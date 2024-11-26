@@ -11,6 +11,8 @@ define krampus = Character("Krampus", color = "000")
 
 define unk = Character("Unknown", color = "#808080")
 
+$ fPoints = 0
+
 # The game starts here.
 
 label start:
@@ -166,17 +168,28 @@ label start:
     "The hulking figure shakes in silent laughter before responding."
 
     frosty "Yes. I know what you're thinking..."
-    frosty "Actually, no I don't know... What do you think?"
+    frosty "Actually, no I don't know..."
+    frosty "I assume you figured it out by now, but yes I am Frosty the Snowman, or at least the human version of him."
 
     menu:
         "You seem nice.":
-        mc "You seem really kind."
+            mc "You seem really kind."
+            "Frosty smiles with a big wide smile."
+            frsoty "Thank you."
+            $ fPoints += 1
 
         "It suits you.":
-        mc "It suits you, and yet your demeanor is warm."
+            mc "It suits you, and yet your demeanor is warm."
+            "Frosty smiles with a big wide smile."
+            frsoty "Thank you."
+            $ fPoints += 1
 
-        "I figured you'd be named something more... intimidating":
-        mc "I figured, with how big you are... I was just expecting something more intimidating."
-    
-    
+        "I figured you'd be something more... intimidating":
+            mc "I figured, with how big you are... I was just expecting something more intimidating."
+            unk "I promise, you do not want to mess with this guy."  #krampus
+            frosty "It's ok Kramp, I understand. It helps that people underestimate me."
+
+    frosty "Well I guess now is as good of a time as ever to introduce ourselves."
+    frosty "As you figured, I am Frosty, Frosty the Snowman. And this is Krampus."
+
     return
