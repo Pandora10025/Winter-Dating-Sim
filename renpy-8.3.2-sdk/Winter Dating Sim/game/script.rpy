@@ -413,7 +413,72 @@ label jack_date_1:
     jack "I don't usually... hang out like this. But I'm glad I did-with you."
 
     "Your heart warms at his words, and you smile back." 
-    
+
     mc "Me too. Same time next week?"
+
+label jack_date_2:
+
+    "The air is crisp and cold as you step onto the ice rink, its surface gleaming under the soft glow of fairy lights strung overhead. Snowflakes drift lazily from the sky, and the entire scene feels like something out of a winter dream."
+    "Jack Frost is already waiting near the edge of the rink, leaning casually against the barrier." 
+    "His icy white hair sparkles under the lights, and when he spots you, he stands up straight, a playful grin spreading across his face."
+
+    jack "About time you got here," 
+
+    "He holds out a pair of skates for you."
+
+    jack "I was starting to think you were scared to face the ice with me."
+
+    "You take the skates, laughing."
+
+    mc "Oh, I'm not scared. I just didn't want to show you up too soon."
+
+    "Jack arches an eyebrow, a mischievous glint in his eyes."
+
+    jack "Big talk for someone who hasn't even laced up yet."
+
+    "Once your skates are on, Jack leads you to the rink. He steps onto the ice effortlessly, gliding backward as if he was born to skate."
+    "Well, maybe he was. His movements are smooth and graceful, every motion infused with a hint of magic. You follow, a little less confident but determined not to let him show you up completely."
+
+    jack "Need a hand?" 
+
+    "Jack offers you his hand, his voice is teasing, but there's a genuine warmth in his expression."
+
+    "You take his hand, and the chill of his touch sends a shiver up your spine-not unpleasant, just cool enough to remind you of who he is. He pulls you along, helping you find your balance."
+
+    jack "There, see? You're a natural. Almost as good as me."
+    mc "Watch this."
+
+    "You try a daring spin, only to wobble precariously and nearly fall. Jack catches you easily, his laugh ringing out like bells on a frosty morning."
+
+    jack "Nice try,"
+    jack "But leave the fancy moves to the professional."
+
+    "As the evening goes on, you relax more, skating side by side with Jack."
+    "At one point, he waves his hand, and a shimmering frost spreads across the ice, creating intricate patterns of snowflakes and swirls that glisten under the lights."
+
+    mc "Wow, Show-off much?"
+    jack "Hey, I've got to impress you somehow."
+    mc "You don't have to try so hard."
+
+    "Jack's smirk softens into a genuine smile."
+
+    jack "Careful." 
+
+    "He leans in slightly, his breath cool against your cheek."
+
+    jack "Say things like that, and I might actually believe you enjoy my company."
+
+    "You laugh, your cheeks warm despite the cold."
+
+    mc "Maybe I do."
+
+    "Jack pulls back, grinning again."
+
+    jack  "Good. Because I was thinking, next time, we could build a snow fort. Unless you're too scared to lose at that, too."
+    mc "Not a chance, but you better bring your A-game."
+    
+    "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
+    "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
+
 
     return
