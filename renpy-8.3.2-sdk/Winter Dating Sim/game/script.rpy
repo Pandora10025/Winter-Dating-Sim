@@ -197,6 +197,14 @@ label start:
     frosty "Well I guess now is as good of a time as ever to introduce ourselves."
     frosty "As you figured, I am frosty, frosty the Snowman. And this is Krampus."
 
+    "add in more blah blah blahh but testing for the dates...."
+    menu:
+        "frosty date":
+            jump frosty_date_1
+        "jack date":
+            jump jack_date_1
+
+return
 
 label frosty_date_1:
     "You hastily knock on the door labeled 'frosty' feeling slightly nervous."
@@ -342,6 +350,8 @@ label frosty_date_1:
 
     "Frosty echoes your sentiment, his bright smile lingering as he walks beside you."
 
+    return
+
 label jack_date_1:
 
     "You step into the dimly lit gaming room, where neon LED lights cast a soft blue glow, creating an atmosphere that feels both exciting and relaxed."
@@ -416,6 +426,8 @@ label jack_date_1:
 
     mc "Me too. Same time next week?"
 
+    jump jack_date_2
+
 label jack_date_2:
 
     "The air is crisp and cold as you step onto the ice rink, its surface gleaming under the soft glow of fairy lights strung overhead. Snowflakes drift lazily from the sky, and the entire scene feels like something out of a winter dream."
@@ -479,6 +491,8 @@ label jack_date_2:
 
     "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
     "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
+
+    jump jack_date_3
 
 label jack_date_3:
     "The military gym is stark and utilitarian, with fluorescent lights casting a cool glow over the room."
@@ -580,7 +594,7 @@ label jack_date_3:
     "Jack ruffles his hair awkwardly."
 
     jack "Good thing I've got the best partner."
-    
+
     "You both leave the gym together, the mission looming ahead but feeling just a little less daunting with him by your side."
 
     return
