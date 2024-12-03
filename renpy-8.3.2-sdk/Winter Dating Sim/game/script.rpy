@@ -228,9 +228,9 @@ label frosty_date_1:
     "The room also had the faint scent of evergreen trees in the winter, but it wasn't cold surprisingly, for him being frosty the Snowman, but instead was actually kind of warm."
 
     menu:
-        mc "It's warm in here":
+        "It's warm in here":
             frosty "Haha yeah. I like to keep it warm in here, contrary to popular belief..."
-        mc "Its very cozy in here":
+        "Its very cozy in here":
             frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out..."
 
     frosty "So.. What do you want to do today?"
