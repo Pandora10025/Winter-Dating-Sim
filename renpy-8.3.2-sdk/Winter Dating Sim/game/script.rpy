@@ -476,9 +476,111 @@ label jack_date_2:
 
     jack  "Good. Because I was thinking, next time, we could build a snow fort. Unless you're too scared to lose at that, too."
     mc "Not a chance, but you better bring your A-game."
-    
+
     "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
     "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
 
+label jack_date_3:
+    "The military gym is stark and utilitarian, with fluorescent lights casting a cool glow over the room."
+    "It's filled with various equipment for physical and tactical training, but in the center of it all stands Jack Frost, leaning casually against his frost-covered staff."
+    "Despite the harsh setting, he looks as effortlessly cool as ever, his icy white hair almost glowing under the lights."
+
+    jack "Finally." 
+
+    "Jack calls out as you approach, his voice echoing slightly in the cavernous space."
+
+    jack "Thought you might've chickened out on me."
+
+    "You roll your eyes, adjusting your gloves."
+
+    mc "Chickened out? I could say the same about you. Are you sure you're not too fragile for this kind of training?"
+
+    "Jack laughs, a sound like cracking ice."
+
+    jack "Oh, you've got jokes. Alright then, let's see if you can back it up." 
+
+    "He tosses you his staff, and you catch it, the icy chill of it seeping through your gloves."
+
+    jack "First lesson, this isn't just a fancy walking stick. It's an extension of your energy. You want it to work for you? You've gotta connect with it. Otherwise, it's just a very expensive popsicle."
+
+    "You hold the staff, feeling its weight and the faint hum of cold energy running through it."
+
+    mc "Alright. So, how do I connect with it?"
+
+    "Jack steps behind you, his hands lightly covering yours on the staff. His touch is cold, but not unpleasant, like the crisp air on a winter morning."
+
+    jack "Start by grounding yourself. Feel the frost in the staff, let it flow through you. Don't fight it. You've gotta let the cold work with you, not against you."
+
+    "You take a deep breath, focusing on the staff as Jack guides you."
+
+    jack "Now, visualize your target. Let's start with that punching bag over there."
+
+    "Across the gym, a heavy punching bag sways slightly, as if daring you to aim. You nod, raising the staff and focusing."
+
+    mc "Alright, here goes nothing."
+    jack "Not nothing, go big or go home."
+
+    "You swing the staff, and a blast of frost shoots forward, encasing the punching bag in a thin layer of ice. Jack whistles, impressed."
+
+    jack "Not bad, rookie. Not bad at all."
+
+    "You grin, spinning the staff experimentally in your hands."
+
+    mc "Looks like I've got the hang of this."
+    jack "Don't get cocky..." 
+
+    "There's a mischievous glint in his eye now. He steps back, spinning his own staff effortlessly."
+
+    jack "Now let's see if you can handle a moving target."
+
+    "With a quick motion, he sends a flurry of snow your way."
+    "You scream, dodging the icy attack."
+
+    mc "Hey! I thought we were training, not sparring!"
+    jack "This {i}is{/i} training," 
+
+    "He was laughing at you now."
+
+    jack "You're gonna have to learn to think on your feet."
+
+    "He flicks his staff again, sending another burst of frost toward you."
+    "You block it with the staff, feeling the energy pulse through your hands."
+
+    mc "Two can play at that game," 
+
+    "You aim to blast frost at Jack. He dodges it easily, his movements as fluid as the wind."
+    "The two of you go back and forth, the gym echoing with bursts of frost and laughter."
+    "Jack keeps you on your toes, pushing you to react faster, aim better, and trust the staff's power."
+
+    jack "Nice shot!" 
+
+    "You manage to graze his side with a burst of frost. He spins around, his staff creating a swirl of cold air that almost knocks you off your feet."
+
+    jack "But don't celebrate yet!"
+
+    "By the time you both call a truce, the gym is colder than when you started, with frost covering the equipment and ice shimmering on the floor."
+    "You're out of breath but exhilarated, the staff still humming faintly in your hands."
+    "Jack leans on his own staff, watching you with a mix of amusement and pride."
+
+    jack "You're not half bad. With a little more practice, you might actually keep up with me out there."
+
+    "You smirk, leaning the staff against your shoulder."
+
+    mc "Keep up? I'm pretty sure I'm already ahead."
+
+    "Jack shakes his head, grinning."
+
+    jack "Sure, sure. Keep telling yourself that, rookie. But don't forget-this was the easy part. The real mission's gonna be a lot tougher."
+    mc "Good thing I've got the best trainer then." 
+
+    "Jack's grin softens into something more genuine."
+
+    jack "Yeah, well," 
+
+    "Jack ruffles his hair awkwardly."
+
+    jack "Good thing I've got the best partner."
+    
+    "You both leave the gym together, the mission looming ahead but feeling just a little less daunting with him by your side."
 
     return
