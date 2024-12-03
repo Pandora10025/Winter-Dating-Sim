@@ -1,7 +1,4 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+﻿# name of the character.
 
 #Main characters
 define mc = Character("[mcname]", color = "#efbf04")
@@ -18,6 +15,8 @@ define emily = Character("Emily", color = "#ffc1f2")
 
 #Character Roamnce Points
 $ fPoints = 0
+$ jPoints = 0
+$ kPoints = 0
 
 # The game starts here.
 
@@ -199,7 +198,7 @@ label start:
     frosty "As you figured, I am frosty, frosty the Snowman. And this is Krampus."
 
 
-label frosty Date 1:
+label frosty_date_1:
     "You hastily knock on the door labeled 'frosty' feeling slightly nervous."
 
     "frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and frosty was the least intimidating out of the bunch."
@@ -216,7 +215,6 @@ label frosty Date 1:
     #with dissolve 
 
     "frosty's room is pretty simple, nothing too out of the ordinary here."
-
     "A plain-ish bed, some shelves holding small knick-knacks like a few books, a small figure, and some plants."
     "The open arrangement and lack of clutter made the room feel very cozy, especially with the plants adding a pop of color here and there."
     "The room also had the faint scent of evergreen trees in the winter, but it wasn't cold surprisingly, for him being frosty the Snowman, but instead was actually kind of warm."
@@ -228,23 +226,16 @@ label frosty Date 1:
             frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out..."
 
     frosty "So.. What do you want to do today?"
-
     mc "Hmm. I'm not sure.."
-
     frosty "Well I have an idea if you would like..."
-
     mc "Oh? Sure what is it?"
-
     frosty "Well... there is this cat cafe near here that I like to go to sometimes. Oh wait, are you allergic to cats? Oh shoot I didn't think about that... Well we can do something else if you-"
-
     mc "No haha frosty it's ok I'm not allergic to cats. That sounds amazing, let's go!"
-
     frosty "Really?" 
 
     "His eyes light up as he looks at you with a bright smile on his face. He reminds you of a golden retriever in the way he gets so excited about things."
 
     mc "Yes really!"
-
     frosty "Oh my god yay I'm so excited! Let's go!"
 
     "frosty quickly grabs a tote bag and heads out with you to the Cat Cafe." 
@@ -255,19 +246,12 @@ label frosty Date 1:
     "You both step into the local cat cafe with frosty by your side. As you look over to him, his face is beaming with joy looking at the cats behind the glass."
 
     unk "Hi frosty!" 
-
     frosty "Hi emily!"
-
     emily "Oh I see you brought a friend this time!"
-
     mc "Oh, Hi, I'm [mcname]"
-
     emily "Nice to meet you! I'm emily. I own this cat cafe. Can I get you anything to drink before going in?"
-
     frosty "One hot chocolate please!"
-
     mc "I'll also take a hot chocolate."
-
     frosty "Good choice" 
 
     "You and frosty settle into a cozy little corner of the cafe, where the warm lighting and soft hum of conversation make everything feel calm and inviting."
@@ -282,11 +266,9 @@ label frosty Date 1:
     "Whiskers leans in, sniffing frosty's outstretched hand before rubbing against it. frosty grins and gently scratches behind the cat's ears."
 
     frosty "See? Total sweetheart."
-
     mc "Do you come here a lot?" 
 
     "Whiskers curls up comfortably on the table between you."
-
     "Frosty nods, his tone easygoing but warm."
 
     frosty "Yeah, whenever I need a little pick-me-up. Something about being here just... makes the world feel softer, y'know? Plus, cats are great company. They don't expect much—just a little kindness—and they give so much back."
@@ -340,14 +322,11 @@ label frosty Date 1:
     frosty "This is the best. You know, cats don't care about what you look like or anything. They just... know if you' re good people. Or a good whatever we are, I guess."
 
     "There's a moment of quiet as Frosty seems lost in thought, absently scratching Whiskers' chin."
-
     "You sip your hot chocolate, watching him with a new appreciation. For all his cheerful energy, frosty has a way of grounding a room, making it feel safe and welcoming."
 
     frosty "Thanks for coming with me today,"
-
     frosty "I know it's kind of random, but I wanted to share this place with you. It means a lot to me."
-
-    mc"It's not random, I can see why you love it here. I had a great time."
+    mc "It's not random, I can see why you love it here. I had a great time."
 
     "frosty beams, his eyes crinkling with joy."
 
@@ -362,5 +341,79 @@ label frosty Date 1:
     frosty "Next time," 
 
     "Frosty echoes your sentiment, his bright smile lingering as he walks beside you."
+
+label jack_date_1:
+
+    "You step into the dimly lit gaming room, where neon LED lights cast a soft blue glow, creating an atmosphere that feels both exciting and relaxed."
+    "Jack Frost is already there, sitting cross-legged on a beanbag chair. His icy white hair catches the light, giving him an ethereal look. He grins when he sees you."
+
+    jack "Hey!"
+
+    "His voice is crisp but warm, like a winter breeze."
+
+    jack "Thought this might be a cool way to hang out. Get it? Cool?"
+
+    "He chuckles at his own pun, a mischievous glint in his icy blue eyes."
+    "You laugh, shaking your head."
+
+    mc "You're lucky I like bad jokes. What are we playing?"
+
+    "Jack holds up two controllers."
+
+    jack "Mario Kart. A classic choice, right? I hope you're ready for some friendly competition."
+
+    "You settle into a beanbag next to him, taking the controller he offers. The menu screen flashes on the TV, and cheerful music fills the room."
+    "As the first race begins, Jack leans over slightly, whispers..."
+
+    jack "Fair warning-I might be a little {i}frosty{/i} when I lose."
+
+    "The game starts, and Jack is immediately in the lead. He's surprisingly good at this, dodging shells and drifting around corners with ease."
+
+    jack "Come on, keep up!"
+
+    "Jack continues teasing, throwing a playful glance your way."
+
+    mc "Oh, I see how it is."
+
+    "You focus harder, managing to snag a red shell."
+
+    mc "Take this!" 
+
+    "You launch the red shell, and it hits Jack's character just before the finish line. You zoom past him, claiming first place."
+    "Jack stares at the screen in mock horror."
+
+    jack "No way. You iced me!" 
+
+    "He bursts out laughing, his laugh as light and bright as the snowflakes outside the window."
+
+    mc "Guess you're not as unbeatable as you thought."
+
+    jack "Okay, okay."
+
+    "He concedes, raising his hands in surrender." 
+
+    jack "Best two out of three? Or... want to team up and take on the AI together?"
+
+    "You can't help but smile at the suggestion."
+
+    mc "Let's team up. I'd hate to embarrass you again."
+
+    "Jack shakes his head with a grin."
+
+    jack "Alright, but if we win, I'm taking credit. Deal?"
+
+    "The two of you spend the rest of the evening racing through pixelated landscapes, throwing banana peels, and laughing at each other's mishaps." 
+    "Jack's energy is infectious, and you find yourself completely at ease as if the world beyond this cozy gaming room doesn't exist."
+    "As the night winds down and the final race ends, Jack turns to you, his expression softening."
+
+    jack  "This was fun," 
+    
+    "His voice is quieter now."
+
+    jack "I don't usually... hang out like this. But I'm glad I did-with you."
+
+    "Your heart warms at his words, and you smile back." 
+    
+    mc "Me too. Same time next week?"
 
     return
