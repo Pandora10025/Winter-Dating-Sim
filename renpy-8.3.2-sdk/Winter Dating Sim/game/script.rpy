@@ -193,7 +193,25 @@ label start:
             frosty "It's ok Kramp, I understand. It helps that people underestimate me."
 
     frosty "Well I guess now is as good of a time as ever to introduce ourselves."
-    frosty "As you figured, I am frosty, frosty the Snowman. And this is Krampus."
+    frosty "As you figured, I am Frosty, Frosty the Snowman. And this is Krampus."
+
+    "The older man gives you a small nod, acknowledging that he is in fact Krampus."
+
+    frosty "And the guy with ice white hair is Jack. Speaking of which where is he?"
+    jack "Awe man Frosty, are you really introducing me to the cutie {i}without{/i} me being there?"
+    frosty "Speak of the devil..."
+
+    "The man with ice white hair and eyes the color of fresh ice appears before you, hand streched out asking you to shake it."
+
+    menu:
+        "shake his hand":
+            "You take in his hand shake it, they are cold to the touch."
+        "look behind him":
+            "You look behind him to see whoever it was he was supposed to get."
+
+    "The man gives you a small wink before turining away to reveal the person who he brought along."
+
+    #add in description for mrs. clause.
 
     "add in more blah blah blahh but testing for the dates...."
     menu:
