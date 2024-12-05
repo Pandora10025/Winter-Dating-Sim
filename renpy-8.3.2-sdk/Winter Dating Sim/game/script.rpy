@@ -13,7 +13,7 @@ define unk = Character("Unknown", color = "#808080")
 define emily = Character("Emily", color = "#ffc1f2")
 
 
-#Character Roamnce Points
+#Character Romance Points
 $ fPoints = 0
 $ jPoints = 0
 $ kPoints = 0
@@ -695,3 +695,84 @@ label krampus_date_1:
     "There's a spark of excitement and fun in his presence, and you can't help but look forward to the next adventure."
 
     return
+
+label krampus_date_2:
+    "The bar is dimly lit and cozy, with flickering candlelight reflecting off bottles of aged whiskey and frosted mugs of beer."
+    "The air is warm, a welcome contrast to the biting cold outside, and the hum of quiet conversation mingles with the crackle of a nearby fireplace."
+    "Seated at a corner table, Krampus cuts an imposing figure even in this laid-back setting. His dark fur peeks out from under a tailored coat, and his horns curl gracefully, catching the soft glow of the lights."
+    "When you approach, his crimson eyes lift to meet yours, and a wicked grin spreads across his face."
+
+    krampus  "There you are." 
+    krampus "I was beginning to think you got lost in the snow."
+
+    "Sliding into the seat across from him, you smirk."
+
+    mc  "I don't get lost that easily. What are we drinking?"
+
+    "Krampus gestures to the bartender, who brings over two glasses filled with a dark amber liquid."
+
+    krampus "Mulled wine."
+    krampus "Warms you up from the inside out. Unless you can't handle a little heat?"
+
+    "You raise an eyebrow and take a sip. The wine is rich and spiced, with a subtle warmth that spreads through your chest."
+
+    mc  "Not bad." 
+    mc "But I expected something... stronger from you."
+
+    "His laugh is low and rough, like boots crunching through snow."
+
+    krampus  "Careful, little one. Challenge me, and you might regret it."
+    mc "Oh, I'm not scared." 
+    mc "What else you got?"
+
+    "Krampus signals again, and this time the bartender brings over a pair of frosted shot glasses filled with a glowing blue liquid."
+
+    krampus "Icefire shots." 
+    krampus "They burn cold going down. Think you can keep up?"
+
+    "You pick up the glass, the chill biting against your fingertips."
+
+    mc "Only one way to find out."
+
+    "The two of you toast, and you down the shot in one gulp. It's like swallowing a snowstorm, the icy burn rushing through your throat and leaving a strangely invigorating warmth behind."
+    "You cough slightly, and Krampus laughs, his shoulders shaking."
+
+    krampus "Not bad." 
+    krampus "But I barely saw you flinch. Maybe there's more to you than I thought."
+    mc "Was that supposed to impress me?" 
+    mc "Because I'm still standing."
+    
+    "Krampus leans back in his chair, swirling the remnants of his drink." 
+
+    krampus "Alright, you're tougher than most. But let's see how sharp you are after another round."
+
+    "The night goes on with more drinks, each one seemingly more exotic and potent than the last."
+    "Between sips, Krampus regales you with darkly humorous tales of his escapades: scaring the naughty into good behavior, outwitting hunters, and even a wild snowball fight with Jack Frost that left a village buried under a week's worth of snow."
+
+    krampus "So, what about you?" 
+    krampus "What's the wildest thing you've ever done?"
+
+    "You laugh, shaking your head."
+
+    mc "Oh no, I'm not falling for that one. You'll have to work harder if you want my secrets."
+
+    "His grin is all sharp teeth and mischief."
+
+    krampus  "Fair enough. But don't think I won't figure you out eventually."
+
+    "As the bar starts to quiet down, you realize how much you've been enjoying yourself."
+    "Despite his intimidating presence, Krampus is surprisingly easy to talk to-charming in his own gruff, devil-may-care way."
+    "When you finally get up to leave, he follows you to the door, his towering frame casting a shadow over the snow-dusted street outside."
+
+    krampus "This was fun!" 
+    krampus "You've got spirit. I like that."
+    mc "Maybe we'll do it again sometime." 
+
+    "Krampus smirks, his sharp teeth glinting in the moonlight."
+
+    krampus "Careful what you wish for. I've got plenty more tricks up my sleeve."
+
+    "As you part ways, the warmth of the bar lingers with you, along with the memory of Krampus's devilish grin and the laughter you shared."
+    "Something tells you this won't be the last time you cross paths with him."
+
+return
