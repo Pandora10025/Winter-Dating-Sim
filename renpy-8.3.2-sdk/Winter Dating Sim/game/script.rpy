@@ -219,6 +219,8 @@ label start:
             jump frosty_date_1
         "jack date":
             jump jack_date_1
+        "krampus date":
+            jump krampus_date_1
 
 return
 
@@ -612,5 +614,84 @@ label jack_date_3:
     jack "Good thing I've got the best partner."
 
     "You both leave the gym together, the mission looming ahead but feeling just a little less daunting with him by your side."
+
+    return
+label krampus_date_1:
+    "The air is crisp and biting as you stand at the top of the ski slope, looking down at the endless stretch of sparkling white snow."
+    "The sun glints off the frosted peaks, and in the distance, the evergreens sway in the cold wind."
+    "Beside you stands Krampus, his imposing frame dressed in a sleek black ski suit, horns curling up from under his custom-made helmet."
+    "His yellow eyes gleam with mischief as he adjusts his skis."
+
+    krampus "Ready to eat some snow?" 
+
+    "You tighten your gloves and adjust your goggles."
+
+    mc "Eat snow? You're awfully confident for someone who's about to get left behind."
+
+    krampus "Careful, little one. Pride comes before a tumble down the mountain."
+
+    "With a flick of his ski poles, he pushes off, gliding down the slope with a natural ease that makes it clear he's done this a thousand times before."
+    "His thick tail flicks behind him like a rudder, helping him navigate the twists and turns with precision."
+
+    krampus "Come on!"
+    krampus "Try to keep up, unless you're scared of a little speed!"
+
+    "You grit your teeth and launch yourself after him, the wind whipping past your face as you pick up speed."
+    "The slope is steeper than you expected, and your heart pounds as you swerve to avoid small drifts of snow and the occasional tree."
+    "Krampus stays just ahead of you, his laughter carrying on the wind."
+
+    krampus "You're not bad!"
+    krampus "But you'll never catch me at that pace!"
+    mc "Oh, we'll see about that!"
+
+    "You push yourself harder, gaining ground as you race toward him."
+    "Krampus glances back, his grin widening." 
+
+    krampus "Impressive!"
+
+    "He slows just enough to let you pull alongside him." 
+    "Then, with a wicked gleam in his eye, he taps the tip of his ski pole to the snow, sending a small flurry of powder into your path."
+
+    mc "Hey!" 
+
+    "You swerve to avoid the icy spray."
+
+    krampus "Just keeping things interesting"
+
+    "Krampus' chuckle resonates through the crisp air."
+    "The two of you race neck and neck, weaving down the mountain with increasing speed."
+    "Krampus leaps off a small ridge, landing gracefully and glancing back to see if you dare follow."
+    "Not wanting to back down, you take the jump, your skis hitting the snow with a satisfying thud."
+
+    krampus "Not bad!" 
+    krampus "Maybe you've got some spirit after all."
+
+    "As the slope levels out near the bottom, the two of you come to a stop near a small lodge."
+    "Your legs are shaky from the exertion, but your adrenaline is pumping, and you can't stop smiling."
+
+    mc "That was amazing!"
+
+    "Krampus leans on his ski poles, his horns catching the late afternoon light."
+
+    krampus "Not bad for a rookie!"
+    krampus "Though I'd still say I won."
+    mc "You wish!" 
+    mc "I was right behind you the whole time."
+    krampus "Close..." 
+    krampus "but next time, I'll make sure you can't keep up."
+    mc "Next time?"
+
+    "You raise an eyebrow."
+    "He grins, baring sharp teeth."
+
+    krampus "You didn't think this was a one-time thing, did you?"
+    krampus "I've got plenty of slopes to show you... if you think you can handle them."
+
+    "You smile, feeling the warmth of the challenge in his tone."
+
+    mc "Bring it on, Krampus. I'll take you on any mountain."
+
+    "His laugh echoes across the snowy peaks as the two of you head into the lodge, your competitive banter continuing over mugs of steaming hot cocoa."
+    "There's a spark of excitement and fun in his presence, and you can't help but look forward to the next adventure."
 
     return
