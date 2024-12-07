@@ -18,6 +18,9 @@ $ fPoints = 0
 $ jPoints = 0
 $ kPoints = 0
 
+# random variables
+define frostyDate1 = false
+
 # The game starts here.
 
 label start:
@@ -368,7 +371,157 @@ label frosty_date_1:
 
     "Frosty echoes your sentiment, his bright smile lingering as he walks beside you."
 
-    return
+    frostyDate1 = True
+
+    jump frosty_date_2_start
+
+label frosty_date_2_start:
+
+if frostyDate1:
+    jump frosty_date_2_yes
+
+if not frosty_date_1:
+    jump frosty_date_2_no
+
+return
+
+label frosty_date_2_yes:
+
+    "You choose to knock on the door labeled Frosty again."
+    "Last time you had an amazing time with him and couldn't stop thinking about what it would be like to spend another day with him."
+    "So you chose to hang out with him again."
+
+    frosty "[mcname]!"
+
+    "Frosty says to you as he opens the door, excited to see that you choose to spend time with him again."
+
+    mc "Hey Frosty!" 
+
+    frosty "I'm so happy you came back! I have a fun day planned for us. Are you ready?"
+
+    mc "Woah, someone is ready to go. Hell yeah I am!"
+
+    frosty "Awesome! Make sure to bundle up, we're going to be outside."
+
+    mc "Uh, Ok! Let me just grab my stuff and I'll meet you outside?"
+
+    frosty "Perfect!"
+
+    jump frosty_date_2
+
+
+label frosty_date_2_no:
+
+    "You hastily knock on the door labeled 'Frosty' feeling slightly nervous."
+
+    "Frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and Frosty was the least intimidating out of the bunch."
+
+    "After a moment or two, the door in front of you opens to reveal Frosty standing before you."
+
+    "He towers over you, but instead of finding him intimidating, he looks down at you with a bright smile on his face."
+
+    frosty "Y/N!"
+
+    "You smile back at him as he welcomes you into his room."
+
+    "Frosty's room is pretty simple, nothing too out of the ordinary here."
+
+    "A plain-ish bed, some shelves holding small knick-knacks like a few books, a small figure, and some plants."
+
+    "The open arrangement and lack of clutter made the room feel very cozy, especially with the plants adding a pop of color here and there." 
+
+    "The room also had the faint scent of evergreen trees in the winter, but it wasn't cold surprisingly, for him being Frosty the Snowman, but instead was actually kind of warm."
+
+    menu:
+        mc "It's warm in here":
+            frosty "Haha yeah. I like to keep it warm in here, contrary to popular belief…"
+        mc "Its very cozy in here":
+            frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out…"
+
+    frosty "I'm really happy you came to hang out with me today. I have a really fun day planned and I am happy to share it with you!"
+
+    mc "Oh wow Frosty that's so nice of you!"
+
+    frosty "Of course! How else are we going to welcome the new member of the team? Make sure to bundle up, we're going to be outside."
+
+    mc "Alright!"
+
+    jump frosty_date_2
+
+
+label frosty_date_2:
+
+    "You grab your coat, scarf, and gloves, making sure you're bundled up for whatever Frosty has planned."
+    "Stepping outside, you see him waiting for you at the bottom of the steps, his cheeks tinged pink from the cold and excitement."
+    "There's something magical about the way he seems to glow, as if winter itself has chosen him as its representative."
+
+    frosty "Ready to go?"
+
+    "Frosty holds out his hand for you to take to begin your journey"
+
+    mc "Lead the way!" 
+
+    "You slip your hand into his. His touch is cool but not uncomfortable." 
+    "It's a sensation that reminds you of holding fresh snow."
+    "As the two of you walk, Frosty chatters excitedly about the day ahead."
+
+    frosty "I hope you like skating! There's this great little rink nearby. It's got fairy lights, music, and everything!"
+
+    "As he talks to you, you look up into his eyes and see they are sparkling like fresh frost on a windowpane"
+
+    mc "Sounds perfect!"
+
+    "When you arrive, the scene is just as Frosty described: the rink is surrounded by tall trees wrapped in twinkling lights, and a soft melody drifts through the crisp air."
+    "Couples and families glide gracefully, or hilariously awkwardly, across the ice, their laughter mingling with the soft crunch of skates."
+    "Frosty turns to you, a playful grin on his face."
+
+    frosty "So, are you a natural, or should I prepare for a lot of falling?"
+    mc "Guess you'll just have to find out, but I did just become a person and all only a few days ago."
+    
+    "He laughs and grabs your hand again, leading you toward the rental booth."
+    "Soon enough, you're both lacing up your skates. Frosty finishes first and hops up, balancing effortlessly."
+
+    mc "Show-off..."
+    frosty "I can't help it. Ice and I, we go way back."
+
+    "Once you're ready, he helps you to your feet."
+    "Your first steps on the ice are a little shaky, but Frosty is right there beside you, steadying you with his hands."
+
+    frosty "Just take it slow." 
+
+    "Frosty's voice is soft and reassuring"
+
+    frosty "I've got you."
+
+    "The two of you make your way onto the rink."
+    "At first, you're clinging to Frosty's arm for dear life, but his patience and encouragement soon have you finding your balance."
+
+    mc "See? You're doing great!"
+
+    "You smile widely at him and he smiles back."
+    "His rosy cheeks and gentle nature give you a sense of comfort that you have yet to experience in this world yet."
+    "Frosty not only makes you feel at ease but he feels like home to you."
+    "As the evening goes on, you and Frosty laugh, stumble, and eventually find a rhythm."
+    "There's a moment when he spins you around, his laughter echoing like bells in the winter air."
+    "For a brief second, you feel weightless, as if the world is nothing but you, him, and the sparkling ice beneath your feet."
+    "By the time you leave the rink, your cheeks are red from the cold and exertion, and your heart is warm from the joy of the evening."
+
+    mc "That was amazing!"
+
+    "He smiles, his breath visible in the frosty air."
+
+    frosty "I'm glad you had fun. I knew today would be special."
+
+    "As you walk back together, Frosty suddenly stops and looks at you, his expression soft and sincere."
+
+    frosty "Thanks for choosing to spend your time with me, [mcname]. It means a lot."
+
+    "You feel a blush rise to your cheeks, not from the cold this time."
+
+    mc "Anytime, Frosty. I can't wait for our next adventure."
+
+return
+
 
 label jack_date_1:
 
