@@ -227,6 +227,20 @@ label start:
 
 return
 
+label before_date_3:
+
+    "To add in later but basicaly to undestand the 3rd date..."
+    "The group is going to fight the badguy, the boogyman, and they need to prep you how to fight since you are new."
+    "you have to choose who you want to learn to fight with..."
+    menu:
+        "frosty":
+            jump frosty_date_3
+        "jack":
+            jump jack_date_3
+        #"krampus":
+            #jump krampus_date_3
+
+
 label frosty_date_1:
     "You hastily knock on the door labeled 'frosty' feeling slightly nervous."
 
@@ -520,6 +534,125 @@ label frosty_date_2:
 
     mc "Anytime, Frosty. I can't wait for our next adventure."
 
+    jump before_date_3
+
+label frosty_date_3:
+    "You knock on Frosty's door, and for a moment, the quiet of the hall feels heavier than usual. It's not just the anticipation of tonight's training."
+    "It's the knowledge that this might be your last night like this. Together."
+
+    "When the door swings open, Frosty is already smiling, his usual easy warmth lighting up the space."
+    "But tonight, there's something different in his expression a softness, an understanding."
+
+    frosty "[mcname]!"
+    "His voice is quieter than usual but no less welcoming."
+
+    frosty "You ready to do this?"
+
+    "You nod, trying to steady yourself."
+
+    mc "Yeah. Let's go."
+
+    "He steps aside to let you in, then falls into step beside you as you head toward the gym."
+    "The silence between you isn't awkward; it's something shared, unspoken but understood."
+
+    frosty "I know I've been saying this every day lately,"
+
+    "Frosty says while rubbing the back of his neck."
+
+    frosty "but I'm really glad you picked me to train with. I mean, I'm not saying I'm the best fighter around, but..."
+
+    "He pauses, glancing at you with a small, crooked smile."
+
+    frosty "I'm glad it's me."
+
+    mc "I wouldn't have it any other way,"
+
+    "His smile widens just enough to make your chest ache."
+
+    "When you reach the gym, the fluorescent lights buzz faintly, casting their cold glow over the stark space."
+    "It's the same as always:punching bags, training dummies, rows of weights, but tonight, it feels different."
+
+    "Frosty steps into the center of the room, motioning for you to follow."
+
+    frosty "Alright, this is it. One last session before... well, before everything."
+
+    "He looks at you, his usual playful demeanor giving way to something more serious."
+
+    frosty "We're gonna make it count."
+
+    "You nod, swallowing the lump in your throat."
+
+    frosty "Okay, first things first:gear."
+
+    "He holds out his hands, and the air around him chills slightly."
+    "Snow swirls in his palms, compressing and solidifying into a pair of brass knuckles that glint like polished ice."
+    "This time, they're more intricate than before, the designs etched into them sharp and deliberate."
+    "He hands them to you with a small smile."
+
+    frosty "They're not just weapons, they're a part of me. I wanted you to have something... just in case."
+
+    "You slip them on, the cold seeping into your skin before settling into a comfortable warmth."
+
+    mc "They're perfect,"
+
+    "You are at a loss for words for how kind of a gesture this is. You look up at him smiling."
+
+    mc "Thank you."
+
+    "He grins, but it's softer this time."
+
+    frosty "Alright, let's get to work."
+
+    "Frosty moves to a training dummy, his movements fluid but deliberate as he demonstrates the basics: balance, power, precision."
+    "He keeps his instructions simple but effective, adjusting your stance with gentle nudges and murmured encouragement."
+
+    frosty "Good,"
+
+    "He steps back to watch as you throw another punch."
+    frosty "Now, again. Keep your shoulders loose, but focus on where you want to hit. Make it count."
+
+    "You follow his guidance, feeling the weight of the brass knuckles amplify your strikes."
+    "Each punch lands with a satisfying thud, and Frosty's quiet murmurs of approval spur you on."
+
+    "As the session continues, the room feels warmer, like the space between you is charged with something unspoken."
+    "When he steps closer to demonstrate a block, his hands linger on yours for just a moment longer than necessary."
+
+    frosty "You've got this, you're stronger than you think, [mcname]. I've always known that."
+
+    "His words sit with you, sinking deeper than the physical strain of the training."
+    "You push yourself harder, knowing this is your last chance to prepare."
+
+    "By the time you're finished, the two of you are sitting side by side on the floor, your backs against the wall."
+    "The gym is quiet now, save for the faint hum of the lights."
+
+    frosty "[mcname],"
+
+    "Frosty starts, his tone unusually soft. He hesitates for a moment before continuing." 
+
+    frosty "No matter what happens tomorrow... I just want you to know... I'm proud of you."
+    frosty "You're everything this world needs. And if it comes down to it..."
+
+    "He trails off, his gaze dropping to the floor before meeting yours again."
+
+    frosty "You'll make it. I know you will."
+
+    mc "Frosty..."
+
+    frosty "Hey"
+
+    "He flashes you a grin that doesn't quite reach his eyes."
+
+    frosty "No sad stuff, okay? We've got enough of that coming. Let's just... stay here a little longer. Just us."
+
+    "You nod, leaning your head against his shoulder."
+    "His arm comes up around you, pulling you closer."
+    "For a moment, it feels like time slows, like the world beyond this room doesn't exist."
+
+    "And even though the battle looms large on the horizon, here, in this moment, you feel safe."
+
+    "Together, you sit in the glow of the fluorescent lights, knowing this is the end of one chapter and the start of another."
+    "Whatever comes next, you'll carry this moment with you. Always."
+
 return
 
 
@@ -663,7 +796,7 @@ label jack_date_2:
     "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
     "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
 
-    jump jack_date_3
+    jump before_date_3
 
 label jack_date_3:
     "The military gym is stark and utilitarian, with fluorescent lights casting a cool glow over the room."
@@ -927,5 +1060,5 @@ label krampus_date_2:
 
     "As you part ways, the warmth of the bar lingers with you, along with the memory of Krampus's devilish grin and the laughter you shared."
     "Something tells you this won't be the last time you cross paths with him."
-
-return
+    
+    jump before_date_3
