@@ -19,7 +19,7 @@ $ jPoints = 0
 $ kPoints = 0
 
 # random variables
-default frostyDate1 = false
+default frostyDate1 = False
 
 # The game starts here.
 
@@ -184,12 +184,10 @@ label start:
             mc "You seem really kind."
             "frosty smiles with a big wide smile."
             frosty "Thank you."
-
         "It suits you.":
             mc "It suits you, and yet your demeanor is warm."
             "frosty smiles with a big wide smile."
             frosty "Thank you."
-
         "I figured you'd be something more... intimidating":
             mc "I figured, with how big you are... I was just expecting something more intimidating."
             unk "I promise, you do not want to mess with this guy."  #krampus
