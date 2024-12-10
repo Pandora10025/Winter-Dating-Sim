@@ -3,7 +3,7 @@
 #Main characters
 define mc = Character("[mcname]", color = "#efbf04")
 define msC = Character("Ms. Clause", color = "#850101")
-define frosty = Character("frosty the 'Snowman'", color = "#ffffff")
+define frosty = Character("frosty the 'Snowman'", color = "#ADD8E6")
 define jack = Character ("Jack Frost", color = "#000bd4")
 define krampus = Character("Krampus", color = "#3d0d0d")
 
