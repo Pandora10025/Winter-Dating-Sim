@@ -19,7 +19,7 @@ $ jPoints = 0
 $ kPoints = 0
 
 # random variables
-define frostyDate1 = false
+default frostyDate1 = false
 
 # The game starts here.
 
@@ -217,6 +217,7 @@ label start:
     #add in description for mrs. clause.
 
     "add in more blah blah blahh but testing for the dates...."
+
     menu:
         "frosty date":
             jump frosty_date_1
@@ -231,7 +232,8 @@ label before_date_2:
 
     "Blah blah blah plot and stuff"
     "guess what yoyu can choose who to go on your second date with!"
-        menu:
+
+    menu:
         "frosty":
             jump frosty_date_2
         "jack":
@@ -401,9 +403,9 @@ label frosty_date_1:
 
     "Frosty echoes your sentiment, his bright smile lingering as he walks beside you."
 
-    frostyDate1 = True
-
     jump before_date_2
+
+    $ frostyDate1 = True
 
 label frosty_date_2_start:
 
@@ -463,9 +465,9 @@ label frosty_date_2_no:
     "The room also had the faint scent of evergreen trees in the winter, but it wasn't cold surprisingly, for him being Frosty the Snowman, but instead was actually kind of warm."
 
     menu:
-        mc "It's warm in here":
+        "It's warm in here":
             frosty "Haha yeah. I like to keep it warm in here, contrary to popular belief…"
-        mc "Its very cozy in here":
+        "Its very cozy in here":
             frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out…"
 
     frosty "I'm really happy you came to hang out with me today. I have a really fun day planned and I am happy to share it with you!"
