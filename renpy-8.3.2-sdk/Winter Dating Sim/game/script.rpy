@@ -227,11 +227,27 @@ label start:
 
 return
 
+label before_date_2:
+
+    "Blah blah blah plot and stuff"
+    "guess what yoyu can choose who to go on your second date with!"
+        menu:
+        "frosty":
+            jump frosty_date_2
+        "jack":
+            jump jack_date_2
+        "krampus":
+            jump krampus_date_2
+
+    return
+
 label before_date_3:
 
     "To add in later but basicaly to undestand the 3rd date..."
     "The group is going to fight the badguy, the boogyman, and they need to prep you how to fight since you are new."
     "you have to choose who you want to learn to fight with..."
+    "ps: theres no 3rd date for krampus yet."
+    
     menu:
         "frosty":
             jump frosty_date_3
@@ -387,7 +403,7 @@ label frosty_date_1:
 
     frostyDate1 = True
 
-    jump frosty_date_2_start
+    jump before_date_2
 
 label frosty_date_2_start:
 
@@ -730,7 +746,7 @@ label jack_date_1:
 
     mc "Me too. Same time next week?"
 
-    jump jack_date_2
+    jump before_date_2
 
 label jack_date_2:
 
@@ -980,7 +996,7 @@ label krampus_date_1:
     "His laugh echoes across the snowy peaks as the two of you head into the lodge, your competitive banter continuing over mugs of steaming hot cocoa."
     "There's a spark of excitement and fun in his presence, and you can't help but look forward to the next adventure."
 
-    return
+    jump before_date_2
 
 label krampus_date_2:
     "The bar is dimly lit and cozy, with flickering candlelight reflecting off bottles of aged whiskey and frosted mugs of beer."
