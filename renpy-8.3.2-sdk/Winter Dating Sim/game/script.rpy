@@ -1,16 +1,24 @@
 ﻿# name of the character.
 
 #Main characters
-define mc = Character("[mcname]", color = "#efbf04")
+define mc = Character("[mcname]", color = "#ffac00")
 define msC = Character("Ms. Clause", color = "#850101")
 define frosty = Character("frosty the 'Snowman'", color = "#ADD8E6")
 define jack = Character ("Jack Frost", color = "#000bd4")
 define krampus = Character("Krampus", color = "#3d0d0d")
 
-define unk = Character("Unknown", color = "#808080")
+define unk = Character("Unknown 1", color = "#b0b0b0") #clause?
+define unk1 = Character("Unknown 1", color = "#000bd4") #Jack
+define unk2 = Character("Unknown 2", color = "#3d0d0d") #Krampus
+define unk3 = Character("Unknown 3", color = "#ADD8E6") #Frosty
 
 #Other Characters
 define emily = Character("Emily", color = "#ffc1f2")
+
+#Sprites
+image Jack Happy = im.Scale("happy_JACK.png", 800, 1000)
+image Jack Neu = im.Scale("neutral_JACK.png", 800, 1000)
+image Jack Sad = im.Scale("upset_JACK.png", 800, 1000)
 
 
 #Character Romance Points
@@ -60,6 +68,7 @@ label start:
 
     scene bg hub command
     with blink_open
+    with vpunch
 
     mc "Ugh..."
     mc "Where..."
@@ -80,6 +89,7 @@ label start:
             mc "It seems like this room is only for this book..."
 
     "Before you could continue to explore, an ear pericing sound suddenly errupts around you, acopanied by the sound of urgent footsteps"
+    with vpunch
 
     mc "What is going on? I don't think I did anything..."
 
@@ -92,63 +102,68 @@ label start:
     scene bg hub command
     with blink_open
 
-    unk "Maybe we should go in and see -" #probably frosty
-    unk "Go in, are you nuts!" #probably Jack
-    unk "Well how else do you expect us to know who is in there..." #frosty
-    unk "And what, may I ask, will you do if there IS someone in there?" #probably Krampus
-    unk "Ummm... I hadn't gotten that far..." #frosty
-    unk "Hello! Is there anyone in there!" #frosty
-    unk "What are you doing?!?!" #Jack 
-    unk "I figured if we're not going in to see if someone's in there, I could call out and see if anyone responds..." #frosty
-    unk "Of all the ideas that has to be the stu-" #Jack
+    unk3 "Maybe we should go in and see -" #probably frosty
+    unk1 "Go in, are you nuts!" #probably Jack
+    unk3 "Well how else do you expect us to know who is in there..." #frosty
+    unk2 "And what, may I ask, will you do if there IS someone in there?" #probably Krampus
+    unk3 "Ummm... I hadn't gotten that far..." #frosty
+    unk3 "Hello! Is there anyone in there!" #frosty
+    unk1 "What are you doing?!?!" #Jack 
+    unk3 "I figured if we're not going in to see if someone's in there, I could call out and see if anyone responds..." #frosty
+    unk1 "Of all the ideas that has to be the stu-" #Jack
 
     mc "Ummm... hello?" 
-    unk "Yes! Hello!" #frosty
-    unk "Stop talking." #Krampus
+    unk3 "Yes! Hello!" #frosty
+    unk2 "Stop talking." #Krampus
 
-    unk "If you come out peacefully we'll make your suffering short." #Krampus
-    unk "Don't say that! You'll scare them." #frosty
-    unk "Good." #Krampus
+    unk2 "If you come out peacefully we'll make your suffering short." #Krampus
+    unk3 "Don't say that! You'll scare them." #frosty
+    unk2 "Good." #Krampus
 
     mc "Where is out? Where am I?"
-    unk "You're not going to trick us, so you can drop the act." #Krampus
+    unk2 "You're not going to trick us, so you can drop the act." #Krampus
 
     mc "Trick? Who is us? And why would I want to trick you?"
     unk "..."
-    unk "I don't know guys, it sounds like they really don't know anything..." #frosty
-    unk "You're not allowed to have anymore thoughts." #Jack 
-    unk "We're coming in..." #Krampus
-    unk "NO, we are not! Have you lost your mind." #Jack
-    unk "No. I have not." #Krampus
+    unk3 "I don't know guys, it sounds like they really don't know anything..." #frosty
+    unk1 "You're not allowed to have anymore thoughts." #Jack 
+    unk2 "We're coming in..." #Krampus
+    unk3 "NO, we are not! Have you lost your mind." #Jack
+    unk2 "No. I have not." #Krampus
 
     "A loud clanking sound resonates through the room."
     "To your right, a part of the wall begins to move as if it is moving to the side to reveal something."
 
     
     #Krampus slides onto screen
-    unk "You make any sudden movements and I will kill you." #Krampus 
+    unk2 "You make any sudden movements and I will kill you." #Krampus 
 
     #frosty and Jack enter 
-    unk "So who is it?" #Jack
-    unk "Oh... hi" #frosty
+    show Jack Sad at left
+    with moveinleft 
+    unk1 "So who is it?" #Jack
+    unk3 "Oh... hi" #frosty
 
     mc "Umm... hi"
     mc "Where am I? Who are you?"
 
-    unk "You... really don't know, do you?" #Jack
+    show Jack Neu at center
+    with ease
+    unk1 "You... really don't know, do you?" #Jack
     
     "You eye the first man to arrive."
     "He stands tall, with elf-like ears protruding out from his black and gray streaked hair."
     "You look up into his eyes, they tell the tale of an older man, hung up and annoyed with life, before slowly shaking your head."
 
-    unk "We should get Mrs. C in here." #frosty
-    unk "What is your name?" #Krampus
+    unk3 "We should get Mrs. C in here." #frosty
+    unk2 "What is your name?" #Krampus
 
     mc "It's..."
     mc "I'm ..."
     mc "I'm [mcname], I think."
 
-    unk "You think?" #Jack
+    show Jack Sad at center
+    unk2 "You think?" #Jack
 
     "The one to speak this time was slightly shorter than the man that first entered. He had white hair like snow and eyes the color ice."
     "He seemed to look at you with curiosity as opposed to the last man who seemed to only be annoyed by your presence."
@@ -157,20 +172,22 @@ label start:
 
     "You try taking a step towards the men, but find that your legs are less reliable than you think they are, and you find yourself stumbling a bit before having to catch yourself."
 
-    unk "Whoa whoa whoa. Maybe you should sit." #frosty 
+    unk3 "Whoa whoa whoa. Maybe you should sit." #frosty 
 
     "This man seems so be slightly different than the rest. He stands taller than all of them, his broad shoulders make it so he takes up the most space, but his eyes tell a different story."
     "Instead of looking at you with an air of curiosity or annoyance, he looks concerned."
     "He slungs your arm around his shoulder as he eases you to the floor."
 
-    unk "Take a few deep breaths, are you hurt anywhere." #frosty 
-    unk "Snow! What are you doing dude, they could be dangerous." #Jack 
-    unk "I don't know dude, they can hardly stand." #frosty
-    unk "Go get Mrs. Clause." #Krampus
-    unk "But-" #Jack
-    unk "Go. For now, I think frosty is correct. And Mrs. Clause will be able to tell for sure." #krampus
+    unk3 "Take a few deep breaths, are you hurt anywhere." #frosty 
+    unk1 "Snow! What are you doing dude, they could be dangerous." #Jack 
+    unk3 "I don't know dude, they can hardly stand." #frosty
+    unk2 "Go get Mrs. Clause." #Krampus
+    unk1 "But-" #Jack
+    unk2 "Go. For now, I think frosty is correct. And Mrs. Clause will be able to tell for sure." #krampus
 
     #Jack's sprite slides off screen
+    show Jack Sad with moveoutleft
+
     mc "frosty?"
 
     "The hulking figure shakes in silent laughter before responding."
@@ -180,8 +197,8 @@ label start:
     frosty "I assume you figured it out by now, but yes I am frosty the Snowman, or at least the human version of him."
 
     menu:
-        "You seem nice.":
-            mc "You seem really kind."
+        "You seem... nice.":
+            mc "You seem... nice."
             "frosty smiles with a big wide smile."
             frosty "Thank you."
         "It suits you.":
@@ -206,7 +223,7 @@ label start:
 
     menu:
         "shake his hand":
-            "You take in his hand shake it, they are cold to the touch."
+            "You take in his hand shake it, it is cold to the touch."
         "look behind him":
             "You look behind him to see whoever it was he was supposed to get."
 
@@ -228,6 +245,8 @@ return
 
 label before_date_2:
 
+    scene bg black screen 
+
     "Blah blah blah plot and stuff"
     "guess what yoyu can choose who to go on your second date with!"
 
@@ -243,6 +262,7 @@ label before_date_2:
 
 label before_date_3:
 
+    scene bg black screen 
     "To add in later but basicaly to undestand the 3rd date..."
     "The group is going to fight the badguy, the boogyman, and they need to prep you how to fight since you are new."
     "you have to choose who you want to learn to fight with..."
@@ -258,6 +278,7 @@ label before_date_3:
 
 
 label frosty_date_1:
+    scene bg black screen 
     "You hastily knock on the door labeled 'frosty' feeling slightly nervous."
 
     "frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and frosty was the least intimidating out of the bunch."
@@ -674,9 +695,14 @@ return
 
 label jack_date_1:
 
-    "You step into the dimly lit gaming room, where neon LED lights cast a soft blue glow, creating an atmosphere that feels both exciting and relaxed."
-    "Jack Frost is already there, sitting cross-legged on a beanbag chair. His icy white hair catches the light, giving him an ethereal look. He grins when he sees you."
+    scene bg black screen 
 
+    "You step into the dimly lit gaming room, where neon LED lights cast a soft blue glow, creating an atmosphere that feels both exciting and relaxed."
+    "Jack Frost is already there, sitting cross-legged on a beanbag chair."
+    "His icy white hair catches the light, giving him an ethereal look. He grins when he sees you."
+
+    show Jack Happy at center
+    with fade
     jack "Hey!"
 
     "His voice is crisp but warm, like a winter breeze."
@@ -695,6 +721,7 @@ label jack_date_1:
     "You settle into a beanbag next to him, taking the controller he offers. The menu screen flashes on the TV, and cheerful music fills the room."
     "As the first race begins, Jack leans over slightly, whispers..."
 
+    show Jack Sad
     jack "Fair warning-I might be a little {i}frosty{/i} when I lose."
 
     "The game starts, and Jack is immediately in the lead. He's surprisingly good at this, dodging shells and drifting around corners with ease."
@@ -709,19 +736,23 @@ label jack_date_1:
 
     mc "Take this!" 
 
+    with hpunch
     "You launch the red shell, and it hits Jack's character just before the finish line. You zoom past him, claiming first place."
     "Jack stares at the screen in mock horror."
 
     jack "No way. You iced me!" 
 
+    show Jack Happy
     "He bursts out laughing, his laugh as light and bright as the snowflakes outside the window."
 
     mc "Guess you're not as unbeatable as you thought."
 
+    show Jack Neu
     jack "Okay, okay."
 
     "He concedes, raising his hands in surrender." 
 
+    show Jack Happy
     jack "Best two out of three? Or... want to team up and take on the AI together?"
 
     "You can't help but smile at the suggestion."
@@ -745,11 +776,14 @@ label jack_date_1:
     "Your heart warms at his words, and you smile back." 
 
     mc "Me too. Same time next week?"
+    with fade
 
     jump before_date_2
 
 label jack_date_2:
 
+    show Jack Neu at center
+    with fade
     "The air is crisp and cold as you step onto the ice rink, its surface gleaming under the soft glow of fairy lights strung overhead. Snowflakes drift lazily from the sky, and the entire scene feels like something out of a winter dream."
     "Jack Frost is already waiting near the edge of the rink, leaning casually against the barrier." 
     "His icy white hair sparkles under the lights, and when he spots you, he stands up straight, a playful grin spreading across his face."
@@ -758,6 +792,7 @@ label jack_date_2:
 
     "He holds out a pair of skates for you."
 
+    show Jack Happy
     jack "I was starting to think you were scared to face the ice with me."
 
     "You take the skates, laughing."
@@ -766,6 +801,7 @@ label jack_date_2:
 
     "Jack arches an eyebrow, a mischievous glint in his eyes."
 
+    show Jack Happy
     jack "Big talk for someone who hasn't even laced up yet."
 
     "Once your skates are on, Jack leads you to the rink. He steps onto the ice effortlessly, gliding backward as if he was born to skate."
@@ -780,7 +816,9 @@ label jack_date_2:
     jack "There, see? You're a natural. Almost as good as me."
     mc "Watch this."
 
-    "You try a daring spin, only to wobble precariously and nearly fall. Jack catches you easily, his laugh ringing out like bells on a frosty morning."
+    "You try a daring spin, only to wobble precariously and nearly fall."
+    with vpunch
+    "Jack catches you easily, his laugh ringing out like bells on a frosty morning."
 
     jack "Nice try,"
     jack "But leave the fancy moves to the professional."
@@ -811,6 +849,7 @@ label jack_date_2:
 
     "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
     "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
+    with fade
 
     jump before_date_3
 
@@ -819,23 +858,28 @@ label jack_date_3:
     "It's filled with various equipment for physical and tactical training, but in the center of it all stands Jack Frost, leaning casually against his frost-covered staff."
     "Despite the harsh setting, he looks as effortlessly cool as ever, his icy white hair almost glowing under the lights."
 
+    show Jack Neu at cetner
     jack "Finally." 
 
     "Jack calls out as you approach, his voice echoing slightly in the cavernous space."
 
+    show Jack Sad
     jack "Thought you might've chickened out on me."
 
     "You roll your eyes, adjusting your gloves."
 
     mc "Chickened out? I could say the same about you. Are you sure you're not too fragile for this kind of training?"
 
+    show Jack Happy
     "Jack laughs, a sound like cracking ice."
 
     jack "Oh, you've got jokes. Alright then, let's see if you can back it up." 
 
     "He tosses you his staff, and you catch it, the icy chill of it seeping through your gloves."
 
-    jack "First lesson, this isn't just a fancy walking stick. It's an extension of your energy. You want it to work for you? You've gotta connect with it. Otherwise, it's just a very expensive popsicle."
+    show Jack Neu
+    jack "First lesson, this isn't just a fancy walking stick. It's an extension of your energy. You want it to work for you? You've gotta connect with it."
+    jack "Otherwise, it's just a very expensive popsicle."
 
     "You hold the staff, feeling its weight and the faint hum of cold energy running through it."
 
@@ -854,6 +898,7 @@ label jack_date_3:
     mc "Alright, here goes nothing."
     jack "Not nothing, go big or go home."
 
+    with hpunch
     "You swing the staff, and a blast of frost shoots forward, encasing the punching bag in a thin layer of ice. Jack whistles, impressed."
 
     jack "Not bad, rookie. Not bad at all."
@@ -863,21 +908,26 @@ label jack_date_3:
     mc "Looks like I've got the hang of this."
     jack "Don't get cocky..." 
 
+    show Jack Happy
     "There's a mischievous glint in his eye now. He steps back, spinning his own staff effortlessly."
 
     jack "Now let's see if you can handle a moving target."
 
     "With a quick motion, he sends a flurry of snow your way."
+    with vpunch
     "You scream, dodging the icy attack."
 
     mc "Hey! I thought we were training, not sparring!"
+    show Jack Neu
     jack "This {i}is{/i} training," 
 
+    show Jack Happy
     "He was laughing at you now."
 
     jack "You're gonna have to learn to think on your feet."
 
     "He flicks his staff again, sending another burst of frost toward you."
+    with hpunch
     "You block it with the staff, feeling the energy pulse through your hands."
 
     mc "Two can play at that game," 
@@ -890,12 +940,14 @@ label jack_date_3:
 
     "You manage to graze his side with a burst of frost. He spins around, his staff creating a swirl of cold air that almost knocks you off your feet."
 
+    show Jack Neu
     jack "But don't celebrate yet!"
 
     "By the time you both call a truce, the gym is colder than when you started, with frost covering the equipment and ice shimmering on the floor."
     "You're out of breath but exhilarated, the staff still humming faintly in your hands."
     "Jack leans on his own staff, watching you with a mix of amusement and pride."
 
+    show Jack Happy
     jack "You're not half bad. With a little more practice, you might actually keep up with me out there."
 
     "You smirk, leaning the staff against your shoulder."
@@ -909,16 +961,20 @@ label jack_date_3:
 
     "Jack's grin softens into something more genuine."
 
+    show Jack Neu
     jack "Yeah, well," 
 
     "Jack ruffles his hair awkwardly."
 
+    show Jack Happy
     jack "Good thing I've got the best partner."
 
     "You both leave the gym together, the mission looming ahead but feeling just a little less daunting with him by your side."
-
+    with fade
     return
 label krampus_date_1:
+
+    scene bg black screen 
     "The air is crisp and biting as you stand at the top of the ski slope, looking down at the endless stretch of sparkling white snow."
     "The sun glints off the frosted peaks, and in the distance, the evergreens sway in the cold wind."
     "Beside you stands Krampus, his imposing frame dressed in a sleek black ski suit, horns curling up from under his custom-made helmet."
