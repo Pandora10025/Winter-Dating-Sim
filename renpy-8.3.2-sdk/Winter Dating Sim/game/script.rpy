@@ -1134,3 +1134,107 @@ label krampus_date_2:
     "Something tells you this won't be the last time you cross paths with him."
     
     jump before_date_3
+
+    label krampus_date_3:
+
+    "The gym smells of leather, chalk, and sweat, the air thick with the energy of past battles fought and won."
+    "It's stark with heavy punching bags hanging in neat rows and a well-worn boxing ring in the corner."
+    "The sharp clang of metal weights echoes as you walk in, but your attention is locked on Krampus, who's standing near a makeshift sparring mat."
+    "He's shed his usual coat, his broad chest and arms exposed save for the thick fur that covers him like armor."
+    "His claws flex and curl as he stretches, and his horns gleam under the cold fluorescent lights. His red eyes fix on you as you approach, a grin playing at the corners of his sharp mouth."
+
+    krampus "Well, well"
+    krampus "Look who finally decided to show up. Thought you might back out when you heard the words 'bare knuckle.'"
+
+    "You roll your shoulders, matching his smirk."
+
+    mc "And miss out on the chance to put you on the mat? Not a chance." 
+    krampus "Big talk. Let's see if you can back it up."
+
+    "Krampus motions for you to step onto the mat, and you do, kicking off your boots and wrapping your hands with the provided bandages."
+    "As you finish, he saunters over, his claws dragging lightly across the mat as if testing its texture."
+
+    krampus "First lesson..."
+    krampus "Boxing isn't just about throwing punches. It's about control. You've got to stay balanced, protect yourself, and know when to strike. Otherwise, you're just flailing around, waiting to get flattened."
+
+    "He steps closer, towering over you but not in a way that feels threatening. His massive hands hover over yours, guiding them into position."
+
+    krampus "Hands up. Chin down. And for the love of god, don't drop your guard."
+
+    "You mimic his stance, fists up and knees slightly bent."
+
+    mc  "Like this?"
+    krampus "Not bad." 
+    krampus "But you're too stiff. Loosen up, or you'll telegraph every move."
+
+    "Before you can adjust, he flicks out a clawed hand-not hard, but fast enough to tap the side of your head."
+
+    krampus "See? Wide open."
+    mc "Hey!"
+
+    "You protest, resetting your stance."
+
+    mc "I wasn't ready."
+    krampus "You think your enemies are going to wait for you to be ready?" 
+    krampus "Stay focused, or you're just giving me more opportunities to humiliate you."
+
+    "You narrow your eyes, determination sparking."
+
+    mc "Alright, big guy. Let's see what you've got."
+
+    "Krampus raises an eyebrow, clearly amused."
+
+    krampus "That's the spirit."
+
+    "He squares up in front of you, his movements are surprisingly fluid for someone so large."
+
+    krampus "Try to hit me." 
+
+    "You hesitate for half a second before throwing a jab at his midsection. He sidesteps effortlessly, tapping your wrist to deflect the blow."
+
+    krampus "Too slow." 
+
+    "You try again, this time feinting with one hand and aiming higher with the other. Krampus blocks with ease, his reflexes razor-sharp."
+
+    krampus  "That's better." 
+    krampus "But your footing's off. You're leaning too far forward."
+    mc "Fine." 
+    mc "What about this?"
+
+    "You launch a series of quick strikes, mixing high and low targets. Krampus blocks and dodges most of them, but one punch grazes his side. He steps back, laughing."
+
+    krampus "Now that's more like it. You've got some fire in you."
+    mc "Was there ever any doubt?"
+
+    "He shakes his head, his grin never fading." 
+
+    krampus "Oh, I didn't doubt it. I just like seeing it for myself."
+
+    "For the next hour, he pushes you harder, teaching you how to move, dodge, and strike with precision."
+    "His critiques are sharp but never cruel, and every time you land even the smallest hit, he praises you with a mix of amusement and genuine pride."
+    "By the end of the session, your knuckles are sore, and your body feels like it's been through a storm."
+    "But there's a satisfaction in the ache, a sense of accomplishment."
+
+    krampus "You did good."
+    krampus "For a beginner, anyway."
+    mc "Thanks." 
+    mc "You're not a bad teacher."
+
+    "He chuckles, his red eyes glinting."
+
+    krampus "Careful with the compliments. I might start expecting you to listen next time."
+    mc "Next time?"
+
+    "Krampus leans back, his claws resting on his knees."
+
+    krampus "Oh, this was just the warm-up. The real fun starts when we get into advanced techniques. If you're up for it, of course."
+
+    "You grin, despite your exhaustion."
+
+    mc "Bring it on."
+
+    "Krampus smirks, baring his sharp teeth."
+
+    krampus "You've got guts. I like that."
+
+    "With Krampus by your side, even the toughest challenges seem a little more thrilling-and a lot more fun."
