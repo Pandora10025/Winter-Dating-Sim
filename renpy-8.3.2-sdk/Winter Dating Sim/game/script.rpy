@@ -20,6 +20,10 @@ image Jack Happy = im.Scale("happy_JACK.png", 800, 1000)
 image Jack Neu = im.Scale("neutral_JACK.png", 800, 1000)
 image Jack Sad = im.Scale("upset_JACK.png", 800, 1000)
 
+image Kramp Happy = im.Scale("HAPPY_Krampus.png", 800, 1000)
+image Kramp Neu = im.Scale("NEUTRAL_Krampus.png", 800, 1000)
+image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
+
 
 #Character Romance Points
 $ fPoints = 0
@@ -58,7 +62,7 @@ label start:
 
     scene bg black screen
 
-    scene bg hub command 
+    scene bg book room
     with blink_open
 
     scene bg black screen 
@@ -66,7 +70,7 @@ label start:
 
     mc "Uhh..."
 
-    scene bg hub command
+    scene bg book room
     with blink_open
     with vpunch
 
@@ -99,7 +103,7 @@ label start:
     with blink_shut
     mc "Uuugh"
 
-    scene bg hub command
+    scene bg book room
     with blink_open
 
     unk3 "Maybe we should go in and see -" #probably frosty
@@ -136,10 +140,12 @@ label start:
 
     
     #Krampus slides onto screen
+    show Kramp Neu at right
+    with moveinleft
     unk2 "You make any sudden movements and I will kill you." #Krampus 
 
     #frosty and Jack enter 
-    show Jack Sad at left
+    show Jack Sad at center
     with moveinleft 
     unk1 "So who is it?" #Jack
     unk3 "Oh... hi" #frosty
@@ -156,6 +162,7 @@ label start:
     "You look up into his eyes, they tell the tale of an older man, hung up and annoyed with life, before slowly shaking your head."
 
     unk3 "We should get Mrs. C in here." #frosty
+    show Kramp Nod at right
     unk2 "What is your name?" #Krampus
 
     mc "It's..."
@@ -181,6 +188,7 @@ label start:
     unk3 "Take a few deep breaths, are you hurt anywhere." #frosty 
     unk1 "Snow! What are you doing dude, they could be dangerous." #Jack 
     unk3 "I don't know dude, they can hardly stand." #frosty
+    show Kramp Neu at right
     unk2 "Go get Mrs. Clause." #Krampus
     unk1 "But-" #Jack
     unk2 "Go. For now, I think frosty is correct. And Mrs. Clause will be able to tell for sure." #krampus
@@ -977,20 +985,25 @@ label krampus_date_1:
     scene bg black screen 
     "The air is crisp and biting as you stand at the top of the ski slope, looking down at the endless stretch of sparkling white snow."
     "The sun glints off the frosted peaks, and in the distance, the evergreens sway in the cold wind."
+    show Kramp Neu at center
+    with fade
     "Beside you stands Krampus, his imposing frame dressed in a sleek black ski suit, horns curling up from under his custom-made helmet."
     "His yellow eyes gleam with mischief as he adjusts his skis."
 
+    show Kramp Happy at center
     krampus "Ready to eat some snow?" 
 
     "You tighten your gloves and adjust your goggles."
 
     mc "Eat snow? You're awfully confident for someone who's about to get left behind."
 
+    show Kramp Nod at center
     krampus "Careful, little one. Pride comes before a tumble down the mountain."
 
     "With a flick of his ski poles, he pushes off, gliding down the slope with a natural ease that makes it clear he's done this a thousand times before."
     "His thick tail flicks behind him like a rudder, helping him navigate the twists and turns with precision."
 
+    show Kramp Happy at center
     krampus "Come on!"
     krampus "Try to keep up, unless you're scared of a little speed!"
 
@@ -998,6 +1011,8 @@ label krampus_date_1:
     "The slope is steeper than you expected, and your heart pounds as you swerve to avoid small drifts of snow and the occasional tree."
     "Krampus stays just ahead of you, his laughter carrying on the wind."
 
+    show Kramp happy at center
+    with vpunch
     krampus "You're not bad!"
     krampus "But you'll never catch me at that pace!"
     mc "Oh, we'll see about that!"
@@ -1033,8 +1048,11 @@ label krampus_date_1:
 
     krampus "Not bad for a rookie!"
     krampus "Though I'd still say I won."
+
     mc "You wish!" 
     mc "I was right behind you the whole time."
+
+    show Kramp Nod at center
     krampus "Close..." 
     krampus "but next time, I'll make sure you can't keep up."
     mc "Next time?"
@@ -1042,6 +1060,7 @@ label krampus_date_1:
     "You raise an eyebrow."
     "He grins, baring sharp teeth."
 
+    show Kramp Happy at center
     krampus "You didn't think this was a one-time thing, did you?"
     krampus "I've got plenty of slopes to show you... if you think you can handle them."
 
@@ -1057,9 +1076,11 @@ label krampus_date_1:
 label krampus_date_2:
     "The bar is dimly lit and cozy, with flickering candlelight reflecting off bottles of aged whiskey and frosted mugs of beer."
     "The air is warm, a welcome contrast to the biting cold outside, and the hum of quiet conversation mingles with the crackle of a nearby fireplace."
+    show Kramp Neu at center
     "Seated at a corner table, Krampus cuts an imposing figure even in this laid-back setting. His dark fur peeks out from under a tailored coat, and his horns curl gracefully, catching the soft glow of the lights."
     "When you approach, his crimson eyes lift to meet yours, and a wicked grin spreads across his face."
 
+    show Kramp Happy at center
     krampus  "There you are." 
     krampus "I was beginning to think you got lost in the snow."
 
@@ -1069,6 +1090,7 @@ label krampus_date_2:
 
     "Krampus gestures to the bartender, who brings over two glasses filled with a dark amber liquid."
 
+    show Kramp Neu at center
     krampus "Mulled wine."
     krampus "Warms you up from the inside out. Unless you can't handle a little heat?"
 
@@ -1077,6 +1099,8 @@ label krampus_date_2:
     mc  "Not bad." 
     mc "But I expected something... stronger from you."
 
+    show Kramp Happy at center
+    with vpunch
     "His laugh is low and rough, like boots crunching through snow."
 
     krampus  "Careful, little one. Challenge me, and you might regret it."
