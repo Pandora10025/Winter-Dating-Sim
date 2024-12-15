@@ -48,6 +48,7 @@ label start:
 
     scene bg black screen
     play music "audio/bg music.wav" volume 0.5
+    #Floating In The Midnight Breeze by FoolBoyMedia -- https://freesound.org/s/332323/ -- License: Attribution NonCommercial 4.0
 
     "In the begining there were stories... Legends..."
 
@@ -283,8 +284,8 @@ label before_date_3:
             jump frosty_date_3
         "jack":
             jump jack_date_3
-        #"krampus":
-            #jump krampus_date_3
+        "krampus":
+            jump krampus_date_3
 
 
 label frosty_date_1:
@@ -330,8 +331,8 @@ label frosty_date_1:
 
     "frosty quickly grabs a tote bag and heads out with you to the Cat Cafe." 
 
-    #scene bg cat cafe
-    #with dissolve
+    scene bg cat cafe
+    with dissolve
 
     "You both step into the local cat cafe with frosty by your side. As you look over to him, his face is beaming with joy looking at the cats behind the glass."
 
@@ -425,6 +426,9 @@ label frosty_date_1:
     "You glance at a fluffy calico peeking at you from behind a stack of books, and frosty laughs. It's warm and easy, and it feels like a perfect ending to the day."
 
     mc "Next time for sure"
+
+    scene bg black screen
+    with dissolve
 
     "You both step outside into the cold and crisp air."
 
@@ -715,10 +719,12 @@ label jack_date_1:
     with fade
     jack "Hey!"
 
+    show Jack Neu at center
     "His voice is crisp but warm, like a winter breeze."
 
     jack "Thought this might be a cool way to hang out. Get it? Cool?"
 
+    show Jack Happy at center
     "He chuckles at his own pun, a mischievous glint in his icy blue eyes."
     "You laugh, shaking your head."
 
@@ -726,6 +732,7 @@ label jack_date_1:
 
     "Jack holds up two controllers."
 
+    show Jack Neu at center
     jack "Mario Kart. A classic choice, right? I hope you're ready for some friendly competition."
 
     "You settle into a beanbag next to him, taking the controller he offers. The menu screen flashes on the TV, and cheerful music fills the room."
@@ -736,6 +743,7 @@ label jack_date_1:
 
     "The game starts, and Jack is immediately in the lead. He's surprisingly good at this, dodging shells and drifting around corners with ease."
 
+    show Jack Neu at center
     jack "Come on, keep up!"
 
     "Jack continues teasing, throwing a playful glance your way."
@@ -750,6 +758,7 @@ label jack_date_1:
     "You launch the red shell, and it hits Jack's character just before the finish line. You zoom past him, claiming first place."
     "Jack stares at the screen in mock horror."
 
+    show Jack Sad at center
     jack "No way. You iced me!" 
 
     show Jack Happy
@@ -773,10 +782,12 @@ label jack_date_1:
 
     jack "Alright, but if we win, I'm taking credit. Deal?"
 
+    hide Jack Happy with fade
     "The two of you spend the rest of the evening racing through pixelated landscapes, throwing banana peels, and laughing at each other's mishaps." 
     "Jack's energy is infectious, and you find yourself completely at ease as if the world beyond this cozy gaming room doesn't exist."
     "As the night winds down and the final race ends, Jack turns to you, his expression softening."
 
+    show Jack Happy at center
     jack  "This was fun," 
     
     "His voice is quieter now."
@@ -809,6 +820,7 @@ label jack_date_2:
 
     mc "Oh, I'm not scared. I just didn't want to show you up too soon."
 
+    show Jack Neu
     "Jack arches an eyebrow, a mischievous glint in his eyes."
 
     show Jack Happy
@@ -817,12 +829,13 @@ label jack_date_2:
     "Once your skates are on, Jack leads you to the rink. He steps onto the ice effortlessly, gliding backward as if he was born to skate."
     "Well, maybe he was. His movements are smooth and graceful, every motion infused with a hint of magic. You follow, a little less confident but determined not to let him show you up completely."
 
+    show Jack Neu
     jack "Need a hand?" 
 
     "Jack offers you his hand, his voice is teasing, but there's a genuine warmth in his expression."
-
     "You take his hand, and the chill of his touch sends a shiver up your spine-not unpleasant, just cool enough to remind you of who he is. He pulls you along, helping you find your balance."
 
+    show Jack Happy
     jack "There, see? You're a natural. Almost as good as me."
     mc "Watch this."
 
@@ -833,17 +846,22 @@ label jack_date_2:
     jack "Nice try,"
     jack "But leave the fancy moves to the professional."
 
+    hide Jack Happy with fade
     "As the evening goes on, you relax more, skating side by side with Jack."
     "At one point, he waves his hand, and a shimmering frost spreads across the ice, creating intricate patterns of snowflakes and swirls that glisten under the lights."
 
+    show Jack Happy
     mc "Wow, Show-off much?"
+    show Jack Sad
     jack "Hey, I've got to impress you somehow."
     mc "You don't have to try so hard."
 
+    show Jack Happy at center
     "Jack's smirk softens into a genuine smile."
 
     jack "Careful." 
 
+    show Jack Neu at center
     "He leans in slightly, his breath cool against your cheek."
 
     jack "Say things like that, and I might actually believe you enjoy my company."
@@ -852,11 +870,13 @@ label jack_date_2:
 
     mc "Maybe I do."
 
+    show Jack Happy at center
     "Jack pulls back, grinning again."
 
     jack  "Good. Because I was thinking, next time, we could build a snow fort. Unless you're too scared to lose at that, too."
     mc "Not a chance, but you better bring your A-game."
 
+    hide Jack Happy with fade
     "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
     "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
     with fade
@@ -868,7 +888,7 @@ label jack_date_3:
     "It's filled with various equipment for physical and tactical training, but in the center of it all stands Jack Frost, leaning casually against his frost-covered staff."
     "Despite the harsh setting, he looks as effortlessly cool as ever, his icy white hair almost glowing under the lights."
 
-    show Jack Neu at cetner
+    show Jack Neu at center
     jack "Finally." 
 
     "Jack calls out as you approach, his voice echoing slightly in the cavernous space."
@@ -895,6 +915,7 @@ label jack_date_3:
 
     mc "Alright. So, how do I connect with it?"
 
+    hide Jack Neu
     "Jack steps behind you, his hands lightly covering yours on the staff. His touch is cold, but not unpleasant, like the crisp air on a winter morning."
 
     jack "Start by grounding yourself. Feel the frost in the staff, let it flow through you. Don't fight it. You've gotta let the cold work with you, not against you."
@@ -911,14 +932,16 @@ label jack_date_3:
     with hpunch
     "You swing the staff, and a blast of frost shoots forward, encasing the punching bag in a thin layer of ice. Jack whistles, impressed."
 
+    show Jack Happy
     jack "Not bad, rookie. Not bad at all."
 
     "You grin, spinning the staff experimentally in your hands."
 
     mc "Looks like I've got the hang of this."
+
+    show Jack Neu
     jack "Don't get cocky..." 
 
-    show Jack Happy
     "There's a mischievous glint in his eye now. He steps back, spinning his own staff effortlessly."
 
     jack "Now let's see if you can handle a moving target."
@@ -928,7 +951,6 @@ label jack_date_3:
     "You scream, dodging the icy attack."
 
     mc "Hey! I thought we were training, not sparring!"
-    show Jack Neu
     jack "This {i}is{/i} training," 
 
     show Jack Happy
@@ -942,10 +964,12 @@ label jack_date_3:
 
     mc "Two can play at that game," 
 
+    hide Jack Happy
     "You aim to blast frost at Jack. He dodges it easily, his movements as fluid as the wind."
     "The two of you go back and forth, the gym echoing with bursts of frost and laughter."
     "Jack keeps you on your toes, pushing you to react faster, aim better, and trust the staff's power."
 
+    show Jack Happy
     jack "Nice shot!" 
 
     "You manage to graze his side with a burst of frost. He spins around, his staff creating a swirl of cold air that almost knocks you off your feet."
