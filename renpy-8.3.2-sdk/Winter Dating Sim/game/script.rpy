@@ -47,6 +47,7 @@ label start:
         blink_shut = ImageDissolve("bg black screen", .5, ramplen=128, reverse=True, time_warp=eyewarp)
 
     scene bg black screen
+    play music "audio/bg music.wav" volume 0.5
 
     "In the begining there were stories... Legends..."
 
@@ -249,6 +250,7 @@ label start:
         "krampus date":
             jump krampus_date_1
 
+    stop music fadeout 1.0
 return
 
 label before_date_2:
@@ -1262,3 +1264,93 @@ label krampus_date_2:
     krampus "You've got guts. I like that."
 
     "With Krampus by your side, even the toughest challenges seem a little more thrilling-and a lot more fun."
+    return
+
+label jack_easter_island:
+    "The air grows colder as you and Jack step into the Egg Collection Depot. Rows upon rows of towering, rainbow-colored crates stretch out before you, the vibrant hues eerily dim under the flickering lights."
+    "A faint, mechanical hum echoes through the space, accompanied by the rhythmic clinking of conveyor belts that have long since stopped running."
+    "Jack walks beside you, his staff tapping softly against the tiled floor."
+
+    jack "Well, this place screams 'cheerful holiday magic,' doesn't it?"
+
+    "You glance up at the crates stacked precariously high."
+
+    mc "More like abandoned magic. What do you think happened here?"
+
+    "Jack shrugs, twirling his staff absently."
+
+    jack "Could be sabotage. Could be someone didn't pay their electricity bill. Either way, it's weird that no one's here."
+
+    "As you move deeper into the depot, the silence feels oppressive. You notice broken eggshells scattered along the floor, their once-bright pastel colors dulled."
+    "Jack kneels to examine them, brushing his gloved fingers over the shards."
+
+    jack "These weren't dropped by accident." 
+    jack "Something smashed them on purpose."
+
+    "You frown, looking around for more clues."
+
+    mc "If this is sabotage, it's targeted. Why the eggs?"
+
+    "Jack rises, his expression grim."
+
+    jack  "Because without the eggs, Easter doesn't happen. Whoever's behind this knew exactly what they were doing."
+
+    "A sudden noise-a faint scuffling coming from another room-catches your attention. Jack instinctively raises his staff, a faint frost spreading across the ground around him."
+
+    jack "Stay close."
+
+    "You nod, heart pounding as the two of you move toward the sound."
+    "Jack looks at you, his expression sharp and determined."
+    "You exchange a brief, tense glance before entering the next room, both of you ready for whatever-or whoever-you might find."
+    return
+
+label krampus_easter_island:
+
+    "The air is damp and heavy as you and Krampus descend into the labyrinthine distribution tunnels beneath the Easter hub."
+    "The walls are carved from rough stone, lined with rusted tracks that once ferried brightly painted egg crates to the surface."
+    "Now, the tracks lie abandoned, with overturned carts and shattered eggs littering the ground."
+    "Krampus strides ahead, his claws clicking faintly against the stone floor."
+
+    krampus  "Cheerful place." 
+    krampus "Nothing says holiday spirit like a crypt for candy."
+
+    "You glance around uneasily. The tunnel feels more claustrophobic with each step, the dim light from Krampus's glowing lantern barely illuminating the path ahead."
+
+    mc  "This used to be the heart of the operation."
+    mc "Without these tunnels, there's no distribution. Whoever hit this place really wanted Easter to grind to a halt."
+
+    "Krampus huffs, his breath visible in the chilly air." 
+
+    krampus "Makes sense. Take out the foundation, and the whole thing collapses. Classic sabotage."
+
+    "As you move deeper, the tracks lead to a large, sealed gate. The metal is dented, with deep claw marks raked across its surface. Krampus kneels to examine them, his sharp claws tracing the grooves."
+
+    krampus "Not a rabbit." 
+    krampus "Too big. Something else tore this open."
+    mc "Could it be who-or what-took the Bunny?"
+    krampus "Maybe." 
+    krampus "Or maybe it's something worse. Either way, we're not stopping here."
+
+    "He plants his claws on the edge of the gate and pushes, the metal groaning under his strength."
+    "The gate creaks open just enough for the two of you to slip through, revealing a sprawling cavern filled with abandoned egg crates. Some are smashed, while others are eerily intact, stacked haphazardly as if left in a rush."
+    "Krampus sniffs the air as his expression darkens."
+
+    krampus  "Something was here recently."
+
+    "You pause, listening. There's a faint sound somewhere in the distance, but nothing else."
+
+    mc  "Do you think it's still here?"
+
+    krampus  "If it is, we'll deal with it. Come on."
+
+    "As you continue through the cavern, you spot something unusual-a set of wheel tracks, fresh and cutting through the dust. They veer off into another room."
+    "Krampus notices them too, his grin fading into a focused scowl."
+
+    krampus "Could be our missing Bunny. Or whoever took him."
+    mc "Do we follow?"
+    krampus "We follow. But stay close. This feels like a trap."
+
+    "Together, you walk into the room with the sense of unease pressing down on you both."
+
+
+
