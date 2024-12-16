@@ -24,7 +24,7 @@ image Kramp Happy = im.Scale("HAPPY_Krampus.png", 800, 1000)
 image Kramp Neu = im.Scale("NEUTRAL_Krampus.png", 800, 1000)
 image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
-image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
+image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1010)
 
 
 #Character Romance Points
@@ -45,7 +45,7 @@ label start:
             mcname = "Noel"
         def eyewarp(x):
             return x**3.5
-        blink_open = ImageDissolve("bg hub command.png", .5, ramplen=128, reverse=False, time_warp=eyewarp)
+        blink_open = ImageDissolve("bg book room.png", .5, ramplen=128, reverse=False, time_warp=eyewarp)
         blink_shut = ImageDissolve("bg black screen.jpg", .5, ramplen=128, reverse=True, time_warp=eyewarp)
 
     scene bg black screen
