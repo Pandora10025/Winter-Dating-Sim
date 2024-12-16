@@ -85,6 +85,7 @@ label start:
     menu:
         "Move closer to the book":
             "You move closer to take a look at the book."
+            play sound "audio/book glow.wav"
             "It glows with a warm golden light, almost beckoning for you to reach out and touch it."
             mc "What is this book...?"
 
@@ -94,6 +95,7 @@ label start:
             "The room seems to center around te podium that holds the golden book..."
             mc "It seems like this room is only for this book..."
 
+    $ renpy.sound.play("audio/alarm.wav", loop=True)
     "Before you could continue to explore, an ear pericing sound suddenly errupts around you, acopanied by the sound of urgent footsteps"
     with vpunch
 
@@ -108,6 +110,7 @@ label start:
     scene bg book room
     with blink_open
 
+    stop sound
     unk3 "Maybe we should go in and see -" #probably frosty
     unk1 "Go in, are you nuts!" #probably Jack
     unk3 "Well how else do you expect us to know who is in there..." #frosty
@@ -137,11 +140,10 @@ label start:
     unk3 "NO, we are not! Have you lost your mind." #Jack
     unk2 "No. I have not." #Krampus
 
+    play sound "audio/clank.wav"
     "A loud clanking sound resonates through the room."
     "To your right, a part of the wall begins to move as if it is moving to the side to reveal something."
-
     
-    #Krampus slides onto screen
     show Kramp Neu at right
     with moveinleft
     unk2 "You make any sudden movements and I will kill you." #Krampus 
@@ -195,7 +197,6 @@ label start:
     unk1 "But-" #Jack
     unk2 "Go. For now, I think frosty is correct. And Mrs. Clause will be able to tell for sure." #krampus
 
-    #Jack's sprite slides off screen
     show Jack Sad with moveoutleft
 
     mc "frosty?"
@@ -217,7 +218,7 @@ label start:
             frosty "Thank you."
         "I figured you'd be something more... intimidating":
             mc "I figured, with how big you are... I was just expecting something more intimidating."
-            unk "I promise, you do not want to mess with this guy."  #krampus
+            unk2 "I promise, you do not want to mess with this guy."  #krampus
             frosty "It's ok Kramp, I understand. It helps that people underestimate me."
 
     frosty "Well I guess now is as good of a time as ever to introduce ourselves."
