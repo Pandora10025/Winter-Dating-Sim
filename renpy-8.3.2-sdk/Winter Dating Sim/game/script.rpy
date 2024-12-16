@@ -709,7 +709,7 @@ return
 
 label jack_date_1:
 
-    scene bg black screen 
+    scene bg jack bedroom
 
     "You step into the dimly lit gaming room, where neon LED lights cast a soft blue glow, creating an atmosphere that feels both exciting and relaxed."
     "Jack Frost is already there, sitting cross-legged on a beanbag chair."
@@ -735,6 +735,8 @@ label jack_date_1:
     show Jack Neu at center
     jack "Mario Kart. A classic choice, right? I hope you're ready for some friendly competition."
 
+    scene bg gaming
+    with dissolve
     "You settle into a beanbag next to him, taking the controller he offers. The menu screen flashes on the TV, and cheerful music fills the room."
     "As the first race begins, Jack leans over slightly, whispers..."
 
@@ -786,6 +788,8 @@ label jack_date_1:
     "The two of you spend the rest of the evening racing through pixelated landscapes, throwing banana peels, and laughing at each other's mishaps." 
     "Jack's energy is infectious, and you find yourself completely at ease as if the world beyond this cozy gaming room doesn't exist."
     "As the night winds down and the final race ends, Jack turns to you, his expression softening."
+
+    scene bg jack bedroom
 
     show Jack Happy at center
     jack  "This was fun," 
@@ -843,6 +847,7 @@ label jack_date_2:
     with vpunch
     "Jack catches you easily, his laugh ringing out like bells on a frosty morning."
 
+    show Jack Neu
     jack "Nice try,"
     jack "But leave the fancy moves to the professional."
 
@@ -850,18 +855,18 @@ label jack_date_2:
     "As the evening goes on, you relax more, skating side by side with Jack."
     "At one point, he waves his hand, and a shimmering frost spreads across the ice, creating intricate patterns of snowflakes and swirls that glisten under the lights."
 
-    show Jack Happy
+    show Jack Happy at center
     mc "Wow, Show-off much?"
     show Jack Sad
     jack "Hey, I've got to impress you somehow."
     mc "You don't have to try so hard."
 
-    show Jack Happy at center
+    show Jack Happy
     "Jack's smirk softens into a genuine smile."
 
     jack "Careful." 
 
-    show Jack Neu at center
+    show Jack Neu
     "He leans in slightly, his breath cool against your cheek."
 
     jack "Say things like that, and I might actually believe you enjoy my company."
@@ -870,7 +875,7 @@ label jack_date_2:
 
     mc "Maybe I do."
 
-    show Jack Happy at center
+    show Jack Happy
     "Jack pulls back, grinning again."
 
     jack  "Good. Because I was thinking, next time, we could build a snow fort. Unless you're too scared to lose at that, too."
@@ -932,7 +937,7 @@ label jack_date_3:
     with hpunch
     "You swing the staff, and a blast of frost shoots forward, encasing the punching bag in a thin layer of ice. Jack whistles, impressed."
 
-    show Jack Happy
+    show Jack Happy at center
     jack "Not bad, rookie. Not bad at all."
 
     "You grin, spinning the staff experimentally in your hands."
@@ -1016,20 +1021,20 @@ label krampus_date_1:
     "Beside you stands Krampus, his imposing frame dressed in a sleek black ski suit, horns curling up from under his custom-made helmet."
     "His yellow eyes gleam with mischief as he adjusts his skis."
 
-    show Kramp Happy at center
+    show Kramp Happy
     krampus "Ready to eat some snow?" 
 
     "You tighten your gloves and adjust your goggles."
 
     mc "Eat snow? You're awfully confident for someone who's about to get left behind."
 
-    show Kramp Nod at center
+    show Kramp Nod
     krampus "Careful, little one. Pride comes before a tumble down the mountain."
 
+    hide Kramp Nod
     "With a flick of his ski poles, he pushes off, gliding down the slope with a natural ease that makes it clear he's done this a thousand times before."
     "His thick tail flicks behind him like a rudder, helping him navigate the twists and turns with precision."
 
-    show Kramp Happy at center
     krampus "Come on!"
     krampus "Try to keep up, unless you're scared of a little speed!"
 
@@ -1037,19 +1042,19 @@ label krampus_date_1:
     "The slope is steeper than you expected, and your heart pounds as you swerve to avoid small drifts of snow and the occasional tree."
     "Krampus stays just ahead of you, his laughter carrying on the wind."
 
-    show Kramp happy at center
-    with vpunch
     krampus "You're not bad!"
     krampus "But you'll never catch me at that pace!"
     mc "Oh, we'll see about that!"
 
     "You push yourself harder, gaining ground as you race toward him."
+    show Kramp Happy at center
     "Krampus glances back, his grin widening." 
 
     krampus "Impressive!"
 
     "He slows just enough to let you pull alongside him." 
     "Then, with a wicked gleam in his eye, he taps the tip of his ski pole to the snow, sending a small flurry of powder into your path."
+    with hpunch
 
     mc "Hey!" 
 
@@ -1058,9 +1063,12 @@ label krampus_date_1:
     krampus "Just keeping things interesting"
 
     "Krampus' chuckle resonates through the crisp air."
+    hide Kramp Happy
     "The two of you race neck and neck, weaving down the mountain with increasing speed."
     "Krampus leaps off a small ridge, landing gracefully and glancing back to see if you dare follow."
+    show Kramp Happy at center
     "Not wanting to back down, you take the jump, your skis hitting the snow with a satisfying thud."
+    with vpunch
 
     krampus "Not bad!" 
     krampus "Maybe you've got some spirit after all."
@@ -1070,23 +1078,26 @@ label krampus_date_1:
 
     mc "That was amazing!"
 
+    show Kramp Neu
     "Krampus leans on his ski poles, his horns catching the late afternoon light."
 
+    show Kramp Happy
     krampus "Not bad for a rookie!"
+    show Kramp Nod
     krampus "Though I'd still say I won."
 
     mc "You wish!" 
     mc "I was right behind you the whole time."
 
-    show Kramp Nod at center
     krampus "Close..." 
+    show Kramp Happy
     krampus "but next time, I'll make sure you can't keep up."
     mc "Next time?"
 
     "You raise an eyebrow."
     "He grins, baring sharp teeth."
 
-    show Kramp Happy at center
+    show Kramp Nod
     krampus "You didn't think this was a one-time thing, did you?"
     krampus "I've got plenty of slopes to show you... if you think you can handle them."
 
@@ -1094,8 +1105,10 @@ label krampus_date_1:
 
     mc "Bring it on, Krampus. I'll take you on any mountain."
 
+    show Kramp Happy
     "His laugh echoes across the snowy peaks as the two of you head into the lodge, your competitive banter continuing over mugs of steaming hot cocoa."
     "There's a spark of excitement and fun in his presence, and you can't help but look forward to the next adventure."
+    with fade
 
     jump before_date_2
 
@@ -1106,7 +1119,7 @@ label krampus_date_2:
     "Seated at a corner table, Krampus cuts an imposing figure even in this laid-back setting. His dark fur peeks out from under a tailored coat, and his horns curl gracefully, catching the soft glow of the lights."
     "When you approach, his crimson eyes lift to meet yours, and a wicked grin spreads across his face."
 
-    show Kramp Happy at center
+    show Kramp Happy 
     krampus  "There you are." 
     krampus "I was beginning to think you got lost in the snow."
 
@@ -1116,26 +1129,32 @@ label krampus_date_2:
 
     "Krampus gestures to the bartender, who brings over two glasses filled with a dark amber liquid."
 
-    show Kramp Neu at center
+    show Kramp Neu
     krampus "Mulled wine."
     krampus "Warms you up from the inside out. Unless you can't handle a little heat?"
+    show Kramp Nod
 
     "You raise an eyebrow and take a sip. The wine is rich and spiced, with a subtle warmth that spreads through your chest."
 
     mc  "Not bad." 
     mc "But I expected something... stronger from you."
 
-    show Kramp Happy at center
+    show Kramp Happy
     with vpunch
     "His laugh is low and rough, like boots crunching through snow."
 
+    show Kramp Nod
     krampus  "Careful, little one. Challenge me, and you might regret it."
+
     mc "Oh, I'm not scared." 
     mc "What else you got?"
 
+    show Kramp Neu
     "Krampus signals again, and this time the bartender brings over a pair of frosted shot glasses filled with a glowing blue liquid."
 
+    show Kramp Happy
     krampus "Icefire shots." 
+    show Kramp Neu
     krampus "They burn cold going down. Think you can keep up?"
 
     "You pick up the glass, the chill biting against your fingertips."
@@ -1145,13 +1164,17 @@ label krampus_date_2:
     "The two of you toast, and you down the shot in one gulp. It's like swallowing a snowstorm, the icy burn rushing through your throat and leaving a strangely invigorating warmth behind."
     "You cough slightly, and Krampus laughs, his shoulders shaking."
 
+    show Kramp Happy
     krampus "Not bad." 
+    show Kramp Nod
     krampus "But I barely saw you flinch. Maybe there's more to you than I thought."
+
     mc "Was that supposed to impress me?" 
     mc "Because I'm still standing."
     
     "Krampus leans back in his chair, swirling the remnants of his drink." 
 
+    show Kramp Neu
     krampus "Alright, you're tougher than most. But let's see how sharp you are after another round."
 
     "The night goes on with more drinks, each one seemingly more exotic and potent than the last."
@@ -1164,16 +1187,20 @@ label krampus_date_2:
 
     mc "Oh no, I'm not falling for that one. You'll have to work harder if you want my secrets."
 
+    show Kramp Happy
     "His grin is all sharp teeth and mischief."
 
+    show Kramp Neu
     krampus  "Fair enough. But don't think I won't figure you out eventually."
 
     "As the bar starts to quiet down, you realize how much you've been enjoying yourself."
     "Despite his intimidating presence, Krampus is surprisingly easy to talk to-charming in his own gruff, devil-may-care way."
     "When you finally get up to leave, he follows you to the door, his towering frame casting a shadow over the snow-dusted street outside."
 
+    show Kramp Happy
     krampus "This was fun!" 
     krampus "You've got spirit. I like that."
+
     mc "Maybe we'll do it again sometime." 
 
     "Krampus smirks, his sharp teeth glinting in the moonlight."
@@ -1182,6 +1209,7 @@ label krampus_date_2:
 
     "As you part ways, the warmth of the bar lingers with you, along with the memory of Krampus's devilish grin and the laughter you shared."
     "Something tells you this won't be the last time you cross paths with him."
+    with fade
     
     jump before_date_3
 
@@ -1193,38 +1221,50 @@ label krampus_date_2:
     "He's shed his usual coat, his broad chest and arms exposed save for the thick fur that covers him like armor."
     "His claws flex and curl as he stretches, and his horns gleam under the cold fluorescent lights. His red eyes fix on you as you approach, a grin playing at the corners of his sharp mouth."
 
+    show Kramp Neu at center
     krampus "Well, well"
+    show Kramp Happy
     krampus "Look who finally decided to show up. Thought you might back out when you heard the words 'bare knuckle.'"
 
     "You roll your shoulders, matching his smirk."
 
     mc "And miss out on the chance to put you on the mat? Not a chance." 
+    show Kramp Nod
     krampus "Big talk. Let's see if you can back it up."
 
     "Krampus motions for you to step onto the mat, and you do, kicking off your boots and wrapping your hands with the provided bandages."
     "As you finish, he saunters over, his claws dragging lightly across the mat as if testing its texture."
 
+    show Kramp Neu
     krampus "First lesson..."
     krampus "Boxing isn't just about throwing punches. It's about control. You've got to stay balanced, protect yourself, and know when to strike. Otherwise, you're just flailing around, waiting to get flattened."
 
     "He steps closer, towering over you but not in a way that feels threatening. His massive hands hover over yours, guiding them into position."
 
+    show Kramp Nod
     krampus "Hands up. Chin down. And for the love of god, don't drop your guard."
 
     "You mimic his stance, fists up and knees slightly bent."
 
     mc  "Like this?"
+    show Kramp Happy
     krampus "Not bad." 
+    show Kramp Neu
     krampus "But you're too stiff. Loosen up, or you'll telegraph every move."
 
     "Before you can adjust, he flicks out a clawed hand-not hard, but fast enough to tap the side of your head."
+    with vpunch
 
+    show Kramp Nod
     krampus "See? Wide open."
+
     mc "Hey!"
 
     "You protest, resetting your stance."
 
     mc "I wasn't ready."
+
+    show Kramp Neu
     krampus "You think your enemies are going to wait for you to be ready?" 
     krampus "Stay focused, or you're just giving me more opportunities to humiliate you."
 
@@ -1232,10 +1272,12 @@ label krampus_date_2:
 
     mc "Alright, big guy. Let's see what you've got."
 
+    show Kramp Happy
     "Krampus raises an eyebrow, clearly amused."
 
     krampus "That's the spirit."
 
+    show Kramp Neu
     "He squares up in front of you, his movements are surprisingly fluid for someone so large."
 
     krampus "Try to hit me." 
@@ -1246,37 +1288,51 @@ label krampus_date_2:
 
     "You try again, this time feinting with one hand and aiming higher with the other. Krampus blocks with ease, his reflexes razor-sharp."
 
+    show Kramp Happy
     krampus  "That's better." 
+    show Kramp Nod
     krampus "But your footing's off. You're leaning too far forward."
+
     mc "Fine." 
     mc "What about this?"
 
     "You launch a series of quick strikes, mixing high and low targets. Krampus blocks and dodges most of them, but one punch grazes his side. He steps back, laughing."
 
+    show Kramp Happy
     krampus "Now that's more like it. You've got some fire in you."
     mc "Was there ever any doubt?"
 
+    show Kramp Nod
     "He shakes his head, his grin never fading." 
 
+    show Kramp Neu
     krampus "Oh, I didn't doubt it. I just like seeing it for myself."
 
+    hide Kramp Neu
     "For the next hour, he pushes you harder, teaching you how to move, dodge, and strike with precision."
     "His critiques are sharp but never cruel, and every time you land even the smallest hit, he praises you with a mix of amusement and genuine pride."
     "By the end of the session, your knuckles are sore, and your body feels like it's been through a storm."
     "But there's a satisfaction in the ache, a sense of accomplishment."
 
+    show Kramp Happy at center
     krampus "You did good."
+    show Kramp Nod
     krampus "For a beginner, anyway."
+
     mc "Thanks." 
     mc "You're not a bad teacher."
 
     "He chuckles, his red eyes glinting."
 
+    show Kramp Happy
     krampus "Careful with the compliments. I might start expecting you to listen next time."
+
     mc "Next time?"
 
+    show Kramp Neu
     "Krampus leans back, his claws resting on his knees."
 
+    show Kramp Nod
     krampus "Oh, this was just the warm-up. The real fun starts when we get into advanced techniques. If you're up for it, of course."
 
     "You grin, despite your exhaustion."
@@ -1285,9 +1341,11 @@ label krampus_date_2:
 
     "Krampus smirks, baring his sharp teeth."
 
+    show Kramp Happy
     krampus "You've got guts. I like that."
 
     "With Krampus by your side, even the toughest challenges seem a little more thrilling-and a lot more fun."
+    with fade
     return
 
 label jack_easter_island:
@@ -1295,6 +1353,7 @@ label jack_easter_island:
     "A faint, mechanical hum echoes through the space, accompanied by the rhythmic clinking of conveyor belts that have long since stopped running."
     "Jack walks beside you, his staff tapping softly against the tiled floor."
 
+    show Jack Neu at center
     jack "Well, this place screams 'cheerful holiday magic,' doesn't it?"
 
     "You glance up at the crates stacked precariously high."
@@ -1303,11 +1362,13 @@ label jack_easter_island:
 
     "Jack shrugs, twirling his staff absently."
 
+    show Jack Sad
     jack "Could be sabotage. Could be someone didn't pay their electricity bill. Either way, it's weird that no one's here."
 
     "As you move deeper into the depot, the silence feels oppressive. You notice broken eggshells scattered along the floor, their once-bright pastel colors dulled."
     "Jack kneels to examine them, brushing his gloved fingers over the shards."
 
+    show Jack Neu
     jack "These weren't dropped by accident." 
     jack "Something smashed them on purpose."
 
@@ -1317,15 +1378,18 @@ label jack_easter_island:
 
     "Jack rises, his expression grim."
 
+    show Jack Sad
     jack  "Because without the eggs, Easter doesn't happen. Whoever's behind this knew exactly what they were doing."
 
     "A sudden noise-a faint scuffling coming from another room-catches your attention. Jack instinctively raises his staff, a faint frost spreading across the ground around him."
 
+    show Jack Neu
     jack "Stay close."
 
     "You nod, heart pounding as the two of you move toward the sound."
     "Jack looks at you, his expression sharp and determined."
     "You exchange a brief, tense glance before entering the next room, both of you ready for whatever-or whoever-you might find."
+    with fade
     return
 
 label krampus_easter_island:
@@ -1335,6 +1399,7 @@ label krampus_easter_island:
     "Now, the tracks lie abandoned, with overturned carts and shattered eggs littering the ground."
     "Krampus strides ahead, his claws clicking faintly against the stone floor."
 
+    show Kramp Nod at center
     krampus  "Cheerful place." 
     krampus "Nothing says holiday spirit like a crypt for candy."
 
@@ -1343,15 +1408,20 @@ label krampus_easter_island:
     mc  "This used to be the heart of the operation."
     mc "Without these tunnels, there's no distribution. Whoever hit this place really wanted Easter to grind to a halt."
 
+    show Kramp Neu
     "Krampus huffs, his breath visible in the chilly air." 
 
     krampus "Makes sense. Take out the foundation, and the whole thing collapses. Classic sabotage."
 
     "As you move deeper, the tracks lead to a large, sealed gate. The metal is dented, with deep claw marks raked across its surface. Krampus kneels to examine them, his sharp claws tracing the grooves."
 
+    show Kramp Nod
     krampus "Not a rabbit." 
     krampus "Too big. Something else tore this open."
+
     mc "Could it be who-or what-took the Bunny?"
+
+    show Kramp Neu
     krampus "Maybe." 
     krampus "Or maybe it's something worse. Either way, we're not stopping here."
 
@@ -1359,22 +1429,30 @@ label krampus_easter_island:
     "The gate creaks open just enough for the two of you to slip through, revealing a sprawling cavern filled with abandoned egg crates. Some are smashed, while others are eerily intact, stacked haphazardly as if left in a rush."
     "Krampus sniffs the air as his expression darkens."
 
+    show Kramp Nod
     krampus  "Something was here recently."
 
     "You pause, listening. There's a faint sound somewhere in the distance, but nothing else."
 
     mc  "Do you think it's still here?"
 
+    show Kramp Neu
     krampus  "If it is, we'll deal with it. Come on."
 
     "As you continue through the cavern, you spot something unusual-a set of wheel tracks, fresh and cutting through the dust. They veer off into another room."
     "Krampus notices them too, his grin fading into a focused scowl."
 
+    show Kramp Neu
     krampus "Could be our missing Bunny. Or whoever took him."
+
     mc "Do we follow?"
+
+    show Kramp Neu
     krampus "We follow. But stay close. This feels like a trap."
 
     "Together, you walk into the room with the sense of unease pressing down on you both."
+    with fade
+    return
 
 
 
