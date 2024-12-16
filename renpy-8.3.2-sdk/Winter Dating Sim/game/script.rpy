@@ -517,17 +517,36 @@ label before_date_2:
 
 label before_date_3:
 
-    scene bg black screen 
-    "To add in later but basicaly to undestand the 3rd date..."
-    "The group is going to fight the badguy, the boogyman, and they need to prep you how to fight since you are new."
-    "you have to choose who you want to learn to fight with..."
+    scene bg black screen
+    "The next morning, you wake up to the sounds of chatter in the hall."
+    play sound "audio/foot steps.wav"
+    "You can hear footsteps rushing by your door every so often, followed by muffled voices that you can't quite make out."
+    scene bg hallway
+    "Disoriented and a little groggy, you slowly make your way outside."
+    "You find Ms. Claus standing a little ways away scribbling furiously at a large clipboard."
+
+    msC "Oh, good morning dear. Did you sleep well?" 
+
+    "You nod, and rub your eyes."
+
+    msC "Good. Tomorrow, you'll be out on your first mission, so today's the time to prepare!" 
+
+    mc "A mission?"
+
+    msC "I know it's early, but we're all getting rather busy and we need all hands on deck. It's nothing too dangerous - just a reconnaissance mission to Easter Island."
+
+    msC "Don't worry too much. I'm sure you're quite capable, and you'll have the boys along with you. You also have today to train and prepare." 
+
+    "She looks back down at her clipboard, and frowns, before scribbling something down again."
+
+    msC "I'm sorry I don't have the time to help you myself, but I'm sure the others would be more than happy to work with you. Why don't you find one of them and try your hand in the training room?"
     
     menu:
-        "Frosty":
+        "Go to Frosty":
             jump frosty_date_3
-        "Jack":
+        "Go to Jack":
             jump jack_date_3
-        "Krampus":
+        "Go to Krampus":
             jump krampus_date_3
 
 
