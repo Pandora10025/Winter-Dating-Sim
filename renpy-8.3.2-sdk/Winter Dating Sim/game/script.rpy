@@ -677,6 +677,7 @@ label frosty_date_1:
     mc "Next time for sure"
 
     scene bg outside
+    show snow
     with dissolve
 
     play sound "audio/foot steps.wav"
@@ -776,6 +777,7 @@ label frosty_date_2:
 
     "You grab your coat, scarf, and gloves, making sure you're bundled up for whatever Frosty has planned."
     scene bg outside
+    show snow
     "Stepping outside, you see him waiting for you at the bottom of the steps, his cheeks tinged pink from the cold and excitement."
     "There's something magical about the way he seems to glow, as if winter itself has chosen him as its representative."
 
@@ -840,6 +842,7 @@ label frosty_date_2:
     frosty "I'm glad you had fun. I knew today would be special."
 
     scene bg outside
+    show snow
     "As you walk back together, Frosty suddenly stops and looks at you, his expression soft and sincere."
 
     frosty "Thanks for choosing to spend your time with me, [mcname]. It means a lot."
@@ -1470,6 +1473,7 @@ label krampus_date_2:
     play sound "audio/foot steps.wav"
     "When you finally get up to leave, he follows you to the door, his towering frame casting a shadow over the snow-dusted street outside."
     scene bg outside
+    show snow
 
     show Kramp Happy
     krampus "This was fun!" 
