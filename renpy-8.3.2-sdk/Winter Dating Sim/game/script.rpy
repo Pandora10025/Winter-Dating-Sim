@@ -24,6 +24,8 @@ image Kramp Happy = im.Scale("HAPPY_Krampus.png", 800, 1000)
 image Kramp Neu = im.Scale("NEUTRAL_Krampus.png", 800, 1000)
 image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
+image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
+
 
 #Character Romance Points
 $ fPoints = 0
@@ -44,13 +46,13 @@ label start:
         def eyewarp(x):
             return x**3.5
         blink_open = ImageDissolve("bg hub command.png", .5, ramplen=128, reverse=False, time_warp=eyewarp)
-        blink_shut = ImageDissolve("bg black screen", .5, ramplen=128, reverse=True, time_warp=eyewarp)
+        blink_shut = ImageDissolve("bg black screen.jpg", .5, ramplen=128, reverse=True, time_warp=eyewarp)
 
     scene bg black screen
     play music "audio/bg music.wav" volume 0.5
     #Floating In The Midnight Breeze by FoolBoyMedia -- https://freesound.org/s/332323/ -- License: Attribution NonCommercial 4.0
 
-    "In the begining there were stories... Legends..."
+    "In the beginning there were stories... Legends..."
 
     "These legends brought... wonder, joy, solace to everyone who heard them."
 
@@ -58,11 +60,12 @@ label start:
 
     scene bg background
 
-    "And with these manifestastions bore one book: the Book of Lore, Legends, and Legendaries."
+    "And with these manifestations bore one book: the Book of Lore, Legends, and Legendaries."
 
     "The icons believed the book to be as sacred as themselves and although much is unknown about the book, it remains protected by those whose stories it contains."
 
     scene bg black screen
+    with None
 
     scene bg book room
     with blink_open
@@ -88,20 +91,24 @@ label start:
             play sound "audio/book glow.wav"
             "It glows with a warm golden light, almost beckoning for you to reach out and touch it."
             mc "What is this book...?"
+            "As you get closer the book's glow gets brighter, and a sense of warmth tingles at your fingertips"
+            $ renpy.sound.play("audio/alarm.mp3", loop=True)
+            "But before you could reach it, an ear piercing sound suddenly erupts around you, accompanied by the sound of urgent footsteps"
+            with vpunch
 
         "Look around the room":
             "You take a look around the room."
-            "It is pretty barren all things concidered."
-            "The room seems to center around te podium that holds the golden book..."
+            "It is pretty barren all things considered."
+            "The room seems to center around the podium that holds the golden book..."
             mc "It seems like this room is only for this book..."
-
-    $ renpy.sound.play("audio/alarm.wav", loop=True)
-    "Before you could continue to explore, an ear pericing sound suddenly errupts around you, acopanied by the sound of urgent footsteps"
-    with vpunch
+            "It glows with a warm golden light, almost beckoning for you to reach out and touch it."
+            $ renpy.sound.play("audio/alarm.mp3", loop=True)
+            "Before you could continue to explore, an ear piercing sound suddenly erupts around you, accompanied by the sound of urgent footsteps"
+            with vpunch
 
     mc "What is going on? I don't think I did anything..."
 
-    unk "Who ever you are in there, you are surrounded! I suggest you come out quietly." #probably Mrs. Claus  
+    unk "Whoever you are in there, you are surrounded! I suggest you come out quietly." #probably Mrs. Claus  
 
     scene bg black screen 
     with blink_shut
@@ -115,6 +122,8 @@ label start:
     unk1 "Go in, are you nuts!" #probably Jack
     unk3 "Well how else do you expect us to know who is in there..." #frosty
     unk2 "And what, may I ask, will you do if there IS someone in there?" #probably Krampus
+    unk3 "I..." #frosty
+    unk3 "oh..."#frosty
     unk3 "Ummm... I hadn't gotten that far..." #frosty
     unk3 "Hello! Is there anyone in there!" #frosty
     unk1 "What are you doing?!?!" #Jack 
@@ -135,22 +144,25 @@ label start:
     mc "Trick? Who is us? And why would I want to trick you?"
     unk "..."
     unk3 "I don't know guys, it sounds like they really don't know anything..." #frosty
-    unk1 "You're not allowed to have anymore thoughts." #Jack 
+    unk1 "You're not allowed to have any more thoughts." #Jack 
     unk2 "We're coming in..." #Krampus
     unk3 "NO, we are not! Have you lost your mind." #Jack
     unk2 "No. I have not." #Krampus
 
     play sound "audio/clank.wav"
     "A loud clanking sound resonates through the room."
-    "To your right, a part of the wall begins to move as if it is moving to the side to reveal something."
+    "To your right, a part of the wall begins to move to the side, revealing something. Or rather someone."
     
     show Kramp Neu at right
     with moveinleft
     unk2 "You make any sudden movements and I will kill you." #Krampus 
 
-    #frosty and Jack enter 
-    show Jack Sad at center
-    with moveinleft 
+    #Jack enter 
+    show Jack Sad at center with moveinleft 
+    #frosty enters
+    show Frosty Neu at left with moveinleft
+
+
     unk1 "So who is it?" #Jack
     unk3 "Oh... hi" #frosty
 
@@ -169,43 +181,64 @@ label start:
     show Kramp Nod at right
     unk2 "What is your name?" #Krampus
 
+    #frosty moves out of frame
+    hide Frosty Neu 
+    with moveoutleft
+
+
     mc "It's..."
     mc "I'm ..."
-    mc "I'm [mcname], I think."
+    mc "I'm [mcname]... I think."
 
     show Jack Sad at center
+    with None
+
+    hide Kramp Nod 
+    with fade
+
     unk2 "You think?" #Jack
 
-    "The one to speak this time was slightly shorter than the man that first entered. He had white hair like snow and eyes the color ice."
-    "He seemed to look at you with curiosity as opposed to the last man who seemed to only be annoyed by your presence."
+    "The one to speak this time was slightly shorter than the man that first entered. He had white hair like snow and eyes the color of ice."
+    "He looked at you with curiosity as opposed to the other man who only seemed to be annoyed by your presence."
     
     mc "I think that's my name. My head is spinning and everything is blurry."
 
-    "You try taking a step towards the men, but find that your legs are less reliable than you think they are, and you find yourself stumbling a bit before having to catch yourself."
+    "You try taking a step towards the men, but find that your legs are less reliable than you think they are. You stumble a bit before having to catch yourself."
+
+    hide Jack Sad with fade
+
+    #frosty comes back into frame looking worried in center
 
     unk3 "Whoa whoa whoa. Maybe you should sit." #frosty 
 
-    "This man seems so be slightly different than the rest. He stands taller than all of them, his broad shoulders make it so he takes up the most space, but his eyes tell a different story."
+    "This man seems to be slightly different from the rest. He stands taller than all of them, his broad shoulders make it so he takes up the most space, but his eyes tell a different story."
     "Instead of looking at you with an air of curiosity or annoyance, he looks concerned."
-    "He slungs your arm around his shoulder as he eases you to the floor."
+    "He slings your arm around his shoulder as he eases you to the floor."
 
     unk3 "Take a few deep breaths, are you hurt anywhere." #frosty 
     unk1 "Snow! What are you doing dude, they could be dangerous." #Jack 
     unk3 "I don't know dude, they can hardly stand." #frosty
-    show Kramp Neu at right
-    unk2 "Go get Mrs. Clause." #Krampus
+    show Kramp Neu at right 
+    show Jack Sad at left 
+    with ease
+    unk2 "Go get Mrs. Claus." #Krampus
     unk1 "But-" #Jack
     unk2 "Go. For now, I think frosty is correct. And Mrs. Clause will be able to tell for sure." #krampus
 
-    show Jack Sad with moveoutleft
+    hide Jack Sad with moveoutleft
 
-    mc "frosty?"
-
+    mc "Frosty?"
+    #frosty moves to center looking happy
     "The hulking figure shakes in silent laughter before responding."
 
     frosty "Yes. I know what you're thinking..."
     frosty "Actually, no I don't know..."
-    frosty "I assume you figured it out by now, but yes I am frosty the Snowman, or at least the human version of him."
+    frosty "I am Frosty the Snowman."
+    mc "Snowman?"
+    frosty "Yeah, the whole silk hat and corncob pipe thing… the kids love it, it makes them laugh you know"
+    "He drops his head a little close, and whispers like he's about to share a secret." 
+    frosty "Better than having a seven foot tall ice giant talking to them, moms are scary"
+
 
     menu:
         "You seem... nice.":
@@ -221,28 +254,31 @@ label start:
             unk2 "I promise, you do not want to mess with this guy."  #krampus
             frosty "It's ok Kramp, I understand. It helps that people underestimate me."
 
-    frosty "Well I guess now is as good of a time as ever to introduce ourselves."
-    frosty "As you figured, I am Frosty, Frosty the Snowman. And this is Krampus."
+    frosty "Maybe now is as best a time to introduce ourselves."
+    frosty "As I said before, I am Frosty, and this is Krampus."
 
-    "The older man gives you a small nod, acknowledging that he is in fact Krampus."
+    "The older man gives you a small nod of acknowledgement."
 
-    frosty "And the guy with ice white hair is Jack. Speaking of which where is he?"
+    frosty "And the guy with the white hair is Jack. Speaking of which, where is he?"
     jack "Awe man Frosty, are you really introducing me to the cutie {i}without{/i} me being there?"
-    frosty "Speak of the devil..."
+    krampus "Speak of the devil..."
 
-    "The man with ice white hair and eyes the color of fresh ice appears before you, hand streched out asking you to shake it."
+    show Jack Neu at left with moveinright
+    "The man with ice white hair and eyes the color of fresh ice appears before you, hand stretched out asking you to shake it."
 
     menu:
         "shake his hand":
-            "You take in his hand shake it, it is cold to the touch."
+            "You take his hand and shake it, it is cold to the touch."
         "look behind him":
-            "You look behind him to see whoever it was he was supposed to get."
+            "You notice a figure standing behind him, tilt your head to try and get a better look at them."
 
-    "The man gives you a small wink before turining away to reveal the person who he brought along."
+    "The man gives you a small wink before turning away to reveal the person who he brought along."
 
     #add in description for mrs. clause.
+    " A short older looking woman, stands with her arms crossed wearing an indiscernible expression"
+    " Her hair was all grey,pinned in a half up and half down style and she wore a black and red dress"
+    "You weren't sure why, but she struck you as vaguely familiar and her presence set you at ease"
 
-    "add in more blah blah blahh but testing for the dates...."
 
     menu:
         "frosty date":
@@ -622,7 +658,7 @@ label frosty_date_3:
     "His smile widens just enough to make your chest ache."
 
     "When you reach the gym, the fluorescent lights buzz faintly, casting their cold glow over the stark space."
-    "It's the same as always:punching bags, training dummies, rows of weights, but tonight, it feels different."
+    "It's the same as always: punching bags, training dummies, rows of weights, but tonight, it feels different."
 
     "Frosty steps into the center of the room, motioning for you to follow."
 
@@ -634,7 +670,7 @@ label frosty_date_3:
 
     "You nod, swallowing the lump in your throat."
 
-    frosty "Okay, first things first:gear."
+    frosty "Okay, first things first: gear."
 
     "He holds out his hands, and the air around him chills slightly."
     "Snow swirls in his palms, compressing and solidifying into a pair of brass knuckles that glint like polished ice."
