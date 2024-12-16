@@ -911,6 +911,7 @@ label frosty_date_3:
     frosty "Okay, first things first: gear."
 
     "He holds out his hands, and the air around him chills slightly."
+    play sound "audio/magic.wav"
     "Snow swirls in his palms, compressing and solidifying into a pair of brass knuckles that glint like polished ice."
     "This time, they're more intricate than before, the designs etched into them sharp and deliberate."
     "He hands them to you with a small smile."
@@ -935,12 +936,16 @@ label frosty_date_3:
     frosty "Good,"
 
     "He steps back to watch as you throw another punch."
+    play sound "audio/punch.wav"
     with hpunch
 
     frosty "Now, again. Keep your shoulders loose, but focus on where you want to hit. Make it count."
 
+    play sound "audio/punch.wav"
     "You follow his guidance, feeling the weight of the brass knuckles amplify your strikes."
+    play sound "audio/punch.wav"
     "Each punch lands with a satisfying thud, and Frosty's quiet murmurs of approval spur you on."
+    play sound "audio/punch.wav"
     with hpunch
 
     "As the session continues, the room feels warmer, like the space between you is charged with something unspoken."
@@ -1216,6 +1221,7 @@ label jack_date_3:
     jack "Not nothing, go big or go home."
 
     with hpunch
+    play sound "audio/magic.wav"
     "You swing the staff, and a blast of frost shoots forward, encasing the punching bag in a thin layer of ice. Jack whistles, impressed."
 
     show Jack Happy at center
@@ -1251,6 +1257,7 @@ label jack_date_3:
     mc "Two can play at that game," 
 
     hide Jack Happy
+    play sound "audio/magic.wav"
     "You aim to blast frost at Jack. He dodges it easily, his movements as fluid as the wind."
     "The two of you go back and forth, the gym echoing with bursts of frost and laughter."
     "Jack keeps you on your toes, pushing you to react faster, aim better, and trust the staff's power."
@@ -1258,6 +1265,7 @@ label jack_date_3:
     show Jack Happy
     jack "Nice shot!" 
 
+    play sound "audio/magic.wav"
     "You manage to graze his side with a burst of frost. He spins around, his staff creating a swirl of cold air that almost knocks you off your feet."
 
     show Jack Neu
@@ -1540,6 +1548,7 @@ label krampus_date_2:
     krampus "But you're too stiff. Loosen up, or you'll telegraph every move."
 
     "Before you can adjust, he flicks out a clawed hand-not hard, but fast enough to tap the side of your head."
+    play sound "audio/punch.wav"
     with vpunch
 
     show Kramp Nod
@@ -1569,10 +1578,12 @@ label krampus_date_2:
 
     krampus "Try to hit me." 
 
+    play sound "audio/punch.wav"
     "You hesitate for half a second before throwing a jab at his midsection. He sidesteps effortlessly, tapping your wrist to deflect the blow."
 
     krampus "Too slow." 
 
+    play sound "audio/punch.wav"
     "You try again, this time feinting with one hand and aiming higher with the other. Krampus blocks with ease, his reflexes razor-sharp."
 
     show Kramp Happy
@@ -1583,7 +1594,9 @@ label krampus_date_2:
     mc "Fine." 
     mc "What about this?"
 
+    play sound "audio/punch.wav"
     "You launch a series of quick strikes, mixing high and low targets. Krampus blocks and dodges most of them, but one punch grazes his side. He steps back, laughing."
+    play sound "audio/punch.wav"
 
     show Kramp Happy
     krampus "Now that's more like it. You've got some fire in you."
@@ -1596,6 +1609,7 @@ label krampus_date_2:
     krampus "Oh, I didn't doubt it. I just like seeing it for myself."
 
     hide Kramp Neu
+    play sound "audio/punch.wav"
     "For the next hour, he pushes you harder, teaching you how to move, dodge, and strike with precision."
     "His critiques are sharp but never cruel, and every time you land even the smallest hit, he praises you with a mix of amusement and genuine pride."
     "By the end of the session, your knuckles are sore, and your body feels like it's been through a storm."
