@@ -26,6 +26,10 @@ image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
 image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1010)
 
+#bg scales
+image bg jack bedroom = im.Scale("bg jack bedroom", 800, 600)
+image bg gaming = im.Scale("bg gaming", 800, 600)
+
 
 #Character Romance Points
 $ fPoints = 0
@@ -362,6 +366,7 @@ label start:
     scene bg hallway 
     with dissolve
 
+    play sound "audio/foot steps.wav"
     "Behind you the wall that was once open, slides shut fitting seamlessly into the pattern of the rest of the stone wall"
     "You make your way through the winding confusing maze of corridors and arches."
     "Every once in a while passing by all manor of beings,"
@@ -485,7 +490,7 @@ label start:
     "You wake with a start, body covered in a cold sweat." 
     "It was just a dream, you realize when you hear a knock on the door"
 
-
+    stop music fadeout 1.0
 
     menu:
         "frosty date":
@@ -495,7 +500,6 @@ label start:
         "krampus date":
             jump krampus_date_1
 
-    stop music fadeout 1.0
 return
 
 label before_date_2:
@@ -534,9 +538,9 @@ label before_date_3:
 label frosty_date_1:
     scene bg black screen 
     play sound "audio/door knock.wav"
-    "You hastily knock on the door labeled 'frosty' feeling slightly nervous."
+    "You hastily knock on the door labeled 'Frosty' feeling slightly nervous."
 
-    "frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and frosty was the least intimidating out of the bunch."
+    "Frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and frosty was the least intimidating out of the bunch."
 
     "After a moment or two, the door in front of you opens to reveal frosty standing before you."
 
@@ -676,7 +680,7 @@ label frosty_date_1:
 
     mc "Next time for sure"
 
-    scene bg black screen
+    scene bg outside
     with dissolve
 
     play sound "audio/foot steps.wav"
@@ -702,6 +706,7 @@ return
 
 label frosty_date_2_yes:
 
+    scene bg black screen
     play sound "audio/door knock.wav"
     "You choose to knock on the door labeled Frosty again."
     "Last time you had an amazing time with him and couldn't stop thinking about what it would be like to spend another day with him."
@@ -709,6 +714,8 @@ label frosty_date_2_yes:
 
     frosty "[mcname]!"
 
+    scene bg frosty bedroom
+    with dissolve
     "Frosty says to you as he opens the door, excited to see that you choose to spend time with him again."
 
     mc "Hey Frosty!" 
@@ -772,6 +779,7 @@ label frosty_date_2_no:
 label frosty_date_2:
 
     "You grab your coat, scarf, and gloves, making sure you're bundled up for whatever Frosty has planned."
+    scene bg outside
     "Stepping outside, you see him waiting for you at the bottom of the steps, his cheeks tinged pink from the cold and excitement."
     "There's something magical about the way he seems to glow, as if winter itself has chosen him as its representative."
 
@@ -841,18 +849,23 @@ label frosty_date_2:
     "You feel a blush rise to your cheeks, not from the cold this time."
 
     mc "Anytime, Frosty. I can't wait for our next adventure."
+    with fade
 
     jump before_date_3
 
 label frosty_date_3:
+    scene bg black screen
     play sound "audio/door knock.wav"
     "You knock on Frosty's door, and for a moment, the quiet of the hall feels heavier than usual. It's not just the anticipation of tonight's training."
     "It's the knowledge that this might be your last night like this. Together."
 
+    scene bg frosty bedroom
+    with dissolve
     "When the door swings open, Frosty is already smiling, his usual easy warmth lighting up the space."
     "But tonight, there's something different in his expression a softness, an understanding."
 
     frosty "[mcname]!"
+
     "His voice is quieter than usual but no less welcoming."
 
     frosty "You ready to do this?"
@@ -961,8 +974,8 @@ label frosty_date_3:
 
     "Together, you sit in the glow of the fluorescent lights, knowing this is the end of one chapter and the start of another."
     "Whatever comes next, you'll carry this moment with you. Always."
-
-return
+    with fade
+    return
 
 
 label jack_date_1:
@@ -1001,7 +1014,7 @@ label jack_date_1:
     show Jack Sad
     jack "Fair warning-I might be a little {i}frosty{/i} when I lose."
 
-    play sound "audio/mario kart.mp3"
+    play sound "audio/mario kart.mp3" volume 0.5
     "The game starts, and Jack is immediately in the lead. He's surprisingly good at this, dodging shells and drifting around corners with ease."
 
     show Jack Neu at center
