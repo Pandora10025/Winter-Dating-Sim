@@ -35,6 +35,15 @@ $ kPoints = 0
 # random variables
 default frostyDate1 = False
 
+#click sound
+# not sure if this works tbh
+init python:
+    def character_callback(event, **kwargs):
+        if event == "end":
+            renpy.music.play("click.wav", channel="audio")
+
+    config.all_character_callbacks.append(character_callback)
+
 # The game starts here.
 
 label start:
@@ -49,7 +58,7 @@ label start:
         blink_shut = ImageDissolve("bg black screen.jpg", .5, ramplen=128, reverse=True, time_warp=eyewarp)
 
     scene bg black screen
-    play music "audio/bg music.wav" volume 0.5
+    play music "audio/bg music.wav"
     #Floating In The Midnight Breeze by FoolBoyMedia -- https://freesound.org/s/332323/ -- License: Attribution NonCommercial 4.0
 
     "In the beginning there were stories... Legends..."
@@ -820,6 +829,7 @@ label frosty_date_2:
 
     play music "audio/winter music.mp3"
     scene bg ice rink
+    play sound "audio/ice skating.wav"
     "When you arrive, the scene is just as Frosty described: the rink is surrounded by tall trees wrapped in twinkling lights, and a soft melody drifts through the crisp air."
     "Couples and families glide gracefully, or hilariously awkwardly, across the ice, their laughter mingling with the soft crunch of skates."
     "Frosty turns to you, a playful grin on his face."
@@ -871,6 +881,7 @@ label frosty_date_2:
 
     mc "Anytime, Frosty. I can't wait for our next adventure."
     with fade
+    stop sound
 
     jump before_date_3
 
@@ -1113,6 +1124,7 @@ label jack_date_2:
     scene bg ice rink
     show Jack Neu at center
     with fade
+    play sound "audio/ice skating.wav"
     "The air is crisp and cold as you step onto the ice rink, its surface gleaming under the soft glow of fairy lights strung overhead. Snowflakes drift lazily from the sky, and the entire scene feels like something out of a winter dream."
     "Jack Frost is already waiting near the edge of the rink, leaning casually against the barrier." 
     "His icy white hair sparkles under the lights, and when he spots you, he stands up straight, a playful grin spreading across his face."
@@ -1189,6 +1201,7 @@ label jack_date_2:
     "The two of you skate a little longer, weaving around the rink as snow falls softly around you."
     "The world feels quiet and magical, and as Jack skates beside you, his laughter mixing with yours, you think there's no place you'd rather be."
     with fade
+    stop sound
 
     jump before_date_3
 
@@ -1780,6 +1793,7 @@ label krampus_easter_island:
 
 label frosty_easter_island:
     scene bg easter island
+    play sound "audio/light buzz.wav"
     "The fluorescent lights buzz faintly as you and Frosty step into the Snowflake Engineering Bay, the heart of winter's magic production. The air is crisp and cool, carrying the faint scent of ozone and pine. Frosty runs a gloved hand along one of the frost-covered consoles, his breath fogging in the chilly air."
     mc "This is where the snowflakes are made?"
     frosty "Yeah. Every flurry, every blizzard, every perfectly unique snowflake starts here."
