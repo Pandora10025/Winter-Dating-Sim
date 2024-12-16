@@ -3,14 +3,14 @@
 #Main characters
 define mc = Character("[mcname]", color = "#ffac00")
 define msC = Character("Ms. Claus", color = "#850101")
-define frosty = Character("Frosty the 'Snowman'", color = "#6eb5cc")
+define frosty = Character("Frosty the 'Snowman'", color = "#ffffff")
 define jack = Character ("Jack Frost", color = "#000bd4")
 define krampus = Character("Krampus", color = "#3d0d0d")
 
 define unk = Character("Unknown 1", color = "#b0b0b0") #claus?
 define unk1 = Character("Unknown 1", color = "#000bd4") #Jack
 define unk2 = Character("Unknown 2", color = "#3d0d0d") #Krampus
-define unk3 = Character("Unknown 3", color = "#6eb5cc") #Frosty
+define unk3 = Character("Unknown 3", color = "#ffffff") #Frosty
 
 #Other Characters
 define emily = Character("Emily", color = "#ffc1f2")
@@ -24,13 +24,7 @@ image Kramp Happy = im.Scale("HAPPY_Krampus.png", 800, 1000)
 image Kramp Neu = im.Scale("NEUTRAL_Krampus.png", 800, 1000)
 image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
-image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1010)
-
-#bg scales
-image bg jack bedroom = im.Scale("bg jack bedroom.jpg", 800, 600)
-image bg gaming = im.Scale("bg gaming.jpg", 800, 600)
-image bg frosty bedroom= im.Scale("bg frosty bedroom.jpg", 800, 600)
-image bg cat cafe = im.Scale("bg cat cafe.jpg", 800, 600)
+image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
 
 
 #Character Romance Points
