@@ -6,6 +6,7 @@ define msC = Character("Ms. Claus", color = "#850101")
 define frosty = Character("Frosty the 'Snowman'", color = "#ffffff")
 define jack = Character ("Jack Frost", color = "#000bd4")
 define krampus = Character("Krampus", color = "#3d0d0d")
+define boogy = Character("The Boogyman", color = "#036507")
 
 define unk = Character("Unknown 1", color = "#b0b0b0") #claus?
 define unk1 = Character("Unknown 1", color = "#000bd4") #Jack
@@ -1681,6 +1682,40 @@ label krampus_date_2:
     with fade
     return
 
+label before_mission:
+
+    scene bg easter island
+    "Date: 12.16.2024
+    Time: 0600
+    Location: Easter Island, Outskirts"
+
+    show Jack Neu at center
+    show Kramp Neu at Right
+    show Frosty Neu at left
+    "You, Jack Frost, Krampus, and Frosty arrive on Easter Island bright and early the following day." 
+   
+    kramp "Let's go through it one more time."
+
+    kramp "We are here on Easter Island on reconnaissance for information on the Easter Bunny. The Easter Bunny's pages were the most recent to go missing, and soon after the Bunny himself disappeared as well."
+
+    jack "Right. This is where he spent his time, so this is where we're looking."
+    
+    frosty "Should we split up?"
+
+    kramp "Yes, to cover more ground. Let's take pairs."
+
+    "All three of them look at you, seeming to wait for you to pick a partner." 
+    "You'll go with..."
+    menu:
+        "Jack":
+            jump jack_easter_island
+        "Frosty":
+            jump frosty_easter_island
+        "Krampus":
+            jump krampus_easter_island
+    with fade
+
+
 label jack_easter_island:
     scene bg easter island
     "The air grows colder as you and Jack step into the Egg Collection Depot. Rows upon rows of towering, rainbow-colored crates stretch out before you, the vibrant hues eerily dim under the flickering lights."
@@ -1835,6 +1870,106 @@ label frosty_easter_island:
 
     "With Frosty leading the charge, you brace yourself for whatever's coming next, the chill in the air matching the resolve between you."
     return
+
+label confrontation:
+    scene easter island
+    "You round the corner to be faced with all three of your companions, who look at you in surprise to have also found each other." 
+
+    mc "We followed the trail here. What's going on?" 
+
+    "The other pair look at each other, and echo the same sentiment." 
+
+    kramp "What did everyone find?" 
+
+    mc "Sabotage, broken machinery..." 
+
+    frosty "Wait, if everything leads here then - "
+
+    "A loud crash cuts Frosty off as everyone turns to the source of the noise. It's only now that you take stock of the room that you're in." 
+
+    "The room is large but enclosed, with the only windows high enough up the walls that you can't see through them and only a single pair of enormous double doors by your right. The only other exits are the ones you and your companions came through, which are a little ways behind you." 
+
+    "On your left are several rows of flat tables with the remnants of decorations strewn about. It looks like this was made for an assembly line of some kind." 
+
+    "Another loud boom breaks through your thoughts, and you turn just in time to see the double doors fly open as an enormous, hulking figure bursts into the room. The thing is all hanging flesh and melting limbs, and the thick scent of rot makes you gag on your breath." 
+
+    "You stumble back, arms raised in self defense before your companions rush to your side." 
+    
+    frosty "What is that?" 
+
+    kramp "The Boogyman. Spread out!"
+
+    "The Boogyman roars in delight, its body undulating under the weight of its own mass." 
+
+    boogy "Three legends in one place? And you? Oh, you're something special, aren't you?"
+
+    mc "What? What do you mean?" 
+
+    "You realize a fraction of a second too late that the Boogyman is raising an arm to strike. In a panic, you cover your head, hoping to protect your extremities at the very least." 
+
+    "Instead, you catch a bright flash of light out of the corner of your eye, and look up to see Jack blast a flying fleshy blob out of the sky." 
+
+    jack "Move!"
+
+    "You dive sideways, finding cover behind the tables as the monster turns to Jack. At your side, you find a pair of glowing yellow eyes."
+
+   
+    kramp "It's outnumbered. We can win it if we cover for each other and focus it while it's distracted. Do you understand?" 
+
+    "He only gives you a second to nod before leaping over the table to send a barrage of hits into the Boogyman's side, the wrappings around his hands sparking with energy."
+
+    "Something feels off, though. Krampus' hits seem slower than they should, and you realize with a start that the Boogyman's melting, wax-like body is clinging onto the man's punches."
+
+    mc "Wait! It's grabbing onto you!" 
+
+    "Before you can move, you watch as Krampus hits again, and finds himself unable to draw back."
+
+    kramp "What-"
+
+    "With a roar, the monster lifts Krampus up by his arm and flings him into a wall with a sickening crunch."
+
+    #nod
+    kramp "..."
+
+    #sad
+    frosty "Krampus!" 
+
+    #sad
+    jack"I've got him. Cover me!" 
+
+    "As Jack Frost dashes away, you watch Frosty raise a brass covered knuckle to send a heavy punch into the Boogyman's back.The metal carves a grotesque arc into the monster's back, blood pooling as it opens its mouth in a thundering cry." 
+
+    boogy "You'll pay for that!" 
+
+    "With Jack only halfway to Krampus and Frosty all alone in the face of the Boogyman's rage, you realize that this is your shot. You can feel your heart pounding in your chest."
+
+    "You step out from behind the table."
+
+    menu:
+        "Attack The Boogyman":
+            "You throw everything you have at the Boogyman, only stopping to let Frosty grab its attention before attacking again." 
+            "It's a grueling effort, and you can feel exhaustion creeping through your body with every attack. Your efforts aren't in vain, however. You also see the monster slowing down." 
+            "Chunks of waxy flesh are now scattered across the terrain, leaving steaming pools of goop that you have to jump over and around as you move. The Boogyman's roars are deeper, and rumbling."
+
+    "It lobs another projectile at you, and something clicks in your mind."
+
+    mc "The eyes! It's not protecting it's eyes!" 
+
+    "From across the warehouse, Frosty nods. He's heard your message."
+
+    "You watch as he throws another hit at the Boogyman, and the monster turns slowly around with its arms in the air - arms that are now away from its face." 
+
+    menu:
+        "Aim for its eyes.":
+            "With as much strength as you can muster, you sprint forward to make an attack at its face."
+
+    "Your hit spears straight through the Boogyman's sagging, lifeless eyes. The flesh parts almost effortlessly there, unobstructed by the meat that covers the rest of its body, and it recoils almost inward."
+
+    "You have to fall back to avoid being sucked in by its limbs as the monster twists and roars in agony. From the other side, you can see Frosty making a similar retreat to avoid the bubbling goop."
+
+    "As you hit the ground, someone calls out behind you."
+    return
+
 
 
 
