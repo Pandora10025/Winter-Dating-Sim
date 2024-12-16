@@ -532,7 +532,7 @@ label before_date_3:
 
 
 label frosty_date_1:
-    scene bg black screen 
+    scene bg hallway
     play sound "audio/door knock.wav"
     "You hastily knock on the door labeled 'Frosty' feeling slightly nervous."
 
@@ -703,7 +703,7 @@ return
 
 label frosty_date_2_yes:
 
-    scene bg black screen
+    scene bg hallway
     play sound "audio/door knock.wav"
     "You choose to knock on the door labeled Frosty again."
     "Last time you had an amazing time with him and couldn't stop thinking about what it would be like to spend another day with him."
@@ -732,6 +732,7 @@ label frosty_date_2_yes:
 
 label frosty_date_2_no:
 
+    scene bg hallway
     play sound "audio/door knock.wav"
     "You hastily knock on the door labeled 'Frosty' feeling slightly nervous."
 
@@ -855,7 +856,7 @@ label frosty_date_2:
     jump before_date_3
 
 label frosty_date_3:
-    scene bg black screen
+    scene bg hallway
     play sound "audio/door knock.wav"
     "You knock on Frosty's door, and for a moment, the quiet of the hall feels heavier than usual. It's not just the anticipation of tonight's training."
     "It's the knowledge that this might be your last night like this. Together."
@@ -892,6 +893,8 @@ label frosty_date_3:
 
     "His smile widens just enough to make your chest ache."
 
+    scene bg training room
+    with dissolve
     "When you reach the gym, the fluorescent lights buzz faintly, casting their cold glow over the stark space."
     "It's the same as always: punching bags, training dummies, rows of weights, but tonight, it feels different."
 
@@ -932,10 +935,13 @@ label frosty_date_3:
     frosty "Good,"
 
     "He steps back to watch as you throw another punch."
+    with hpunch
+
     frosty "Now, again. Keep your shoulders loose, but focus on where you want to hit. Make it count."
 
     "You follow his guidance, feeling the weight of the brass knuckles amplify your strikes."
     "Each punch lands with a satisfying thud, and Frosty's quiet murmurs of approval spur you on."
+    with hpunch
 
     "As the session continues, the room feels warmer, like the space between you is charged with something unspoken."
     "When he steps closer to demonstrate a block, his hands linger on yours for just a moment longer than necessary."
@@ -1163,6 +1169,7 @@ label jack_date_2:
     jump before_date_3
 
 label jack_date_3:
+    scene bg training room
     "The military gym is stark and utilitarian, with fluorescent lights casting a cool glow over the room."
     "It's filled with various equipment for physical and tactical training, but in the center of it all stands Jack Frost, leaning casually against his frost-covered staff."
     "Despite the harsh setting, he looks as effortlessly cool as ever, his icy white hair almost glowing under the lights."
@@ -1494,6 +1501,7 @@ label krampus_date_2:
 
     label krampus_date_3:
 
+    scene bg training room
     "The gym smells of leather, chalk, and sweat, the air thick with the energy of past battles fought and won."
     "It's stark with heavy punching bags hanging in neat rows and a well-worn boxing ring in the corner."
     "The sharp clang of metal weights echoes as you walk in, but your attention is locked on Krampus, who's standing near a makeshift sparring mat."
@@ -1628,6 +1636,7 @@ label krampus_date_2:
     return
 
 label jack_easter_island:
+    scene bg easter island
     "The air grows colder as you and Jack step into the Egg Collection Depot. Rows upon rows of towering, rainbow-colored crates stretch out before you, the vibrant hues eerily dim under the flickering lights."
     "A faint, mechanical hum echoes through the space, accompanied by the rhythmic clinking of conveyor belts that have long since stopped running."
     play sound "audio/foot steps.wav"
@@ -1674,6 +1683,7 @@ label jack_easter_island:
 
 label krampus_easter_island:
 
+    scene bg easter island
     "The air is damp and heavy as you and Krampus descend into the labyrinthine distribution tunnels beneath the Easter hub."
     "The walls are carved from rough stone, lined with rusted tracks that once ferried brightly painted egg crates to the surface."
     "Now, the tracks lie abandoned, with overturned carts and shattered eggs littering the ground."
