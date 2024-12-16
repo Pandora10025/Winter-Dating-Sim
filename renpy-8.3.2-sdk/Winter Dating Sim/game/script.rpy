@@ -1745,5 +1745,49 @@ label krampus_easter_island:
     with fade
     return
 
+label frosty_easter_island:
+    scene bg easter island
+    "The fluorescent lights buzz faintly as you and Frosty step into the Snowflake Engineering Bay, the heart of winter's magic production. The air is crisp and cool, carrying the faint scent of ozone and pine. Frosty runs a gloved hand along one of the frost-covered consoles, his breath fogging in the chilly air."
+    mc "This is where the snowflakes are made?"
+    frosty "Yeah. Every flurry, every blizzard, every perfectly unique snowflake starts here."
+    mc "It's... empty."
+    frosty "Yeah, and that's a problem. This place is usually a flurry of activity-pun intended."
+
+    "Rows of intricate machinery line the room, their surfaces frosted over like forgotten relics. Frosty moves ahead, his boots crunching softly against the frost-covered floor. He kneels beside a shattered snowflake mold, lifting a shard with care."
+    frosty "This isn't just damage. It's deliberate."
+    mc "Someone sabotaged it?"
+    frosty "Looks like it. These molds are tough. Whoever did this knew exactly where to hit to shut the whole system down."
+
+    "As Frosty inspects the room, the frost on the machines seems to shift slightly, catching the dim light in a way that makes the space feel alive. You notice a set of deep, uneven gouges along the floor, trailing toward one of the larger machines."
+    mc "Frosty, look at this. What could've made those marks?"
+    "Frosty joins you, crouching down to trace the grooves with his finger. His brow furrows."
+    frosty "Not claws. Too smooth for that. Maybe some kind of tool? Whatever it was, it dragged something heavy out of here."
+    mc "The molds?"
+    frosty "Could be. But why take them? If you just wanted to stop the snowflake production, smashing them would've been easier. This feels... bigger."
+
+    "A faint sound-a distant hiss of air-draws both of your attention. Frosty rises to his full height, his expression hardening as he glances toward the source of the noise."
+    frosty "Stay behind me."
+    mc "You think someone's still here?"
+    frosty "Or something. Either way, I don't want you getting hurt."
+
+    "He steps forward, the room seeming colder with every step he takes. You follow closely, your breath visible in the frosty air. The hiss grows louder as you approach a massive piece of machinery, its outer shell cracked and leaking vapor."
+    mc "What is that?"
+    frosty "A snow generator. Or what's left of one."
+
+    "He leans closer, his eyes narrowing as he examines the cracks. The vapor suddenly shifts, coalescing into a thick cloud of mist that begins to swirl around the machine. Frosty instinctively raises his hand, summoning a thin sheet of ice that forms a barrier between you and the mist."
+    frosty "Looks like someone didn't want us snooping around."
+    mc "Can you stop it?"
+    frosty "I can try. But I need you to stay sharp, okay? If this thing is more than just a defense system, we're in for a fight."
+
+    "With a sharp flick of his wrist, Frosty sends a wave of ice shooting toward the machine. The mist recoils, dissipating for a moment before reforming, more aggressive than before. Frosty's jaw tightens."
+    frosty "Figures. Nothing's ever simple, huh?"
+
+    "As the mist closes in, Frosty glances back at you, his expression determined."
+    frosty "We're gonna get through this. Together."
+    mc "Right."
+
+    "With Frosty leading the charge, you brace yourself for whatever's coming next, the chill in the air matching the resolve between you."
+    return
+
 
 
