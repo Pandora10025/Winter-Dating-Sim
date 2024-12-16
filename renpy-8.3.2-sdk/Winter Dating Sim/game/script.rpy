@@ -27,8 +27,10 @@ image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1010)
 
 #bg scales
-image bg jack bedroom = im.Scale("bg jack bedroom", 800, 600)
-image bg gaming = im.Scale("bg gaming", 800, 600)
+image bg jack bedroom = im.Scale("bg jack bedroom.jpg", 800, 600)
+image bg gaming = im.Scale("bg gaming.jpg", 800, 600)
+image bg frosty bedroom= im.Scale("bg frosty bedroom.jpg", 800, 600)
+image bg cat cafe = im.Scale("bg cat cafe.jpg", 800, 600)
 
 
 #Character Romance Points
@@ -510,11 +512,11 @@ label before_date_2:
     "guess what yoyu can choose who to go on your second date with!"
 
     menu:
-        "frosty":
+        "Frosty":
             jump frosty_date_2
-        "jack":
+        "Jack":
             jump jack_date_2
-        "krampus":
+        "Krampus":
             jump krampus_date_2
 
     return
@@ -527,11 +529,11 @@ label before_date_3:
     "you have to choose who you want to learn to fight with..."
     
     menu:
-        "frosty":
+        "Frosty":
             jump frosty_date_3
-        "jack":
+        "Jack":
             jump jack_date_3
-        "krampus":
+        "Krampus":
             jump krampus_date_3
 
 
@@ -801,6 +803,7 @@ label frosty_date_2:
     mc "Sounds perfect!"
 
     play music "audio/winter music.mp3"
+    scene bg ice rink
     "When you arrive, the scene is just as Frosty described: the rink is surrounded by tall trees wrapped in twinkling lights, and a soft melody drifts through the crisp air."
     "Couples and families glide gracefully, or hilariously awkwardly, across the ice, their laughter mingling with the soft crunch of skates."
     "Frosty turns to you, a playful grin on his face."
@@ -842,6 +845,7 @@ label frosty_date_2:
 
     frosty "I'm glad you had fun. I knew today would be special."
 
+    scene bg outside
     "As you walk back together, Frosty suddenly stops and looks at you, his expression soft and sincere."
 
     frosty "Thanks for choosing to spend your time with me, [mcname]. It means a lot."
@@ -1079,6 +1083,7 @@ label jack_date_1:
 
 label jack_date_2:
 
+    scene bg ice rink
     show Jack Neu at center
     with fade
     "The air is crisp and cold as you step onto the ice rink, its surface gleaming under the soft glow of fairy lights strung overhead. Snowflakes drift lazily from the sky, and the entire scene feels like something out of a winter dream."
@@ -1285,7 +1290,7 @@ label jack_date_3:
     return
 label krampus_date_1:
 
-    scene bg black screen 
+    scene bg skiing
     "The air is crisp and biting as you stand at the top of the ski slope, looking down at the endless stretch of sparkling white snow."
     "The sun glints off the frosted peaks, and in the distance, the evergreens sway in the cold wind."
     show Kramp Neu at center
@@ -1385,6 +1390,7 @@ label krampus_date_1:
     jump before_date_2
 
 label krampus_date_2:
+    scene bg bar
     "The bar is dimly lit and cozy, with flickering candlelight reflecting off bottles of aged whiskey and frosted mugs of beer."
     "The air is warm, a welcome contrast to the biting cold outside, and the hum of quiet conversation mingles with the crackle of a nearby fireplace."
     show Kramp Neu at center
@@ -1467,7 +1473,9 @@ label krampus_date_2:
 
     "As the bar starts to quiet down, you realize how much you've been enjoying yourself."
     "Despite his intimidating presence, Krampus is surprisingly easy to talk to-charming in his own gruff, devil-may-care way."
+    play sound "audio/foot steps.wav"
     "When you finally get up to leave, he follows you to the door, his towering frame casting a shadow over the snow-dusted street outside."
+    scene bg outside
 
     show Kramp Happy
     krampus "This was fun!" 
@@ -1479,6 +1487,7 @@ label krampus_date_2:
 
     krampus "Careful what you wish for. I've got plenty more tricks up my sleeve."
 
+    play sound "audio/snow foot steps.wav"
     "As you part ways, the warmth of the bar lingers with you, along with the memory of Krampus's devilish grin and the laughter you shared."
     "Something tells you this won't be the last time you cross paths with him."
     with fade
