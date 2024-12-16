@@ -7,7 +7,7 @@ define frosty = Character("Frosty the 'Snowman'", color = "#6eb5cc")
 define jack = Character ("Jack Frost", color = "#000bd4")
 define krampus = Character("Krampus", color = "#3d0d0d")
 
-define unk = Character("Unknown 1", color = "#b0b0b0") #clause?
+define unk = Character("Unknown 1", color = "#b0b0b0") #claus?
 define unk1 = Character("Unknown 1", color = "#000bd4") #Jack
 define unk2 = Character("Unknown 2", color = "#3d0d0d") #Krampus
 define unk3 = Character("Unknown 3", color = "#6eb5cc") #Frosty
