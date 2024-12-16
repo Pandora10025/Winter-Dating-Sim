@@ -297,7 +297,7 @@ label start:
     " Her hair was all grey,pinned in a half up and half down style and she wore a black and red dress"
     "You weren't sure why, but she struck you as vaguely familiar and her presence set you at ease"
     mc "..."
-    mc "Nadia…"
+    mc "Nadia..."
     
     "The name pops into your head like a flash and spills out before you can stop it. "
     " For a moment the older woman's face shifts with surprise, before morphing into indignance."
@@ -310,18 +310,18 @@ label start:
     unk "How did you know my name?"
 
     mc "I.."
-    mc "I don't know… it was the first thing that popped in my head when I saw you."
-    mc "I feel like…"
-    mc "Like I've seen you before–"
+    mc "I don't know... it was the first thing that popped in my head when I saw you."
+    mc "I feel like..."
+    mc "Like I've seen you before-"
 
     unk "Where?"
 
-    mc "I don't know…"
+    mc "I don't know..."
 
     unk "You're going to have to do a lot better than that." 
 
     mc "I swear, I woke up in this room and was just trying to get my bearings when the alarm started blaring."
-    mc " And… ugh"
+    mc " And... ugh"
 
     scene bg black screen with blink_shut 
     scene bg book room with blink_open
@@ -338,11 +338,11 @@ label start:
 
     "The woman sighs as she looks back at you in earnest"
 
-    unk "You may call me Mrs. Claus, everyone here does… well most people do."
+    unk "You may call me Mrs. Claus, everyone here does... well most people do."
     msC "We're going to have to get you somewhere more comfortable, so we can check you out."
     msC "Do you feel well enough to stand, my dear?"
 
-    mc "I think so…"
+    mc "I think so..."
 
     "You feel a warm hand hovering over your arm as you try to stand."
     "When you stumble, it grabs you softly to steady you as you stand up fully." 
@@ -392,7 +392,7 @@ label start:
 
     msC "And I suppose you can't remember where you came from either?"
 
-    mc "No…"
+    mc "No..."
     mc "I'm sorry"
 
     msC " What are you apologizing for, dear?"
@@ -407,7 +407,7 @@ label start:
 
     show Kramp Neu at right with moveinright
 
-    krampus "Mrs. Claus surely you –"
+    krampus "Mrs. Claus surely you-"
 
     msC "And what do you suggest we do with the poor child"
     msC "They barely know who they are let alone where they came from. Surely you're not suggesting that we set the poor thing out in the world with no memories whatsoever"
@@ -474,8 +474,8 @@ label start:
 
     scene bg black screen with fade
 
-    " A bright shimmering golden light flashes and you hear the sound of childish laughter."
-    " The golden book shines before you, brilliant and warm."
+    "A bright shimmering golden light flashes and you hear the sound of childish laughter."
+    "The golden book shines before you, brilliant and warm."
     "But soon the darkness creeps in,"
     "The book's warm light dims as the sound of tearing paper rings through the air."
     "Vicious, maniacal laughter replaces the sounds of joyous children and the silhouette of a figure creeps closer.."
@@ -521,7 +521,6 @@ label before_date_3:
     "To add in later but basicaly to undestand the 3rd date..."
     "The group is going to fight the badguy, the boogyman, and they need to prep you how to fight since you are new."
     "you have to choose who you want to learn to fight with..."
-    "ps: theres no 3rd date for krampus yet."
     
     menu:
         "frosty":
@@ -534,6 +533,7 @@ label before_date_3:
 
 label frosty_date_1:
     scene bg black screen 
+    play sound "audio/door knock.wav"
     "You hastily knock on the door labeled 'frosty' feeling slightly nervous."
 
     "frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and frosty was the least intimidating out of the bunch."
@@ -542,12 +542,12 @@ label frosty_date_1:
 
     "He towers over you, but instead of finding him intimidating, he looks down at you with a bright smile on his face."
 
-    frosty "Y/N!"
+    frosty "[mcname]"
 
     "You smile back at him as he welcomes you into his room."
 
-    #scene bg frosty bedroom
-    #with dissolve 
+    scene bg frosty bedroom
+    with dissolve 
 
     "frosty's room is pretty simple, nothing too out of the ordinary here."
     "A plain-ish bed, some shelves holding small knick-knacks like a few books, a small figure, and some plants."
@@ -591,6 +591,7 @@ label frosty_date_1:
 
     "You and frosty settle into a cozy little corner of the cafe, where the warm lighting and soft hum of conversation make everything feel calm and inviting."
     "A curious gray tabby pads over to investigate, hopping onto the table with an elegant leap."
+    play sound "audio/cat meows.wav"
 
     frosty "Whiskers!" 
 
@@ -598,6 +599,7 @@ label frosty_date_1:
 
     frosty  "This little guy always says hi first. He's kind of like the cafe's unofficial mascot."
 
+    play sound "audio/cat purr.wav"
     "Whiskers leans in, sniffing frosty's outstretched hand before rubbing against it. frosty grins and gently scratches behind the cat's ears."
 
     frosty "See? Total sweetheart."
@@ -611,6 +613,7 @@ label frosty_date_1:
 
     "A sleek black cat is perched on a windowsill, watching the passersby, while a fluffy orange tabby dozes in a sunbeam."
     "The room feels alive yet tranquil, and you can see why frosty loves it here"
+    play sound "audio/foot steps.wav"
     "Emily, the cafe's owner, brings over your drinks, breaking the quiet moment."
 
     emily "Here we go! One hot chocolate for you," 
@@ -656,6 +659,7 @@ label frosty_date_1:
 
     frosty "This is the best. You know, cats don't care about what you look like or anything. They just... know if you' re good people. Or a good whatever we are, I guess."
 
+    play sound "audio/cat purr.wav"
     "There's a moment of quiet as Frosty seems lost in thought, absently scratching Whiskers' chin."
     "You sip your hot chocolate, watching him with a new appreciation. For all his cheerful energy, frosty has a way of grounding a room, making it feel safe and welcoming."
 
@@ -667,6 +671,7 @@ label frosty_date_1:
 
     frosty "Really? That makes me so happy. We'll come back soon, yeah? Maybe next time we can try some of those cookies-or just hang out with the cats more. I think Mittens over there has her eye on you."
 
+    play sound "audio/cat meows.wav"
     "You glance at a fluffy calico peeking at you from behind a stack of books, and frosty laughs. It's warm and easy, and it feels like a perfect ending to the day."
 
     mc "Next time for sure"
@@ -674,6 +679,7 @@ label frosty_date_1:
     scene bg black screen
     with dissolve
 
+    play sound "audio/foot steps.wav"
     "You both step outside into the cold and crisp air."
 
     frosty "Next time," 
@@ -696,6 +702,7 @@ return
 
 label frosty_date_2_yes:
 
+    play sound "audio/door knock.wav"
     "You choose to knock on the door labeled Frosty again."
     "Last time you had an amazing time with him and couldn't stop thinking about what it would be like to spend another day with him."
     "So you chose to hang out with him again."
@@ -721,6 +728,7 @@ label frosty_date_2_yes:
 
 label frosty_date_2_no:
 
+    play sound "audio/door knock.wav"
     "You hastily knock on the door labeled 'Frosty' feeling slightly nervous."
 
     "Frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and Frosty was the least intimidating out of the bunch."
@@ -729,7 +737,10 @@ label frosty_date_2_no:
 
     "He towers over you, but instead of finding him intimidating, he looks down at you with a bright smile on his face."
 
-    frosty "Y/N!"
+    frosty "[mcname]"
+
+    scene bg frosty bedroom
+    with dissolve 
 
     "You smile back at him as he welcomes you into his room."
 
@@ -772,6 +783,7 @@ label frosty_date_2:
 
     "You slip your hand into his. His touch is cool but not uncomfortable." 
     "It's a sensation that reminds you of holding fresh snow."
+    play sound "audio/snow foot steps.wav"
     "As the two of you walk, Frosty chatters excitedly about the day ahead."
 
     frosty "I hope you like skating! There's this great little rink nearby. It's got fairy lights, music, and everything!"
@@ -780,6 +792,7 @@ label frosty_date_2:
 
     mc "Sounds perfect!"
 
+    play music "audio/winter music.mp3"
     "When you arrive, the scene is just as Frosty described: the rink is surrounded by tall trees wrapped in twinkling lights, and a soft melody drifts through the crisp air."
     "Couples and families glide gracefully, or hilariously awkwardly, across the ice, their laughter mingling with the soft crunch of skates."
     "Frosty turns to you, a playful grin on his face."
@@ -832,6 +845,7 @@ label frosty_date_2:
     jump before_date_3
 
 label frosty_date_3:
+    play sound "audio/door knock.wav"
     "You knock on Frosty's door, and for a moment, the quiet of the hall feels heavier than usual. It's not just the anticipation of tonight's training."
     "It's the knowledge that this might be your last night like this. Together."
 
@@ -987,6 +1001,7 @@ label jack_date_1:
     show Jack Sad
     jack "Fair warning-I might be a little {i}frosty{/i} when I lose."
 
+    play sound "audio/mario kart.mp3"
     "The game starts, and Jack is immediately in the lead. He's surprisingly good at this, dodging shells and drifting around corners with ease."
 
     show Jack Neu at center
@@ -1595,6 +1610,7 @@ label krampus_date_2:
 label jack_easter_island:
     "The air grows colder as you and Jack step into the Egg Collection Depot. Rows upon rows of towering, rainbow-colored crates stretch out before you, the vibrant hues eerily dim under the flickering lights."
     "A faint, mechanical hum echoes through the space, accompanied by the rhythmic clinking of conveyor belts that have long since stopped running."
+    play sound "audio/foot steps.wav"
     "Jack walks beside you, his staff tapping softly against the tiled floor."
 
     show Jack Neu at center
@@ -1641,6 +1657,7 @@ label krampus_easter_island:
     "The air is damp and heavy as you and Krampus descend into the labyrinthine distribution tunnels beneath the Easter hub."
     "The walls are carved from rough stone, lined with rusted tracks that once ferried brightly painted egg crates to the surface."
     "Now, the tracks lie abandoned, with overturned carts and shattered eggs littering the ground."
+    play sound "audio/foot steps.wav"
     "Krampus strides ahead, his claws clicking faintly against the stone floor."
 
     show Kramp Nod at center
