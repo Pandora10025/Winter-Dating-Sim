@@ -172,9 +172,11 @@ label start:
     unk2 "You make any sudden movements and I will kill you." #Krampus 
 
     #Jack enter 
-    show Jack Sad at center with moveinleft 
+    show Jack Sad at center 
+    with moveinleft 
     #frosty enters
-    show Frosty Neu at left with moveinleft
+    show Frosty Neu at left 
+    with moveinleft
 
 
     unk1 "So who is it?" #Jack
@@ -230,7 +232,8 @@ label start:
     hide Jack Sad with fade
 
     #frosty comes back into frame looking worried in center
-    show Frosty Neu at center with moveinleft
+    show Frosty Neu at center 
+    with moveinleft
 
     unk3 "Whoa whoa whoa. Maybe you should sit." #frosty 
 
@@ -279,15 +282,18 @@ label start:
     frosty "Maybe now is as best a time to introduce ourselves."
     frosty "As I said before, I am Frosty, and this is Krampus."
 
-    show Kramp Nod at right with dissolve
+    show Kramp Nod at right 
+    with dissolve
     "The older man gives you a small nod of acknowledgement."
-    show Kramp Neu at right with dissolve
+    show Kramp Neu at right 
+    with dissolve
 
     frosty "And the guy with the white hair is Jack. Speaking of which, where is he?"
     jack "Awe man Frosty, are you really introducing me to the cutie {i}without{/i} me being there?"
     krampus "Speak of the devil..."
 
-    show Jack Neu at left with moveinleft
+    show Jack Neu at left 
+    with moveinleft
     "The man with ice white hair and eyes the color of fresh ice appears before you, hand stretched out asking you to shake it."
 
     menu:
@@ -358,7 +364,8 @@ label start:
     "When you stumble, it grabs you softly to steady you as you stand up fully." 
     with vpunch
     "You look to your side to see who helped you and find Krampus looking at you intently before quickly letting go and looking away."
-    show Kramp Neu at right with moveinright
+    show Kramp Neu at right 
+    with moveinright
     hide Jack Sad with moveoutleft
 
     menu:
@@ -416,7 +423,8 @@ label start:
 
     msC "It can't be helped, you will have to remain here for now until we figure out what to do with you." 
 
-    show Kramp Neu at right with moveinright
+    show Kramp Neu at right 
+    with moveinright
 
     krampus "Mrs. Claus surely you-"
 
@@ -1874,6 +1882,12 @@ label frosty_easter_island:
 label confrontation:
     scene easter island
     "You round the corner to be faced with all three of your companions, who look at you in surprise to have also found each other." 
+    show Jack Neu at center 
+    with moveinright
+    show Kramp Neu at right
+    with moveinleft
+    show frosty at left
+    with moveinbottom
 
     mc "We followed the trail here. What's going on?" 
 
@@ -1885,19 +1899,26 @@ label confrontation:
 
     frosty "Wait, if everything leads here then - "
 
+    #crash sound
     "A loud crash cuts Frosty off as everyone turns to the source of the noise. It's only now that you take stock of the room that you're in." 
 
-    "The room is large but enclosed, with the only windows high enough up the walls that you can't see through them and only a single pair of enormous double doors by your right. The only other exits are the ones you and your companions came through, which are a little ways behind you." 
-
+    "The room is large but enclosed, with the only windows high enough up the walls that you can't see through them and only a single pair of enormous double doors by your right."
+    "The only other exits are the ones you and your companions came through, which are a little ways behind you." 
     "On your left are several rows of flat tables with the remnants of decorations strewn about. It looks like this was made for an assembly line of some kind." 
 
-    "Another loud boom breaks through your thoughts, and you turn just in time to see the double doors fly open as an enormous, hulking figure bursts into the room. The thing is all hanging flesh and melting limbs, and the thick scent of rot makes you gag on your breath." 
+    #boom sound
+    "Another loud boom breaks through your thoughts, and you turn just in time to see the double doors fly open as an enormous, hulking figure bursts into the room."
+    "The thing is all hanging flesh and melting limbs, and the thick scent of rot makes you gag on your breath." 
 
     "You stumble back, arms raised in self defense before your companions rush to your side." 
     
+    #frosty sad
     frosty "What is that?" 
 
     kramp "The Boogyman. Spread out!"
+    hide Kramp Neu with moveoutleft
+    hide Jack Neu with moveoutright
+    hide Frosty Neu with moveoutbottom
 
     "The Boogyman roars in delight, its body undulating under the weight of its own mass." 
 
@@ -1905,16 +1926,25 @@ label confrontation:
 
     mc "What? What do you mean?" 
 
-    "You realize a fraction of a second too late that the Boogyman is raising an arm to strike. In a panic, you cover your head, hoping to protect your extremities at the very least." 
+    "You realize a fraction of a second too late that the Boogyman is raising an arm to strike."
+    "In a panic, you cover your head, hoping to protect your extremities at the very least." 
 
+    #flash sound?
+    with vpunch
     "Instead, you catch a bright flash of light out of the corner of your eye, and look up to see Jack blast a flying fleshy blob out of the sky." 
 
+    show Jack Sad at center
+    with moveinbottom
     jack "Move!"
+    with hpunch
+    hide Jack Sad with easeoutbottom
 
     "You dive sideways, finding cover behind the tables as the monster turns to Jack. At your side, you find a pair of glowing yellow eyes."
 
-   
+    show Kramp Nod at left
     kramp "It's outnumbered. We can win it if we cover for each other and focus it while it's distracted. Do you understand?" 
+    show Kramp Neu at center 
+    with ease
 
     "He only gives you a second to nod before leaping over the table to send a barrage of hits into the Boogyman's side, the wrappings around his hands sparking with energy."
 
@@ -1926,21 +1956,27 @@ label confrontation:
 
     kramp "What-"
 
+    #roar sound
     "With a roar, the monster lifts Krampus up by his arm and flings him into a wall with a sickening crunch."
 
-    #nod
+    show Kramp Nod at center
     kramp "..."
 
     #sad
     frosty "Krampus!" 
 
-    #sad
-    jack"I've got him. Cover me!" 
+    show Jack Sad at left
+    with easeinleft
+    jack "I've got him. Cover me!" 
+    hide Kramp Nod
 
-    "As Jack Frost dashes away, you watch Frosty raise a brass covered knuckle to send a heavy punch into the Boogyman's back.The metal carves a grotesque arc into the monster's back, blood pooling as it opens its mouth in a thundering cry." 
+    "As Jack Frost dashes away, you watch Frosty raise a brass covered knuckle to send a heavy punch into the Boogyman's back."
+    "The metal carves a grotesque arc into the monster's back, blood pooling as it opens its mouth in a thundering cry." 
 
     boogy "You'll pay for that!" 
+    with hpunch
 
+    #heartbeat?
     "With Jack only halfway to Krampus and Frosty all alone in the face of the Boogyman's rage, you realize that this is your shot. You can feel your heart pounding in your chest."
 
     "You step out from behind the table."
@@ -1962,12 +1998,13 @@ label confrontation:
     menu:
         "Aim for its eyes.":
             "With as much strength as you can muster, you sprint forward to make an attack at its face."
+            "Your hit spears straight through the Boogyman's sagging, lifeless eyes."
+            "The flesh parts almost effortlessly there, unobstructed by the meat that covers the rest of its body, and it recoils almost inward."
 
-    "Your hit spears straight through the Boogyman's sagging, lifeless eyes. The flesh parts almost effortlessly there, unobstructed by the meat that covers the rest of its body, and it recoils almost inward."
-
-    "You have to fall back to avoid being sucked in by its limbs as the monster twists and roars in agony. From the other side, you can see Frosty making a similar retreat to avoid the bubbling goop."
-
+    "You have to fall back to avoid being sucked in by its limbs as the monster twists and roars in agony."
+    "From the other side, you can see Frosty making a similar retreat to avoid the bubbling goop."
     "As you hit the ground, someone calls out behind you."
+    
     return
 
 
