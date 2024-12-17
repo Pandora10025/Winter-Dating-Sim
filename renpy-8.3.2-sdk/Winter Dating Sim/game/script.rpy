@@ -602,7 +602,7 @@ label start:
 
     "Frosty gives Jack a pointed look before turning to you with his usual cheerful demeanor."
 
-    frosty "If you’d rather take things slow, I was going to head out to a dog cafe. It’s peaceful there, and you might enjoy the company."
+    frosty "If you’d rather take things slow, I was going to head out to a cat cafe. It’s peaceful there, and you might enjoy the company."
 
     "Krampus crosses his arms, his expression neutral but inviting."
 
@@ -629,17 +629,38 @@ label before_date_2:
 
     scene bg black screen 
 
-    "Blah blah blah plot and stuff"
-    "guess what yoyu can choose who to go on your second date with!"
+    "You wake up on your own the next morning, and make your way to the dining room."
+    "On your way, you catch Mrs. Claus speaking to a small group of pixies, who fly off as you approach."
+
+    msC "Good morning, dear. Breakfast is ready when you’re hungry, and I believe the boys are already in there."
+    msC "I’m afraid I’m a bit tied up at the moment. Did you need something from me?"
+
+    "You shake your head, and leave her to enter the dining room instead. Just like before, Jack, Frosty, and Krampus sit at a table, chatting placidly when you enter."
+    "Krampus spots you first this time, and beckons you to sit with them."
+
+    krampus "Good morning. We were just discussing our plans for the day."
+
+    frosty "Yeah, some of us were gonna head out to the ice rink if you wanted to come along!"
+
+    jack "Nothing like a day out on the ice, right? I’m going too, and I could use a skating partner."
+
+    "Frosty grins, and jostles the shorter man playfully."
+
+    frosty "It’s up to you."
+
+    "By their side, Krampus sighs and sets down his cup."
+
+    krampus "I won’t be participating in...this. But I was looking forward to an evening in my favorite local bar."
+    krampus "I’d be happy to show you around, if you’d like. It’s a lovely place to spend time."
 
     menu:
-        "Frosty":
+        "Go ice skating with Frosty":
             jump frosty_date_2
             $ fPoints += 2
-        "Jack":
+        "Go ice skating with Jack":
             jump jack_date_2
             $ jPoints += 2
-        "Krampus":
+        "Go to the bar with Krampus":
             jump krampus_date_2
             $ kPoints += 2
 
@@ -688,9 +709,9 @@ label frosty_date_1:
     play sound "audio/door knock.wav"
     "You hastily knock on the door labeled 'Frosty' feeling slightly nervous."
 
-    "Frosty had always seemed very sweet, granted you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better, and frosty was the least intimidating out of the bunch."
+    "Frosty had always seemed very sweet. Granted, you had only known him for a few days, but due to the circumstances, you felt like you should get to know everyone better. Frosty was the least intimidating out of the bunch."
 
-    "After a moment or two, the door in front of you opens to reveal frosty standing before you."
+    "After a moment, the door in front of you opens to reveal Frosty standing before you."
 
     "He towers over you, but instead of finding him intimidating, he looks down at you with a bright smile on his face."
 
@@ -701,15 +722,15 @@ label frosty_date_1:
     scene bg frosty bedroom
     with dissolve 
 
-    "frosty's room is pretty simple, nothing too out of the ordinary here."
+    "Frosty's room is pretty simple. Nothing too out of the ordinary here."
     "A plain-ish bed, some shelves holding small knick-knacks like a few books, a small figure, and some plants."
-    "The open arrangement and lack of clutter made the room feel very cozy, especially with the plants adding a pop of color here and there."
-    "The room also had the faint scent of evergreen trees in the winter, but it wasn't cold surprisingly, for him being frosty the Snowman, but instead was actually kind of warm."
+    "The open arrangement and lack of clutter makes the room feel very cozy, especially with the plants adding a pop of color here and there."
+    "The room also had the faint scent of evergreen trees in the winter, but it wasn't cold - surprisingly, for him being Frosty the Snowman - but was instead comfortably warm."
 
     menu:
-        "It's warm in here":
-            frosty "Haha yeah. I like to keep it warm in here, contrary to popular belief..."
-        "Its very cozy in here":
+        "It's warm in here.":
+            frosty "Haha yeah. I like to keep my room warm, contrary to popular belief..."
+        "Its very cozy in here.":
             frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out..."
 
     frosty "So.. What do you want to do today?"
@@ -717,7 +738,7 @@ label frosty_date_1:
     frosty "Well I have an idea if you would like..."
     mc "Oh? Sure what is it?"
     frosty "Well... there is this cat cafe near here that I like to go to sometimes. Oh wait, are you allergic to cats? Oh shoot I didn't think about that... Well we can do something else if you-"
-    mc "No haha frosty it's ok I'm not allergic to cats. That sounds amazing, let's go!"
+    mc "No, Frosty, it's ok I'm not allergic to cats. That sounds amazing, let's go!"
     frosty "Really?" 
 
     "His eyes light up as he looks at you with a bright smile on his face. He reminds you of a golden retriever in the way he gets so excited about things."
