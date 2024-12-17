@@ -3,7 +3,7 @@
 #Main characters
 define mc = Character("[mcname]", color = "#ffac00")
 define msC = Character("Ms. Claus", color = "#850101")
-define frosty = Character("Frosty the 'Snowman'", color = "#ffffff")
+define frosty = Character("Frosty the 'Snowman'", color = "#8fd4ff")
 define jack = Character ("Jack Frost", color = "#000bd4")
 define krampus = Character("Krampus", color = "#3d0d0d")
 define boogy = Character("The Boogyman", color = "#036507")
@@ -11,7 +11,7 @@ define boogy = Character("The Boogyman", color = "#036507")
 define unk = Character("Unknown 1", color = "#b0b0b0") #claus?
 define unk1 = Character("Unknown 1", color = "#000bd4") #Jack
 define unk2 = Character("Unknown 2", color = "#3d0d0d") #Krampus
-define unk3 = Character("Unknown 3", color = "#ffffff") #Frosty
+define unk3 = Character("Unknown 3", color = "#8fd4ff") #Frosty
 
 #Other Characters
 define emily = Character("Emily", color = "#ffc1f2")
@@ -29,9 +29,9 @@ image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
 
 
 #Character Romance Points
-$ fPoints = 0
-$ jPoints = 0
-$ kPoints = 0
+define fPoints = 0
+define jPoints = 0
+define kPoints = 0
 
 # random variables
 default frostyDate1 = False
@@ -277,6 +277,7 @@ label start:
         "It suits you.":
             mc "It suits you, and yet your demeanor is warm."
             "Frosty smiles widely and chuckles once more."
+            $ fPoints += 1
             frosty "Thank you."
         "I figured you'd be something more... intimidating":
             mc "I figured, with how big you are... I was just expecting something more intimidating."
@@ -303,6 +304,7 @@ label start:
     menu:
         "shake his hand":
             "You take his hand and shake it, it is cold to the touch."
+            $ jPoints += 1
         "look behind him":
             "You notice a figure standing behind him, tilt your head to try and get a better look at them."
 
@@ -375,6 +377,7 @@ label start:
     menu:
         "Say Thank You":
             "You murmur a quiet thank you and get an almost imperceptible nod in return." 
+            $ kPoints += 1
         "Smile and Keep Walking":
             "You give him a small smile before turning towards Mrs. Claus."
 
@@ -516,10 +519,13 @@ label start:
     menu:
         "frosty date":
             jump frosty_date_1
+            $ fPoints += 2
         "jack date":
             jump jack_date_1
+            $ jPoints += 2
         "krampus date":
             jump krampus_date_1
+            $ kPoints += 2
 
 return
 
@@ -533,10 +539,13 @@ label before_date_2:
     menu:
         "Frosty":
             jump frosty_date_2
+            $ fPoints += 2
         "Jack":
             jump jack_date_2
+            $ jPoints += 2
         "Krampus":
             jump krampus_date_2
+            $ kPoints += 2
 
     return
 
@@ -569,10 +578,13 @@ label before_date_3:
     menu:
         "Go to Frosty":
             jump frosty_date_3
+            $ fPoints += 2
         "Go to Jack":
             jump jack_date_3
+            $ jPoints += 2
         "Go to Krampus":
             jump krampus_date_3
+            $ kPoints += 1
 
 
 label frosty_date_1:
@@ -737,11 +749,11 @@ label frosty_date_1:
 
 label frosty_date_2_start:
 
-if frostyDate1:
-    jump frosty_date_2_yes
+    if frostyDate1:
+        jump frosty_date_2_yes
 
-if not frosty_date_1:
-    jump frosty_date_2_no
+    if not frosty_date_1:
+        jump frosty_date_2_no
 
 return
 
@@ -803,9 +815,9 @@ label frosty_date_2_no:
 
     menu:
         "It's warm in here":
-            frosty "Haha yeah. I like to keep it warm in here, contrary to popular belief…"
+            frosty "Haha yeah. I like to keep it warm in here, contrary to popular belief..."
         "Its very cozy in here":
-            frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out…"
+            frosty "Thank you! I try to keep it nice and welcoming in here, although the others aren't really ones for hanging out..."
 
     frosty "I'm really happy you came to hang out with me today. I have a really fun day planned and I am happy to share it with you!"
 
@@ -1724,10 +1736,13 @@ label before_mission:
     menu:
         "Jack":
             jump jack_easter_island
+            $ jPoints += 2
         "Frosty":
             jump frosty_easter_island
+            $ fPoints += 2
         "Krampus":
             jump krampus_easter_island
+            $ kPoints += 2
     with fade
 
 
@@ -2014,7 +2029,7 @@ label confrontation:
     with vpunch
     "From the other side, you can see Frosty making a similar retreat to avoid the bubbling goop."
     "As you hit the ground, someone calls out behind you."
-
+    with fade
     return
 
 
