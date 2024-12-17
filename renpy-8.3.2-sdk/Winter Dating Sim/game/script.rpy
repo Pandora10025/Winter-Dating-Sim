@@ -102,33 +102,33 @@ label start:
     "The room is cold and empty, save for a golden book that rests on a podium a few feet before you."
 
     menu:
-        "Move closer to the book":
+        "Move closer to the book.":
             scene bg the book with fade
             "You move closer to take a look at the book."
             play sound "audio/book glow.wav"
             "It glows with a warm golden light, almost beckoning for you to reach out and touch it."
             mc "What is this book...?"
-            "As you get closer the book's glow gets brighter, and a sense of warmth tingles at your fingertips"
+            "As you get closer, the book's glow brightens and a sense of warmth tingles at your fingertips."
             $ renpy.sound.play("audio/alarm.mp3", loop=True)
-            "But before you could reach it, an ear piercing sound suddenly erupts around you, accompanied by the sound of urgent footsteps"
+            "Before you could reach it, however, an ear piercing alarm suddenly erupts around you, accompanied by the sound of urgent footsteps."
             with vpunch
 
-        "Look around the room":
+        "Look around the room.":
             "You take a look around the room."
-            "It is pretty barren all things considered."
-            "The room seems to center around the podium that holds the golden book..."
-            mc "It seems like this room is only for this book..."
+            "There are several paintings on the wall, but none of them seem to hold any particular meaning."
+            "The room seems to center around a podium that holds a golden book..."
+            mc "It seems like this room is only for this book."
             scene bg the book with fade
             play sound "audio/book glow.wav"
             "It glows with a warm golden light, almost beckoning for you to reach out and touch it."
             $ renpy.sound.play("audio/alarm.mp3", loop=True)
-            "Before you could continue to explore, an ear piercing sound suddenly erupts around you, accompanied by the sound of urgent footsteps"
+            "Before you could continue to explore, an ear piercing alarm suddenly erupts around you, accompanied by the sound of urgent footsteps"
             with vpunch
 
     scene bg book room 
-    mc "What is going on? I don't think I did anything..."
+    mc "What's going on? I don't think I did anything."
 
-    unk "Whoever you are in there, you are surrounded! I suggest you come out quietly." #probably Mrs. Claus  
+    unk1 "If someone's in there, you are surrounded! I suggest you come out quietly." #probably Mrs. Claus - this CANNOT be Mrs. Claus because someone else goes to get her later 
 
     scene bg black screen 
     with blink_shut
@@ -138,20 +138,20 @@ label start:
     with blink_open
 
     stop sound
-    unk3 "Maybe we should go in and see -" #probably frosty
-    unk1 "Go in, are you nuts!" #probably Jack
-    unk3 "Well how else do you expect us to know who is in there..." #frosty
-    unk2 "And what, may I ask, will you do if there IS someone in there?" #probably Krampus
+    unk3 "Maybe we should go in and see." #probably frosty
+    unk1 "Go in? Are you nuts?" #probably Jack
+    unk3 "Well, how else do you expect us to know who's in there?" #frosty
+    unk2 "And what, may I ask, will you do if there is someone in there?" #probably Krampus
     unk3 "I..." #frosty
     unk3 "oh..."#frosty
     unk3 "Ummm... I hadn't gotten that far..." #frosty
-    unk3 "Hello! Is there anyone in there!" #frosty
-    unk1 "What are you doing?!?!" #Jack 
-    unk3 "I figured if we're not going in to see if someone's in there, I could call out and see if anyone responds..." #frosty
+    unk3 "Hello? Is there anyone in there?" #frosty
+    unk1 "What are you doing?" #Jack 
+    unk3 "I figured that if we're not going in to see if someone's in there, I could call out and see if anyone responds." #frosty
     unk1 "Of all the ideas that has to be the stu-" #Jack
 
     mc "Ummm... hello?" 
-    unk3 "Yes! Hello!" #frosty
+    unk3 "Yes! Hello?" #frosty
     unk2 "Stop talking." #Krampus
 
     unk2 "If you come out peacefully, we'll make your suffering short." #Krampus
@@ -162,12 +162,12 @@ label start:
     unk2 "You're not going to trick us, so you can drop the act." #Krampus
 
     mc "Trick? Who is us? And why would I want to trick you?"
-    unk "..."
+    unk2 "..."
     unk3 "I don't know guys, it sounds like they really don't know anything..." #frosty
     unk1 "You're not allowed to have any more thoughts." #Jack 
-    unk2 "We're coming in..." #Krampus
-    unk1 "NO, we are not! Have you lost your mind." #Jack
-    unk2 "No. I have not." #Krampus
+    unk2 "We're coming in." #Krampus
+    unk1 "NO, we are not! Have you lost your mind?" #Jack
+    unk2 "I have not." #Krampus
 
     play sound "audio/clank.wav"
     "A loud clanking sound resonates through the room."
@@ -186,14 +186,14 @@ label start:
 
 
     unk1 "So who is it?" #Jack
-    unk3 "Oh... hi" #frosty
+    unk3 "Oh... hi." #frosty
 
     mc "Umm... hi"
     mc "Where am I? Who are you?"
 
     show Jack Neu at center
     with ease
-    unk1 "You... really don't know, do you?" #Jack
+    unk1 "You really don't know, do you?" #Jack
     
     "You eye the first man to arrive."
     hide Jack Neu 
@@ -202,7 +202,7 @@ label start:
     with fade
 
     "He stands tall, with elf-like ears protruding out from his black and gray streaked hair."
-    "You look up into his eyes, they tell the tale of an older man, hung up and annoyed with life, before slowly shaking your head."
+    "His eyes tell the tale of an older man, hung up and exhausted with life. You look up at him, before slowly shaking your head."
 
     show Kramp Neu at right
     show Jack Neu at center
@@ -228,12 +228,12 @@ label start:
 
     unk2 "You think?" #Jack
 
-    "The one to speak this time was slightly shorter than the man that first entered. He had white hair like snow and eyes the color of ice."
-    "He looked at you with curiosity as opposed to the other man who only seemed to be annoyed by your presence."
+    "The one to speak this time is slightly shorter than the first man who entered. He has white hair like snow and eyes the color of ice."
+    "He looks at you with curiosity as opposed to the other man's annoyance."
     
     mc "I think that's my name. My head is spinning and everything is blurry."
 
-    "You try taking a step towards the men, but find that your legs are less reliable than you think they are. You stumble a bit before having to catch yourself."
+    "You try pushing yourself to your feet, but find that your legs are less reliable than you think. You stumble a bit before having to catch yourself."
 
     hide Jack Sad with fade
 
@@ -243,34 +243,34 @@ label start:
 
     unk3 "Whoa whoa whoa. Maybe you should sit." #frosty 
 
-    "This man seems to be slightly different from the rest. He stands taller than all of them, his broad shoulders make it so he takes up the most space, but his eyes tell a different story."
-    "Instead of looking at you with an air of curiosity or annoyance, he looks concerned."
-    "He slings your arm around his shoulder as he eases you to the floor."
+    "This man seems to be slightly different from the rest. He stands taller than all of them, his broad shoulders towering over you, but his eyes tell a different story."
+    "Instead of looking at you with curiosity or annoyance, he looks concerned."
+    "He offers you a hand and helps you ease yourself to the floor."
 
     show Kramp Neu at right 
     show Jack Sad at left 
     with ease
 
-    unk3 "Take a few deep breaths, are you hurt anywhere." #frosty 
-    unk1 "Snow! What are you doing dude, they could be dangerous." #Jack 
-    unk3 "I don't know dude, they can hardly stand." #frosty
+    unk3 "Take a few deep breaths. Are you hurt anywhere?" #frosty 
+    unk1 "Snow! What are you doing? They could be dangerous." #Jack 
+    unk3 "I don't know dude - they can hardly stand." #frosty
     unk2 "Go get Mrs. Claus." #Krampus
     unk1 "But-" #Jack
-    unk2 "Go. For now, I think frosty is correct. And Mrs. Clause will be able to tell for sure." #krampus
+    unk2 "Go. For now, I think Frosty is correct. And Mrs. Claus will be able to tell for sure." #krampus
 
     hide Jack Sad with moveoutleft
 
     mc "Frosty?"
     #frosty moves to center looking happy
-    "The hulking figure shakes in silent laughter before responding."
+    "The hulking figure lets out a short laugh before responding."
 
-    frosty "Yes. I know what you're thinking..."
+    frosty "Yes. I know what you're thinking."
     frosty "Actually, no I don't know..."
-    frosty "I am Frosty the Snowman."
+    frosty "I'm Frosty the Snowman."
     mc "Snowman?"
-    frosty "Yeah, the whole silk hat and corncob pipe thing… the kids love it, it makes them laugh you know"
-    "He drops his head a little close, and whispers like he's about to share a secret." 
-    frosty "Better than having a seven foot tall ice giant talking to them, moms are scary"
+    frosty "Yeah, the whole silk hat and corncob pipe thing… the kids love it. The label makes them laugh you know?"
+    "He drops his head towards you, and whispers like he's about to share a secret." 
+    frosty "It's better than having a seven foot tall ice giant talking to them, and moms are scary when they don't know if you're nice."
 
 
     menu:
@@ -283,13 +283,13 @@ label start:
             "Frosty smiles widely and chuckles once more."
             $ fPoints += 1
             frosty "Thank you."
-        "I figured you'd be something more... intimidating":
-            mc "I figured, with how big you are... I was just expecting something more intimidating."
+        "I figured you'd be something more... intimidating.":
+            mc "I figured, with how big you are, I was just expecting a name more intimidating."
             unk2 "I promise, you do not want to mess with this guy."  #krampus
             frosty "It's ok Kramp, I understand. It helps that people underestimate me."
 
     frosty "Maybe now is as best a time to introduce ourselves."
-    frosty "As I said before, I am Frosty, and this is Krampus."
+    frosty "As I said before, I'm Frosty, and this is Krampus."
 
     show Kramp Nod at right 
     with dissolve
@@ -298,21 +298,21 @@ label start:
     with dissolve
 
     frosty "And the guy with the white hair is Jack. Speaking of which, where is he?"
-    jack "Awe man Frosty, are you really introducing me to the cutie {i}without{/i} me being there?"
+    jack "Awe man Frosty, are you really introducing me when {i}I'm{/i} not there?"
     krampus "Speak of the devil..."
 
     show Jack Neu at left 
     with moveinleft
-    "The man with ice white hair and eyes the color of fresh ice appears before you, hand stretched out asking you to shake it."
+    "The man with white hair and eyes the color of ice appears before you, hand stretched out in an invitation to shake it."
 
     menu:
-        "shake his hand":
-            "You take his hand and shake it, it is cold to the touch."
+        "Shake his hand.":
+            "You take his hand and shake it. His skin is cold to the touch."
             $ jPoints += 1
-        "look behind him":
-            "You notice a figure standing behind him, tilt your head to try and get a better look at them."
+        "Look behind him.":
+            "You notice a figure standing behind him, and tilt your head to try and get a better look at them."
 
-    "The man gives you a small wink before turning away to reveal the person who he brought along."
+    "The man gives you a small wink before turning away to reveal the person he brought along."
     hide Kramp Neu with moveoutright
     show Jack Neu at center 
     show Frosty Neu at right 
@@ -320,164 +320,161 @@ label start:
 
     show Mrs Claus Neu at left with moveinleft
 
-    " A short older looking woman, stands with her arms crossed wearing an indiscernible expression"
-    " Her hair was all grey,pinned in a half up and half down style and she wore a black and red dress"
-    "You weren't sure why, but she struck you as vaguely familiar and her presence set you at ease"
+    "A short, older woman stands with her arms crossed. She wears an indiscernible expression."
+    "Her hair is completely grey and pinned in a half up and half down style that fell around her shoulders. She wore a black and red dress."
+    "You weren't sure why, but she struck you as vaguely familiar. You felt that her presence set you at ease."
     mc "..."
-    mc "Nadia..."
+    mc "Nadia?"
     
-    "The name pops into your head like a flash and spills out before you can stop it. "
-    " For a moment the older woman's face shifts with surprise, before morphing into indignance."
+    "The name pops into your head like a flash and spills out of your lips before you can stop it. "
+    "For a moment the older woman's face shifts with surprise, before morphing into indignance."
 
-    unk "Who are you and how did you get in here?"
-    mc "My name is [mcname] and I'm not sure..."
-    mc " I just woke up here."
+    msC "Who are you and how did you get in here?" #changed unknown to mrs. claus because we already know who she is
+    mc "My name is [mcname] and I'm not sure."
+    mc "I just woke up here."
 
     "The woman's face pinches."
-    unk "How did you know my name?"
+    msC "How did you know my name?"
 
     mc "I.."
-    mc "I don't know... it was the first thing that popped in my head when I saw you."
-    mc "I feel like..."
-    mc "Like I've seen you before-"
+    mc "I don't know. It was the first thing that popped in my head when I saw you."
+    mc "I feel like... like I've seen you before."
 
-    unk "Where?"
+    msC "Where?"
 
-    mc "I don't know..."
+    mc "I don't know."
 
-    unk "You're going to have to do a lot better than that." 
+    msC "You're going to have to do a little better than that." 
 
     mc "I swear, I woke up in this room and was just trying to get my bearings when the alarm started blaring."
-    mc " And... ugh"
+    mc "And... ugh."
 
     scene bg black screen with blink_shut 
     scene bg book room with blink_open
 
     "When your vision returns the woman is closer."
-    "You feel as her hands move across your forehead and cheeks"
-    "Her once an indignant frown, now a concerned furrow." 
+    "You feel her hand press against your forehead."
+    "Her once an indignant frown morphs into a concerned furrow." 
 
-    unk "Why didn't you tell me they were sick!"
+    msC "Why didn't you tell me they were sick?"
 
     show Jack Sad at left with dissolve
 
-    jack "Sick! I knew they seemed out of sorts, but I didn't know they were sick when I came to get you."
+    jack "Sick? I knew they seemed out of sorts, but I didn't know they were sick when I came to get you."
 
-    "The woman sighs as she looks back at you in earnest"
+    "The woman sighs as she looks back at you."
 
-    unk "You may call me Mrs. Claus, everyone here does... well most people do."
-    msC "We're going to have to get you somewhere more comfortable, so we can check you out."
+    msC "You may call me Mrs. Claus. Everyone here does - well, most people do."
+    msC "We're going to have to get you somewhere more comfortable so we can check you out."
     msC "Do you feel well enough to stand, my dear?"
 
-    mc "I think so..."
+    mc "I think so."
 
-    "You feel a warm hand hovering over your arm as you try to stand."
-    "When you stumble, it grabs you softly to steady you as you stand up fully." 
+    "You try again to stand, hoping that your shaking legs will hold up this time."
+    "You aren't quite there yet, and you can feel your knees beginning to buckle beneath you. Before you can hit the floor. however, a gentle hand pulls up your arms to steady you." 
     with vpunch
-    "You look to your side to see who helped you and find Krampus looking at you intently before quickly letting go and looking away."
+    "You look to your side and find Krampus looking at you intently, before quickly letting go and looking away."
     show Kramp Neu at right 
     with moveinright
     hide Jack Sad with moveoutleft
 
     menu:
-        "Say Thank You":
+        "Say thank you.":
             "You murmur a quiet thank you and get an almost imperceptible nod in return." 
             $ kPoints += 1
-        "Smile and Keep Walking":
+        "Smile and keep walking":
             "You give him a small smile before turning towards Mrs. Claus."
 
-    "Mrs. Claus leads you out of the opulent room with the book into a hallway." 
+    "Mrs. Claus leads you out of the room into a hallway." 
 
     scene bg hallway 
     with dissolve
 
     play sound "audio/foot steps.wav"
-    "Behind you the wall that was once open, slides shut fitting seamlessly into the pattern of the rest of the stone wall"
-    "You make your way through the winding confusing maze of corridors and arches."
-    "Every once in a while passing by all manor of beings,"
-    "Short gnome looking creatures with tall green hats adorned with bells or bows,"
-    "Small winged pixies, flutter up in clothes made of silk ribbons decorative cloth,"
-    "Even mice walking on two feet wearing little red vests."
-    "They all stop to greet Mrs. Claus and some of the others before eyeing you and scurrying off."
-    "Before long Mrs. Claus stops at a door and ushers you inside." 
+    "The wall slides shut behind you, the hinges fitting seamlessly into the pattern of the rest of the stone."
+    "You make your way through the winding maze of corridors and arches, occasionally passing a collection of curious beings."
+    "Squat, gnome-like creatures with tall green hats adorned with bells or bows"
+    "Small, winged pixies fluttering across the hall in clothes made of silk ribbons and decorative cloth"
+    "You even see a row of mice walking on two feet wearing tiny red vests."
+    "They all stop to greet Mrs. Claus before eyeing you and scurrying off."
+    "Before long, Mrs. Claus stops at a door and ushers you inside." 
 
     scene bg sitting room 
     with dissolve
 
     show Mrs Claus Neu at center with moveinright 
 
-    msC "Take a seat, my dear while I look you over."
+    msC "Take a seat, my dear, while I look you over."
 
-    "You sit quietly as the older woman flits around you, examining your head and checking your temperature with her hands on your forehead once again."
+    "You sit quietly as the older woman flits around you, examining your head and checking your temperature with a hand on your forehead once again."
 
     msC "Outside of the dizzy spells, how are you feeling?"
 
-    mc" Okay I think, my head was pounding when I first woke up in that room but it's eased up since then."
+    mc" Okay, I think. My head was pounding when I first woke up, but it's eased up since then."
 
-    "Mrs. Claus nods but the look of concern did not leave her face." 
+    "Mrs. Claus nods but the look of concern does not leave her face." 
 
     msC "And you can't remember how you got in that room?"
 
-    "You shake your head softly"
+    "You shake your head."
 
     msC "And I suppose you can't remember where you came from either?"
 
-    mc "No..."
-    mc "I'm sorry"
+    mc "No."
+    mc "I'm sorry."
 
     msC " What are you apologizing for, dear?"
 
-    mc "I can't help, but feel like I've caused you all some trouble." 
+    mc "I can't help but feel like I've caused you all some trouble." 
 
-    msC "No more trouble then we've already been seeing as of lately. Don't you worry your head about it."
+    msC "It's no more trouble then we've already been seeing. Don't you worry about it."
 
-    "And though you wait, Mrs.Claus doesn't expand on what she meant by that. Only taking a step back, seemingly satisfied with her examination of you."
+    "You wait for an exaplanation, but Mrs.Claus doesn't expand on what she meant by that. She only takes a step back, seemingly satisfied with her examination of you."
 
-    msC "It can't be helped, you will have to remain here for now until we figure out what to do with you." 
+    msC "It can't be helped. You'll have to remain here for now until we figure out what to do with you." 
 
     show Kramp Neu at right 
     with moveinright
 
     krampus "Mrs. Claus surely you-"
 
-    msC "And what do you suggest we do with the poor child"
-    msC "They barely know who they are let alone where they came from. Surely you're not suggesting that we set the poor thing out in the world with no memories whatsoever"
+    msC "And what do you suggest we do with them?"
+    msC "They barely know who they are let alone where they came from. Surely you're not suggesting that we set the poor thing out in the world with no memories whatsoever."
 
     krampus "... no, I suppose not" 
 
     msC "Good."
-    msC "Now that that is settled. I'm happy to say you're not as warm as you were earlier so I don't think you're running a fever."
-    msC "You can use this room for the time being"
+    msC "Now that that is settled. I'm happy to say you're not as warm as you were earlier, so I don't think you're running a fever. You likely just need some rest."
+    msC "You can use this room for the time being."
 
     hide Kramp Neu with dissolve
 
-    "You take a moment to finally get a good look at the room you entered."
-    "It's a rather nice bedroom, with a table with chairs by the window and a fire place."
-    "A small cot lay against the wall where the door to the hall you came from is located."
-    "You are seated in a plush chair by said fireplace, and when you look behind you, you find a vestibule and book shelf crammed with books."
-    "It's warm and cozy, which puts you at ease as you let out the rest of the tension you didn't realize you were still carrying since your first encounter in the book room."
+    "You take a moment to finally get a good look at the room you've entered."
+    "It's a nice bedroom with a table and chairs by the window, as well as a fire place on the opposite side of the room. A small cot lays against the wall where the door to the hall is located."
+    "You are seated in a plush chair by said fireplace, and when you look behind you, you find a small vestibule with a shelf crammed full of books."
+    "The room is warm and comfortable, and you finally let out the rest of the tension that you didn't realize you were still carrying since your first encounter."
 
-    "While you look around you pick up on the whispered conversation happening between the others by the door."
+    "In the silence, you pick up on the whispered conversation happening behind the door."
 
     show Kramp Neu at right 
     show Jack Neu at left
     show Mrs Claus Neu at center
     with dissolve 
 
-    msC "...keep an eye on them"
+    msC "...keep an eye on them."
 
-    jack "You mean like guarding them-"
+    jack "You mean like guarding them?"
 
-    msC "No, I don't think they're dangerous-"
+    msC "No, I don't think they're dangerous."
 
     krampus "Are you sure about that?"
 
-    msC "They were right about one thing, the moment I saw them it felt like - I've met them before."
-    msC "Something very familiar that I can't seem to place right this moment. But not dangerous, not even remotely."
+    msC "Look, they were right about one thing. The moment I saw them it felt like I'd met them before."
+    msC "It was something very familiar that I can't seem to place right this moment. But they don't seem dangerous. Not even remotely."
     msC "Until I figure it out, I want you to see if you can help them jog their memories."
     msC "Anything you think could help."
 
-    "Movement next to you catches your attention"
+    "The door clicks open again."
 
     hide Kramp Neu 
     hide Jack Neu
@@ -487,37 +484,37 @@ label start:
     show Frosty Neu at center with dissolve
     "Frosty approaches you with a soft smile on his face."
 
-    frosty "It's ok to be scared or overwhelmed. I can't imagine what it feels like to be you right now but no one here is going to hurt you, I promise."
+    frosty "It's ok to be scared or overwhelmed. I can't imagine what it feels like to be you right now, but no one here is going to hurt you. I promise."
 
-    "He finishes his reassurance as Mrs. Claus comes over once more."
+    "Mrs. Claus comes over once more."
 
     show Frosty Neu at left with ease
     show Mrs Claus Neu at right with moveinright
 
-    msC "Someone will come check on you in the morning, for now I suggest you lay down and get some rest."
+    msC "Someone will come check on you in the morning, but for now I suggest you lay down and get some rest."
 
-    "She nods before ushering everyone out of the room."
+    "She waves her arms, and ushers everyone out of the room."
 
     hide Frosty Neu with moveoutright
     hide Mrs Claus with moveoutright
 
-    "You take Mrs. Claus' advice, getting up to lay on the cot in the corner. It doesn't take long before you drift off to sleep."
+    "You decide to take Mrs. Claus' advice, getting up from the chair to lay on the cot in the corner. It doesn't take long for you drift off to sleep."
 
     scene bg black screen with fade
 
     with flash
     play sound "audio/child laugh.mp3"
-    "A bright shimmering golden light flashes and you hear the sound of childish laughter."
+    "A bright shimmering golden light flashes in your vision, and you hear the sound of childish laughter."
     "The golden book shines before you, brilliant and warm."
-    "But soon the darkness creeps in,"
-    "The book's warm light dims as the sound of tearing paper rings through the air."
+    "But you can feel the darkness creeping in."
+    "The book's warm light dims as the sound of tearing paper slices through the air."
     play sound "audio/evil laugh.mp3"
-    "Vicious, maniacal laughter replaces the sounds of joyous children and the silhouette of a figure creeps closer.."
+    "Vicious, maniacal laughter replaces the sounds of joyous children, and the silhouette of a figure looms ever closer.."
 
     scene bg sitting room with vpunch 
 
-    "You wake with a start, body covered in a cold sweat." 
-    "It was just a dream, you realize when you hear a knock on the door"
+    "You wake with a start, covered in a cold sweat." 
+    "It was just a dream, you tell yourself. Before you have time to process any further, you hear a knock on the door"
 
     msC "Dear? Are you awake?"
 
@@ -525,11 +522,11 @@ label start:
 
     show Mrs Claus Neu at center with moveinright
 
-    "Mrs. Claus enters with a warm, knowing smile, holding a small tray with a steaming cup of tea."
+    "Mrs. Claus enters with a warm smile, holding a small tray with a steaming cup of tea."
 
     msC "Good morning, dear. I thought you might need something to calm your nerves after yesterday's excitement."
 
-    "She sets the tray on a nearby table and sits across from you, her gaze gentle but perceptive."
+    "She sets the tray on a nearby table and sits on the chair across from you, her gaze gentle but perceptive."
 
     msC "Did you sleep well? You look like you've seen a ghost."
 
@@ -537,26 +534,26 @@ label start:
 
     msC "Dreams have a funny way of showing us what we need to see, even if we don't understand them yet. But don't worry too much for now."
 
-    "She pats your hand softly before standing again."
+    "She pats your hand gently before standing again."
 
-    msC "Come along, breakfast is ready, and everyone is waiting. I think you’ll feel better with a full stomach."
+    msC "Come along now. Breakfast is ready, and everyone is waiting. I think you’ll feel better with a full stomach."
 
     mc "Alright. Thank you, Mrs. Claus."
 
     hide Mrs Claus Neu with moveoutright
     scene bg hallway with dissolve
 
-    "You follow Mrs. Claus down a winding hallway until you enter a cozy dining room filled with the smell of fresh bread, bacon, and something sweet."
+    "You follow Mrs. Claus down the winding hallway to enter a large dining room filled with the smell of fresh bread, bacon, and something sweet."
 
     scene bg dining room
 
-    "A long wooden table sits at the center, already occupied."
+    "A long wooden table sits at the center, already occupied by three men."
 
     #show Frosty Happy at left with moveinleft
     show Jack Happy at right with moveinright
     show Krampus Neu at center with moveinbottom
 
-    "Frosty, Jack, and Krampus look up as you enter. Frosty waves enthusiastically, Jack smirks with his usual mischief, and Krampus gives a silent nod of acknowledgment."
+    "Frosty, Jack, and Krampus look up as you enter. Frosty waves enthusiastically, while Jack smirks with his usual mischief. Krampus gives a silent nod of acknowledgment."
 
     frosty "Hey, there they are! Good morning, sleepyhead."
 
@@ -568,18 +565,18 @@ label start:
 
     msC "Eat up, dear. You’ll need your strength."
 
-    "Conversation flows easily as you eat. Frosty is the first to break the silence."
+    "Frosty is the first to break the silence."
 
     frosty "So, how are you feeling this morning? A little less dizzy, I hope?"
 
     mc "Better, thank you."
-    mc "Though there are a few things that I'm still wondering about."
+    mc "Although, there are a few things that I'm still wondering about."
 
     jack "Questions are good! It means you’re curious. And curiosity leads to adventure."
 
     krampus "Or trouble, in your case."
 
-    "Jack smirks but doesn’t deny it, while Frosty chuckles quietly into his cup."
+    "Jack smirks but doesn’t deny it, while Frosty offers you a win grin."
 
     msC "Speaking of adventure, I’m sure the three of you have plenty to do today."
 
@@ -589,11 +586,11 @@ label start:
 
     krampus "And I have work to do."
 
-    msC "Good, good. And you…," 
+    msC "Good, good. And you..." 
 
-    "She turns to you with a kind smile."
+    "She turns to you with a smile."
 
-    msC "Shouldn’t spend all day cooped up alone. Why don’t you join one of them? A little fresh air might help clear your mind."
+    msC "You shouldn’t spend all day cooped up by yourself. Why don’t you join one of them? A little fresh air might help clear your mind."
 
     show Jack Happy at right with ease
     #show Frosty Happy at left with ease
@@ -601,28 +598,28 @@ label start:
 
     "Jack immediately perks up, leaning forward with a playful grin."
 
-    jack "You heard the lady! I’m free all day, and I happen to be excellent company. We could play some games, maybe find something you enjoy playing."
+    jack "You heard the lady! I’m free all day, and I happen to be excellent company. We could play some games, and maybe find something you like."
 
-    "Frosty gives Jack a pointed look before turning to you with his usual warm demeanor."
+    "Frosty gives Jack a pointed look before turning to you with his usual cheerful demeanor."
 
-    frosty "If you’d rather take things slow, I was going to head out to a dog cafe. It’s peaceful, and you might enjoy the company."
+    frosty "If you’d rather take things slow, I was going to head out to a dog cafe. It’s peaceful there, and you might enjoy the company."
 
-    "Krampus crosses his arms, his expression soft and happy."
+    "Krampus crosses his arms, his expression neutral but inviting."
 
-    krampus "I’ll be skiing today. If you want to join, you’re welcome to. It should be fun."
+    krampus "I’ll be skiing today. If you want to join, you’re welcome to. It's a fun activity."
 
 
     stop music fadeout 1.0
 
 
     menu:
-        "frosty date":
+        "Go to the dog cafe with Frosty":
             jump frosty_date_1
             $ fPoints += 2
-        "jack date":
+        "Play games with Jack":
             jump jack_date_1
             $ jPoints += 2
-        "krampus date":
+        "Go skiing with Krampus":
             jump krampus_date_1
             $ kPoints += 2
 
