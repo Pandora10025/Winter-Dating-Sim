@@ -514,6 +514,91 @@ label start:
     "You wake with a start, body covered in a cold sweat." 
     "It was just a dream, you realize when you hear a knock on the door"
 
+    msC "Dear? Are you awake?"
+
+    mc "Yes, come in."
+
+    "Mrs. Claus enters with a warm, knowing smile, holding a small tray with a steaming cup of tea."
+
+    msC "Good morning, dear. I thought you might need something to calm your nerves after yesterday's excitement."
+
+    "She sets the tray on a nearby table and sits across from you, her gaze gentle but perceptive."
+
+    msC "Did you sleep well? You look like you've seen a ghost."
+
+    mc "I... I think I had a dream. Or maybe a memory? It’s hard to tell."
+
+    msC "Dreams have a funny way of showing us what we need to see, even if we don't understand them yet. But don't worry too much for now."
+
+    "She pats your hand softly before standing again."
+
+    msC "Come along, breakfast is ready, and everyone is waiting. I think you’ll feel better with a full stomach."
+
+    mc "Alright. Thank you, Mrs. Claus."
+
+    "You follow Mrs. Claus down a winding hallway until you enter a cozy dining room filled with the smell of fresh bread, bacon, and something sweet.”
+
+    "A long wooden table sits at the center, already occupied."
+
+    #show Frosty Happy at left with moveinleft
+    show Jack Happy at right with moveinright
+    show Krampus Neu at center with moveinbottom
+
+    "Frosty, Jack, and Krampus look up as you enter. Frosty waves enthusiastically, Jack smirks with his usual mischief, and Krampus gives a silent nod of acknowledgment."
+
+    frosty "Hey, there they are! Good morning, sleepyhead."
+
+    jack "Took you long enough. I was starting to think you got lost again."
+
+    krampus "Leave them alone, Jack."
+
+    "Mrs. Claus ushers you to a seat at the table, and plates of food are quickly passed your way."
+
+    msC "Eat up, dear. You’ll need your strength."
+
+    "Conversation flows easily as you eat. Frosty is the first to break the silence."
+
+    frosty "So, how are you feeling this morning? A little less dizzy, I hope?"
+
+    mc  "Better, thank you":
+
+    jack "Questions are good! It means you’re curious. And curiosity leads to adventure."
+
+    krampus "Or trouble, in your case."
+
+    "Jack smirks but doesn’t deny it, while Frosty chuckles quietly into his cup."
+
+    msC "Speaking of adventure, I’m sure the three of you have plenty to do today."
+
+    jack "Oh, you know me, Mrs. C. Always finding something fun to get into."
+
+    frosty "I’ve got a few things to take care of, but nothing too urgent."
+
+    krampus "And I have work to do."
+
+    msC "Good, good. And you…," 
+
+    "She turns to you with a kind smile.”
+
+    msC "Shouldn’t spend all day cooped up alone. Why don’t you join one of them? A little fresh air might help clear your mind."
+
+    show Jack Happy at right with ease
+    #show Frosty Happy at left with ease
+    show Krampus Neu at center with ease
+
+    "Jack immediately perks up, leaning forward with a playful grin."
+
+    jack "You heard the lady! I’m free all day, and I happen to be excellent company. We could play some games, maybe find something you enjoy playing."
+
+    "Frosty gives Jack a pointed look before turning to you with his usual warm demeanor."
+
+    frosty "If you’d rather take things slow, I was going to head out to a dog cafe. It’s peaceful, and you might enjoy the company."
+
+    "Krampus crosses his arms, his expression soft and happy."
+
+    krampus "I’ll be skiing today. If you want to join, you’re welcome to. It should be fun."
+
+
     stop music fadeout 1.0
 
 
