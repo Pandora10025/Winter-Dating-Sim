@@ -27,7 +27,7 @@ image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
 image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
 
-image Mrs.Claus Neu = im.Scale("Neutral_Mrs_Claus",800,1000)
+image Mrs Claus Neu = im.Scale("Neutral_Mrs_Claus",800,1000)
 
 
 #Character Romance Points
@@ -318,7 +318,7 @@ label start:
     show Frosty Neu at right 
     with ease
 
-    show Mrs.Claus Neu at left with moveinleft
+    show Mrs Claus Neu at left with moveinleft
 
     " A short older looking woman, stands with her arms crossed wearing an indiscernible expression"
     " Her hair was all grey,pinned in a half up and half down style and she wore a black and red dress"
@@ -404,7 +404,7 @@ label start:
     scene bg sitting room 
     with dissolve
 
-    show Mrs.Claus Neu at center with moveinright 
+    show Mrs Claus Neu at center with moveinright 
 
     msC "Take a seat, my dear while I look you over."
 
@@ -461,7 +461,7 @@ label start:
 
     show Kramp Neu at right 
     show Jack Neu at left
-    show Mrs.Claus Neu at center
+    show Mrs Claus Neu at center
     with dissolve 
 
     msC "...keep an eye on them"
@@ -481,7 +481,7 @@ label start:
 
     hide Kramp Neu 
     hide Jack Neu
-    hide Mrs.Claus Neu
+    hide Mrs Claus Neu
     with dissolve 
 
     show Frosty Neu at center with dissolve
@@ -492,14 +492,14 @@ label start:
     "He finishes his reassurance as Mrs. Claus comes over once more."
 
     show Frosty Neu at left with ease
-    show Mrs.Claus Neu at right with moveinright
+    show Mrs Claus Neu at right with moveinright
 
     msC "Someone will come check on you in the morning, for now I suggest you lay down and get some rest."
 
     "She nods before ushering everyone out of the room."
 
     hide Frosty Neu with moveoutright
-    hide Mrs. Claus with moveoutright
+    hide Mrs Claus with moveoutright
 
     "You take Mrs. Claus' advice, getting up to lay on the cot in the corner. It doesn't take long before you drift off to sleep."
 
@@ -523,7 +523,7 @@ label start:
 
     mc "Yes, come in."
 
-    show Mrs.Claus Neu at center with moveinright
+    show Mrs Claus Neu at center with moveinright
 
     "Mrs. Claus enters with a warm, knowing smile, holding a small tray with a steaming cup of tea."
 
@@ -543,10 +543,10 @@ label start:
 
     mc "Alright. Thank you, Mrs. Claus."
 
-    hide Mrs.Claus Neu with moveoutright
+    hide Mrs Claus Neu with moveoutright
     scene bg hallway with dissolve
 
-    "You follow Mrs. Claus down a winding hallway until you enter a cozy dining room filled with the smell of fresh bread, bacon, and something sweet.”
+    "You follow Mrs. Claus down a winding hallway until you enter a cozy dining room filled with the smell of fresh bread, bacon, and something sweet."
 
     scene bg dining room
 
@@ -591,7 +591,7 @@ label start:
 
     msC "Good, good. And you…," 
 
-    "She turns to you with a kind smile.”
+    "She turns to you with a kind smile."
 
     msC "Shouldn’t spend all day cooped up alone. Why don’t you join one of them? A little fresh air might help clear your mind."
 
@@ -1811,9 +1811,10 @@ label krampus_date_2:
 label before_mission:
 
     scene bg easter island
-    "Date: 12.16.2024
-    Time: 0600
-    Location: Easter Island, Outskirts"
+    "Date: 12.16.2024"
+    "Time: 0600"
+    "Location: Easter Island, Outskirts"
+    
 
     show Jack Neu at center
     show Kramp Neu at Right
@@ -2282,16 +2283,17 @@ label confrontation:
     "You hear the murmur of words flow around you as everyone lets out a sigh of relief."
     "But you can't focus on what is being said as you catch a glimpse of a golden glow coming from the bottom of the pile of frozen pieces." 
 
-    if (kPoints< 4 and jPoints < 4 and fPoints < 4) 
+    if (kPoints< 4 and jPoints < 4 and fPoints < 4):
          menu:
-            "Go towards the glow" 
-            jump neutral_ending 
-    if (kPoints >= 4)
+            "Go towards the glow" :
+                jump neutral_ending 
+    if (kPoints >= 4):
         jump krampus_ending
-    if (jPoints >= 4)
+    if (jPoints >= 4):
         jump jack_ending
-    if (fPoints >= 4)
+    if (fPoints >= 4):
         jump frosty_ending
+
 label neutral_ending:
     "You walk towards the glow and as you get closer that familiar warmth tingles at your fingertips."
     "Brushing aside the frozen pieces, you find three torn golden pages." 
@@ -2331,7 +2333,7 @@ label neutral_ending:
     "You're approaching the pedestal when you sense a presence beside you."
 
     msC "You could at least say goodbye first." 
-    show Mrs.Claus Neu at right with moveinright
+    show Mrs Claus Neu at right with moveinright
 
     mc "So, you figured it out."
     msC "And you did as well, my dear."
@@ -2353,16 +2355,16 @@ label neutral_ending:
     "You can feel the silent laughter shake her form before she pulls away."
 
     msC "Always."
-    hide Mrs.Claus Neu with dissolve 
-    
+    hide Mrs Claus Neu with dissolve 
+
     "And with that you approach the book, missing pages in hand." 
 
-    bg the book
+    scene bg the book
     with fade
 
     "You finally touch the warm golden pages, and the spirit of the book finally returns home"
 
-    bg black screen with blink_shut
+    scene bg black screen with blink_shut
 
 label jack_ending: 
     ""
