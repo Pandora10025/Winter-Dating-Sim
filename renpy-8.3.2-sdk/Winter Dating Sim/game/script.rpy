@@ -2385,7 +2385,165 @@ label neutral_ending:
     scene bg black screen with blink_shut
 
 label jack_ending: 
-    ""
+    jack "So, about your first reconnaissance mission…"
+
+    "Jack's voice breaks you out of your daze and you turn to face him."
+
+    show Jack Happy at center with moveinright
+
+    "The words paired with a playful smirk pulling at his mouth trigger a torrent of laughter to come bursting out of you."
+    "His own chuckles ring through the air alongside your own."
+
+    jack "Yeah a bit more than we bargained for but you handled it well."
+    jack "Speaking of which,"
+
+    show Jack Neu at center with dissolve
+
+    "Jack steps closer, the smirk fading into a look of concern."
+
+    jack "Are you okay?"
+    jack "When you fell, you stopped moving for a while- you scared me. So, I need to know that you're okay." 
+
+    mc "Yeah, I'm okay."
+    jack "And.. the glowing?"
+
+    "You look down to see that still persistent golden light pulsing around you" 
+
+    mc "I remember everything. And the glowing won't stop until I return my pages."
+
+    show Jack Happy at center with dissolve
+
+    jack "Everything! Really, that's great!" 
+
+    "He pauses, then continues in a confused tone."
+
+    jack "Your pages-"
+
+    krampus "She's the Book of Legends."
+
+    "Krampus' voice cuts through the air as he approaches us with golden pages clutched in one hand."
+
+    show Kram Neu at left with moveinleft
+
+    "He stops next to Jack and holds out the pages to you" 
+
+    "You take them gingerly, a warmth passing through your fingers once you make contact with them." 
+
+    mc "Thank you."
+
+    jack "Seriously, you're really the book. Like, THE Book."
+
+    "Another chuckle passes through you as you nod in affirmation."
+
+    mc "Yes. Well, to be more precise, I am the spirit of the book." 
+
+    jack "Wow, that's…" 
+    jack "Wow"
+
+    "Jack stares at you in awestruck silence, a moment that is quietly interrupted once more by Krampus' urging"
+
+    krampus "We should get going, Frosty is in need of patching up and the pages are at risk the longer we stay out here."
+
+    "That seems to catch Jack's attention as he nods in agreement."
+
+    jack "Right, let's go." 
+
+
+    hide Kram Neu with moveoutleft
+
+    "Krampus walks off in the direction of the exit and Jack holds offers his hand:"
+
+    "You take his hand, cold but familiar. He offers up a smile as he leads you both out of Easter Island."
+
+    scene bg black screen with fade 
+
+    "You all return to the base. Krampus and Frosty split off to find Mrs. Claus to patch up Frosty's cuts and debrief her on the situation."
+
+    "You and Jack make your way to the room with the book, the place where you first meet."
+
+    scene bg book room with fade
+
+    "When you enter the magic around you grows brighter, warmth courses through you stronger and stronger the closer you get to the pedestal." 
+
+    show Jack Neu at right with dissolve
+
+    "You look at Jack, who hasn't let go of your hand since taking hold of it at Easter Island." 
+
+    "You know, you have to choose"
+
+    menu:
+        "Go home":
+            " You give Jack's hand a squeeze before letting go, turning to him with a solemn smile." 
+
+            mc "It's time for me to go."
+
+            show Jack Sad at right with dissolve
+
+            "Jack's face dips in sadness."
+
+            jack "Do you really have to, why not stay."
+
+            mc "I cherish the time we've spent together. It was more than I could ever imagine, but I was expelled because the book was in danger."
+            mc "Now that I have the pages back, I must return home."
+
+            "Though he says nothing, Jack nods in understanding before wrapping you up in one last embrace."
+
+            jack "I'll see you around."
+
+            "You nod and pull away. Looking at Jack one last time." 
+
+            mc "I'll be where I always have been." 
+            "And with that you approach the book, missing pages in hand." 
+            scene bg the book with fade
+            "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+            scene bg black screen with blink_shut
+        "Stay with Jack":
+            " You give Jack's hand a squeeze before letting go, turning to him with a solemn smile." 
+
+            mc "It's time for me to go."
+
+            show Jack Sad at right with dissolve
+
+            "Jack's face dips in sadness."
+
+            jack "Do you really have to, why not stay."
+
+            mc "These past few days have been amazing. Beyond anything I have ever known in the pages of my memories."
+            mc "But, that is all I've ever known, the pages of adventures and songs that brought light and joy to the world." 
+            mc "I don't know what life looks like outside of that." 
+
+            jack "Then stay, and we can experience it together." 
+
+            show Jack Neu at center with ease
+
+            jack "Stay and we can experience many more adventures together." 
+
+            "You take a moment to think about it, about a life of adventures and experiences with Jack."
+
+            "Jack,  competitive, silly, caring and wonderful. Jack Frost."
+
+            "Life would be magical and mischievous, never a dull moment."
+            "A true adventure."
+
+            "You can't help the smile at the thought,"
+
+            mc "Ok, yes I'll stay"
+
+            show Jack Happy at center with dissolve
+
+            jack "Yes? Yes!"
+
+            "Before you know it, Jack picks you up and twirls you around in a hug."
+
+            "His laughter and excitement ring out like bells on a silent night."
+
+            "You can't help the joy that overtakes you, even as he sets you on the ground."
+
+            "It is the beginning of a whole new adventure."
+
+            hide Jack Happy 
+            scene bg black screen 
+            with fade
 label frosty_ending: 
     ""
 label kram_ending:
