@@ -11,6 +11,7 @@ renpy-8.3.2-sdk/the_question
 renpy-8.3.2-sdk/tmp
 renpy-8.3.2-sdk/tutorial
 renpy-8.3.2-sdk/update
+renpy-8.3.2-sdk/WinterDatingSim-1.0-dists
 
 #ignoring files in renpy launcher folder
 renpy-8.3.2-sdk/LICENSE.txt
@@ -29,5 +30,7 @@ renpy-8.3.2-sdk/Winter Dating Sim/log.txt
 renpy-8.3.2-sdk/Winter Dating Sim/errors.txt
 renpy-8.3.2-sdk/Winter Dating Sim/game/.vs
 renpy-8.3.2-sdk/Winter Dating Sim/traceback.txt
+renpy-8.3.2-sdk/Winter Dating Sim/progressive_download.txt
+
 
 
