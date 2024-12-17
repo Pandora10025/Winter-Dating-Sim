@@ -27,6 +27,8 @@ image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
 image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
 
+image Mrs.Claus Neu = im.Scale("Neutral_Mrs_Claus",800,1000)
+
 
 #Character Romance Points
 define fPoints = 0
@@ -244,9 +246,11 @@ label start:
     "This man seems to be slightly different from the rest. He stands taller than all of them, his broad shoulders make it so he takes up the most space, but his eyes tell a different story."
     "Instead of looking at you with an air of curiosity or annoyance, he looks concerned."
     "He slings your arm around his shoulder as he eases you to the floor."
+
     show Kramp Neu at right 
     show Jack Sad at left 
     with ease
+
     unk3 "Take a few deep breaths, are you hurt anywhere." #frosty 
     unk1 "Snow! What are you doing dude, they could be dangerous." #Jack 
     unk3 "I don't know dude, they can hardly stand." #frosty
@@ -314,7 +318,8 @@ label start:
     show Frosty Neu at right 
     with ease
 
-    #show mrs.claus at left with moveinleft
+    show Mrs.Claus Neu at left with moveinleft
+
     " A short older looking woman, stands with her arms crossed wearing an indiscernible expression"
     " Her hair was all grey,pinned in a half up and half down style and she wore a black and red dress"
     "You weren't sure why, but she struck you as vaguely familiar and her presence set you at ease"
@@ -399,7 +404,7 @@ label start:
     scene bg sitting room 
     with dissolve
 
-    #show mrs.claus at center with moveinright 
+    show Mrs.Claus Neu at center with moveinright 
 
     msC "Take a seat, my dear while I look you over."
 
@@ -456,7 +461,7 @@ label start:
 
     show Kramp Neu at right 
     show Jack Neu at left
-    #show mrs.Claus at center
+    show Mrs.Claus Neu at center
     with dissolve 
 
     msC "...keep an eye on them"
@@ -476,7 +481,7 @@ label start:
 
     hide Kramp Neu 
     hide Jack Neu
-    #hide mrs.claus
+    hide Mrs.Claus Neu
     with dissolve 
 
     show Frosty Neu at center with dissolve
@@ -487,14 +492,14 @@ label start:
     "He finishes his reassurance as Mrs. Claus comes over once more."
 
     show Frosty Neu at left with ease
-    #show Mrs. claus at right with moveinright
+    show Mrs.Claus Neu at right with moveinright
 
     msC "Someone will come check on you in the morning, for now I suggest you lay down and get some rest."
 
     "She nods before ushering everyone out of the room."
 
     hide Frosty Neu with moveoutright
-    # hide mrs. clause with moveoutright
+    hide Mrs. Claus with moveoutright
 
     "You take Mrs. Claus' advice, getting up to lay on the cot in the corner. It doesn't take long before you drift off to sleep."
 
@@ -518,6 +523,8 @@ label start:
 
     mc "Yes, come in."
 
+    show Mrs.Claus Neu at center with moveinright
+
     "Mrs. Claus enters with a warm, knowing smile, holding a small tray with a steaming cup of tea."
 
     msC "Good morning, dear. I thought you might need something to calm your nerves after yesterday's excitement."
@@ -536,7 +543,12 @@ label start:
 
     mc "Alright. Thank you, Mrs. Claus."
 
+    hide Mrs.Claus Neu with moveoutright
+    scene bg hallway with dissolve
+
     "You follow Mrs. Claus down a winding hallway until you enter a cozy dining room filled with the smell of fresh bread, bacon, and something sweet.”
+
+    scene bg dining room
 
     "A long wooden table sits at the center, already occupied."
 
@@ -560,7 +572,8 @@ label start:
 
     frosty "So, how are you feeling this morning? A little less dizzy, I hope?"
 
-    mc  "Better, thank you":
+    mc "Better, thank you."
+    mc "Though there are a few things that I'm still wondering about."
 
     jack "Questions are good! It means you’re curious. And curiosity leads to adventure."
 
