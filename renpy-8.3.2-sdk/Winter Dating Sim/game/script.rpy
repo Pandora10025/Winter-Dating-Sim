@@ -36,6 +36,10 @@ $ kPoints = 0
 # random variables
 default frostyDate1 = False
 
+#flash
+init:
+    $ flash = Fade(.25, 0, .75, color="#fff")
+
 #click sound
 # not sure if this works tbh
 init python:
@@ -493,10 +497,13 @@ label start:
 
     scene bg black screen with fade
 
+    with flash
+    play sound "audio/child laugh.mp3"
     "A bright shimmering golden light flashes and you hear the sound of childish laughter."
     "The golden book shines before you, brilliant and warm."
     "But soon the darkness creeps in,"
     "The book's warm light dims as the sound of tearing paper rings through the air."
+    play sound "audio/evil laugh.mp3"
     "Vicious, maniacal laughter replaces the sounds of joyous children and the silhouette of a figure creeps closer.."
 
     scene bg sitting room with vpunch 
@@ -1899,14 +1906,14 @@ label confrontation:
 
     frosty "Wait, if everything leads here then - "
 
-    #crash sound
+    play sound "audio/crash.mp3"
     "A loud crash cuts Frosty off as everyone turns to the source of the noise. It's only now that you take stock of the room that you're in." 
 
     "The room is large but enclosed, with the only windows high enough up the walls that you can't see through them and only a single pair of enormous double doors by your right."
     "The only other exits are the ones you and your companions came through, which are a little ways behind you." 
     "On your left are several rows of flat tables with the remnants of decorations strewn about. It looks like this was made for an assembly line of some kind." 
 
-    #boom sound
+    play sound "audio/boom.mp3"
     "Another loud boom breaks through your thoughts, and you turn just in time to see the double doors fly open as an enormous, hulking figure bursts into the room."
     "The thing is all hanging flesh and melting limbs, and the thick scent of rot makes you gag on your breath." 
 
@@ -1920,6 +1927,7 @@ label confrontation:
     hide Jack Neu with moveoutright
     hide Frosty Neu with moveoutbottom
 
+    play sound "audio/evil laugh.mp3"
     "The Boogyman roars in delight, its body undulating under the weight of its own mass." 
 
     boogy "Three legends in one place? And you? Oh, you're something special, aren't you?"
@@ -1929,8 +1937,8 @@ label confrontation:
     "You realize a fraction of a second too late that the Boogyman is raising an arm to strike."
     "In a panic, you cover your head, hoping to protect your extremities at the very least." 
 
-    #flash sound?
     with vpunch
+    with flash
     "Instead, you catch a bright flash of light out of the corner of your eye, and look up to see Jack blast a flying fleshy blob out of the sky." 
 
     show Jack Sad at center
@@ -1956,7 +1964,7 @@ label confrontation:
 
     kramp "What-"
 
-    #roar sound
+    play sound "audio/roar.mp3"
     "With a roar, the monster lifts Krampus up by his arm and flings him into a wall with a sickening crunch."
 
     show Kramp Nod at center
@@ -1976,7 +1984,7 @@ label confrontation:
     boogy "You'll pay for that!" 
     with hpunch
 
-    #heartbeat?
+    play sound "audio/heartbeat.wav"
     "With Jack only halfway to Krampus and Frosty all alone in the face of the Boogyman's rage, you realize that this is your shot. You can feel your heart pounding in your chest."
 
     "You step out from behind the table."
@@ -1988,6 +1996,7 @@ label confrontation:
             "Chunks of waxy flesh are now scattered across the terrain, leaving steaming pools of goop that you have to jump over and around as you move. The Boogyman's roars are deeper, and rumbling."
 
     "It lobs another projectile at you, and something clicks in your mind."
+    with hpunch
 
     mc "The eyes! It's not protecting it's eyes!" 
 
@@ -2002,9 +2011,10 @@ label confrontation:
             "The flesh parts almost effortlessly there, unobstructed by the meat that covers the rest of its body, and it recoils almost inward."
 
     "You have to fall back to avoid being sucked in by its limbs as the monster twists and roars in agony."
+    with vpunch
     "From the other side, you can see Frosty making a similar retreat to avoid the bubbling goop."
     "As you hit the ground, someone calls out behind you."
-    
+
     return
 
 
