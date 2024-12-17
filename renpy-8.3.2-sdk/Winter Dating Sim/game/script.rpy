@@ -516,6 +516,7 @@ label start:
 
     stop music fadeout 1.0
 
+
     menu:
         "frosty date":
             jump frosty_date_1
@@ -2030,6 +2031,177 @@ label confrontation:
     "From the other side, you can see Frosty making a similar retreat to avoid the bubbling goop."
     "As you hit the ground, someone calls out behind you."
     with fade
+
+    scene bg black screen
+
+    "The world is dark, quiet, almost suffocating"
+    "This feeling…"
+    "Sorrow… despair… hollow emptiness"
+    "Cold, unrelenting unhappiness.."
+    "We felt it before… before"
+    with flash 
+
+    play sound "audio/child laugh.mp3"
+
+    #particles of snow falls
+
+    "Nicolai and Nadia Claus, arbiters of joy for good little children"
+
+    "Krampus a stern teacher, a warning against naughtiness in the cold seasons"
+
+    "Jack Frost, a trickster, a reminder that there is fun to have in the short hours of day."
+
+    "Frosty the Snowman, a memory of the wonders of childhood and the magic that remains."
+
+    "And there it was that warmth that creeps in on a cold winter's night, the melodies of songs and words filled with delight." 
+
+    "And there we were, a manifestation of it all, every word, every rhyme, every song contained in a vessel, pages on pages on pages long."
+
+    scene bg easter island 
+    with flash
+
+    "You wake to find yourself next to Krampus, who also seems to be trying to get his bearings."
+
+    "Jack stands guard over you both alternating between casting an ice shield to block Boogey's projectiles and lobbying his own frozen sickles."
+
+    mc "Jack!"
+
+    show Jack Neu at center with ease
+    jack "Well good morning, sleeping beauty, nice of you to rejoin us!"
+
+    show Kram Neu at left with ease
+    krampus "Frost–"
+
+    jack "Not the time, got it, got it"
+
+    "Krampus stood slowly, holding out his hand to help you up as well."
+
+    mc "I have an idea."
+
+    jack "Well, I'm all ears, sweetheart. I think that Frosty's punches are only succeeding at pissing the meat sack off." 
+
+    "You look over to see Frosty, dodging in and out of the hulking grasp of the Boogeyman taking shots at the eyes whenever possible." 
+
+    "You can't tell for sure from this distance, but he seems to be unwavering. You also know he can't keep that up forever."
+
+    mc "We need snow, lots and lots of snow. As close to a blizzard as you can manage."
+
+    jack "You're kidding…"
+
+    mc "Snow, Frost. Go."
+
+    hide Jack Neu with moveoutbottom
+    show Kramp Neu at center with ease
+
+    "You turn to Krampus and find he is looking at you intently."
+
+    krampus "You're glowing."
+
+    "You look down to see a golden shimmer emanating from your body."
+
+    mc "Yes. Yes, I am."
+    mc "Come on we need to get to Frosty."
+
+    "You and Krampus make your way across the room, ducking behind and through the debris."
+    "The temperature in the room drops dramatically and the panes of the windows above begin to rattle frantically."
+    "The howling of the wind outside grows louder and louder."
+
+    krampus "So this plan-"
+
+    "He stops abruptly before shoving you under a table just as the shattering of glass rings out."
+    with hpunch
+
+    "The wind whips in and flurries of snow follow in its wake."
+
+    play sound "audio/evil laugh.mp3"
+    "A howl from the creature cackles out."
+
+    boogey "You're going to have to do a lot better than a little wind and snowflakes to beat me"
+
+    mc "Thanks."
+    mc "We have to keep moving."
+
+    "You brace yourself against the wind and peek over the table to assess the situation."
+
+    hide Kramp Neu 
+    show Jack Neu at right
+    with fade
+
+    "Jack stands off to the side, staff glowing bright blue with the wind and snow swirling around him to fill the room."
+
+    show Frosty Ney at left with moveinleft
+
+    "Frosty is still dodging in and out of range of the Boogeyman, his movements slightly slower as he battles against the force of the wind to keep his momentum."
+
+    "Despite its jeering, the movement of the gooey amalgamation is noticeably slower, sloppier."
+    "Small parts of the gooping flesh are beginning to congeal and slowly solidify"
+
+    show Kram at center with moveinbottom
+    krampus "The plan."
+    "You nod in agreement."
+    mc "If it freezes then it can be shattered." 
+    krampus "..."
+    krampus "That could work." 
+
+    "Before you can respond, he leaps across the table and you scramble to follow him."
+
+    hide Jack Neu with moveoutright
+    show Kram Neu at right with ease
+
+    krampus "Frosty–"
+
+    "Frosty dodges another molten ball of goo and turns to face us."
+
+    frosty "Hey! You guys are okay!"
+    frosty "That's great, I was really starting to get worried."
+
+    krampus "Yea-"
+
+    frosty "You think, you can get Jack to tone it down with the wind-"
+    "He ducks another ball of goo."
+    frosty "It's really killing my flow, and I think I've really got the guy on the hook now."
+
+    krampus "That's what-"
+    "He pulls us to the side out of the way of another attack."
+    krampus "The wind and snow is part of the plan."
+    krampus "Aim for the freezing bits on the body." 
+
+    "You watch Frosty take in the instruction with a nod before jumping right back into the fray."
+    hide Kram Neu
+    hide Frosty Neu
+    with fade
+
+    "You spread out, launching attacks from all directions."
+    "Slowly chipping away at the howling creature." 
+
+    boogey "No!"
+    boogey "No.."
+    boogey "This is not over!"
+
+    "With one final strike, it was over. Frozen and chipped pieces lay scattered across the floor as the Boogeyman fractures to pieces." 
+
+    "The wind dies down and the snow settles peacefully on the ground."
+    "You hear the murmur of words flow around you as everyone lets out a sigh of relief."
+    "But you can't focus on what is being said as you catch a glimpse of a golden glow coming from the bottom of the pile of frozen pieces." 
+
+    if (kPoints< 4 and jPoints < 4 and fPoints < 4) 
+         menu:
+            "Go towards the glow" 
+            jump neutral_ending 
+    if (kPoints >= 4)
+        jump krampus_ending
+    if (jPoints >= 4)
+        jump jack_ending
+    if (fPoints >= 4)
+        jump frosty_ending
+label neutral_ending:
+    ""
+label jack_ending: 
+    ""
+label frosty_ending: 
+    ""
+label kram_ending:
+    ""
     return
 
 
