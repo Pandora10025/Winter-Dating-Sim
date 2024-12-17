@@ -2293,7 +2293,77 @@ label confrontation:
     if (fPoints >= 4)
         jump frosty_ending
 label neutral_ending:
-    ""
+    "You walk towards the glow and as you get closer that familiar warmth tingles at your fingertips."
+    "Brushing aside the frozen pieces, you find three torn golden pages." 
+
+    show Frosty Neu at right with moveinright 
+
+    frosty "[mcname]... what's going on?"
+
+    show Jack Sad at left with moveinleft
+    show Kram Neu at center with moveinbottom
+
+    jack "Yeah, I've been meaning to ask about the whole… glowing thing…"
+
+    "You pickup the pages before turning around, smiling softly:"
+    mc "It's time for me to go home."
+
+    jack "Home? Did I miss something?"
+
+    show Kram Nod at center with dissolve
+
+    "Krampus gives you a knowing look and a small nod as the golden radiance slowly engulfs you."
+
+    krampus "The book."
+
+    mc "Thank you, for everything. This has been wonderful."
+
+    "And with that the light envelops you completely."
+
+    hide Kram Nod
+    hide Jack Sad
+    hide Frosty Neu
+    scene bg book room 
+    with flash 
+
+    "When it dies down, you are back in the book room of the North Base."
+
+    "You're approaching the pedestal when you sense a presence beside you."
+
+    msC "You could at least say goodbye first." 
+    show Mrs.Claus Neu at right with moveinright
+
+    mc "So, you figured it out."
+    msC "And you did as well, my dear."
+
+    mc "Goodbye doesn't mean much."
+    mc "I'll be where I've always have been." 
+
+    "Mrs. Claus' face takes on a bittersweet expression as she steps closer"
+    with vpunch
+
+    msC "Then, how about…"
+    msC "I'll see you later." 
+
+    "She embraces you in a long hug." 
+
+    mc "I'll see you later, Nadia." 
+    mc "Keep an eye on them, yes?"
+
+    "You can feel the silent laughter shake her form before she pulls away."
+
+    msC "Always."
+    hide Mrs.Claus Neu with dissolve 
+    
+    "And with that you approach the book, missing pages in hand." 
+
+    bg the book
+    with fade
+
+    "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+
+    bg black screen with blink_shut
+
 label jack_ending: 
     ""
 label frosty_ending: 
