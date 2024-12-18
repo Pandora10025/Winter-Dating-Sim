@@ -12,6 +12,8 @@ renpy-8.3.2-sdk/tmp
 renpy-8.3.2-sdk/tutorial
 renpy-8.3.2-sdk/update
 renpy-8.3.2-sdk/WinterDatingSim-1.0-dists
+renpy-8.3.2-sdk/web
+
 
 #ignoring files in renpy launcher folder
 renpy-8.3.2-sdk/LICENSE.txt
