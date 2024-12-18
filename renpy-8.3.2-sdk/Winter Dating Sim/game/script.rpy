@@ -2608,78 +2608,78 @@ label frosty_ending:
 
     show Kram Nod at right with dissolve 
 
-    "Frosty is struck to silence the surprise and awe from such a comical expression on his face that you can't help but chuckle a little."
+    "For once, Frosty is stricken with silence. The surprise and awe form such a comical expression on his face that you can't help but laugh."
 
-    "Truly at a loss for words, you watch as Frosty opens and shuts his mouth repeatedly searching for something to say before breathing out:" 
+    "You watch as Frosty opens and shuts his mouth repeatedly searching for something to say before breathing out." 
 
     frosty "Cool!"
 
     "Krampus silently shakes his head, before turning around and heading for the door. "
 
-    krampus "We should get going, Frosty is in need of patching up and the pages are at risk the longer we stay out here."
+    krampus "We should get going. Frosty is in need of patching up and the pages remain at risk the longer we stay out here."
     
     hide Kram Nod with moveoutright
 
-    "That seems to catch Frosty's attention as he nods in agreement."
+    "That seems to catch Frosty's attention, and he nods in agreement."
 
     frosty "Yeah, yeah. Let's go."
 
-    "He hesitates for a little while, still staring at you." 
+    "He hesitates for a moment, still staring at you." 
 
     menu:
-        "Grab his hand":
-            "You walk over to him and slide your hand in his. With the other you pull on his arm to coax him towards the exit."
-            "These movements seem to snap him out of his reverie, as he squeezes your hand softly and follows you to the exit."
+        "Grab his hand.":
+            "You walk over to him and slide your hand into his. With your other, you pull on his arm to coax him towards the exit."
+            "Your touch seems to snap him out of his reverie, and he squeezes your hand softly before following you to the exit."
 
-        "Follow Krampus" :
-            "You laugh quietly, shaking your head as you walk in the same direction as Krampus." 
+        "Follow Krampus." :
+            "You laugh to yourself, shaking your head as you walk in the same direction as Krampus." 
             "As you pass Frosty, you nudge him playfully in the shoulder."
             mc "You coming?"
-            "That seems to snap him out of his reverie and follows you to the exit."
+            "That seems to snap him out of his reverie, and he follows you to the exit."
 
     hide Frosty Neu 
     scene bg black screen
     with fade 
 
-    "You all return to the base. Krampus and Jack split off, Krampus to go write up a mission report and Jack to take a nap."
+    "The four of you retun to base. Krampus and Jack split off, with Krampus returning to write a mission report and Jack heading to his room to take a nap."
 
-    "You and Frosty go to find Mrs. Claus to get Frosty's cuts patched up and debrief her on the situation."
+    "You and Frosty go to find Mrs. Claus and get Frosty patched up, as well as debrief her on the situation."
 
-    "Once Mrs. Claus was finished with Frosty and thoroughly debriefed, you both made your way to the book room." 
+    "Once Mrs. Claus was finished with Frosty and thoroughly debriefed, you both make your way back to the book room." 
 
     scene bg book room with fade
 
-    "When you enter the magic around you grows brighter, warmth courses through you stronger and stronger the closer you get to the pedestal." 
+    "The magic around you grows brighter as you enter, and you feel the warmth that courses through you growing stronger and stronger the closer you get to the pedestal." 
 
     show Frosty Neu at right with dissolve
 
     "You look at Frosty, whose side you haven't left since leaving Easter Island." 
 
-    "You know, you have to choose"
+    "You know that you'll have to choose."
 
     menu: 
-        "Go home":
+        "Go home.":
 
             show Frosty Neu at center with ease
 
-            "You turn to Frosty, with a solemn smile and before you can say anything, he wraps you up in a warm embrace."
+            "You turn to Frosty with a solemn look. Before you can say anything, he wraps you up in a warm embrace."
 
-            frosty "I'm going to miss you"
+            frosty "I'm going to miss you."
 
-            mc "I will miss you too." 
+            mc "I'll miss you too." 
 
-            "You stay there a long while, swaying slightly back and forth with Frosty's arms engulfing you and the smell of roasted chestnuts and cinnamon surrounding you."
-            "After a while you pull away to see the shimmer of tears in the eyes of the blue giant."
+            "You stay there for a long while, swaying slightly back and forth engulfed in Frosty's arms and the smell of roasted chestnuts and cinnamon."
+            "After a while you pull away to see the glistening of tears in the eyes of the blue giant."
 
-            mc "Aww, no don't cry."
+            mc "No, don't cry!"
 
-            "Frosty takes a steadying breath and the first tear begins to fall down his face."
+            "Frosty takes a steadying breath and a tear begins to fall down his face."
 
-            frosty "This was always my least favorite part, saying goodbye."
+            frosty "This was always my least favorite part. Saying goodbye."
 
             "You shake your head softly."
 
-            mc "This isn't goodbye, just a see you later."
+            mc "This isn't goodbye. Just a see you later."
             mc "I'll be where I have always been." 
 
             "You take his hand to give it one last squeeze, before turning towards the book." 
@@ -2691,18 +2691,18 @@ label frosty_ending:
             scene bg the book
             with fade
 
-            frosty "See you later-"
+            frosty "See you later."
 
-            "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+            "You touch the warm golden pages, and the spirit of the book finally returns home."
 
             scene bg black screen with blink_shut
-        "Stay with Frosty": 
+        "Stay with Frosty.": 
 
-            "You turn to Frosty, with a solemn smile and before you can say anything, he wraps you up in a warm embrace."
+            "You turn to Frosty, with a solemn look. Before you can say anything, he wraps you up in a warm embrace."
 
             frosty "Stay, please."
 
-            "It takes a moment for the words to register over the comforting smell of roasted chestnuts and cinnamon, but when they do you pull away slightly to look at him." 
+            "It takes a moment for the words to register over the comforting smell of roasted chestnuts and cinnamon, but when they do, you pull away slightly to look at him." 
 
             mc "Huh?"
 
@@ -2714,26 +2714,26 @@ label frosty_ending:
             frosty "Please." 
             frosty "I don't know much, but I do know that I really like having you around."
             frosty "If you go now, then there will always be this feeling like I'm missing something."
-            frosty "And it won't be like when I lose other things like those hats or scarves the elves make me sometimes."
-            frosty "They always just make me another one to replace what I lost. But, that won't work this time, if you leave."
+            frosty "It won't be like when I lose other things, like those hats and scarves the elves make me sometimes."
+            frosty "They always just make me another one to replace what I lost. But, that won't work this time. Not if you leave."
             frosty "I can't replace you and I won't want to."
             frosty "So, please, stay."
 
-            "You let the words sink in for a moment."
+            "You let the words sink in."
             "Frosty, your gentle giant. Sweet, caring, protective and reliable." 
-            "With him you know you'd always be safe and happy." 
+            "With him you know that you'd always be safe and happy." 
             "A life of contentment."
-            "You can't help the smile at the thought,"
+            "You can't help the smile at the thought."
 
-            mc "I'll stay"
+            mc "I'll stay."
 
-            "Frosty's face morphs quickly between surprize and pure joy."
+            "Frosty's face morphs quickly between surprise and pure delight."
 
             frosty "Really?!"
 
             mc "Yes!" 
 
-            "He wraps you up once again in a bear hug, you can feel the vibration of his flowing laughter in his chest."
+            "He wraps you up once again in a bear hug, and you can feel the vibration of his flowing laughter in his chest."
             "Warm, safe, and cared for. This was the start of a lifetime of happiness."
 
             hide Frosty Neu 
