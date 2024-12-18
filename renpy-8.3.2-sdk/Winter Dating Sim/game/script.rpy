@@ -2224,7 +2224,7 @@ label confrontation:
 
     "You and Krampus make your way across the room, ducking behind and through the debris."
     "The temperature in the room drops dramatically and the panes of the windows above begin to rattle frantically."
-    with blizzard
+    #with blizzard
     "The howling of the wind outside grows louder and louder."
 
     krampus "So this plan-"
@@ -2769,7 +2769,195 @@ label frosty_ending:
             with fade
 
 label kram_ending:
-    ""
+    krampus "Here, let me get that." 
+
+    show Kram at center 
+    with moveinbottom 
+
+    "Krampus stoops down to rummage through the frozen scraps and debris of the Boogeyman, carefully unveiling three golden pages."
+    "Cautious of his claws, he picks up the pages before turning and handing them to you." 
+    "You take them gingerly, a warmth passing through your fingers once you make contact with them." 
+
+    mc "Thank you."
+
+    show Kram Nod at center
+    with dissolve 
+
+    "You take a moment to inspect the pages in your hands, you try not to think too hard as to where the creature was keeping these." 
+
+    "The sound of a throat being clear redirected your focus back to the man in front of you"
+
+    show Kram Neu at center
+    with dissolve
+
+    "He looks at you with an indiscernible expression, something close to sheepishness."
+
+    krampus "I've been meaning to ask… how are you feeling?"
+
+    "You hesitate to answer and he continues."
+
+    krampus "I was a bit disoriented when I hit the wall during the fight. I was surprised to find you in a similar position when I managed to pull myself together."
+
+    mc "Oh, I'm okay. I was more worried about you if I am being fully honest."
+
+    krampus "oh…"
+    krampus "You don't have to worry about me. I can take a hit or two at least." 
+
+    "There is a stretch of silence that follows. Like a wide chasm that fills the space between the two of you." 
+    "You're about to say something when he speaks up once more."
+
+    krampus "I think Frosty got hurt pretty bad, though he'd never admit it. We should think about heading back to get him checked-out."
+
+    krampus "Jack likely exhausted himself conjuring that blizzard, he's going to need some rest when we get back to the base." 
+
+    krampus "And the longer the pages are out here the more at risk they are."
+
+    "He turns to leave" 
+
+    menu: 
+        "Grab his arm.":
+            "You surge forward and grab Krampus' arm, stopping him from continuing forward. " 
+
+            mc "Are you ok? Be honest with me."
+
+            "He hesitates, before turning back to face you again." 
+
+            krampus "You are the spirit of the Book of Legends aren't you?"
+
+            "His abrupt question takes you aback for a moment, but after a second you nod your head."
+
+            mc "Yes, I am." 
+
+            "You don't know what it is exactly but something seems to settle over Krampus after that confirmation."
+
+            "He takes the hand you used to grab his arm into both of his, looking at you intensely."
+
+            krampus "I need to get you back to safety. Will you allow me to do that?"
+
+            "Without hesitation or breaking eye contact, you nod once again." 
+
+            "And with that he turns, your hand in his, and leads you alongside the others to the exit."
+            
+        "Follow him.": 
+            "You take in the Easter Island warehouse one more time, before turning to follow Krampus." 
+
+            "It takes a bit of speed walking to catch up with him in front of your small group." 
+
+            "And though he doesn't say anything when you reach his side, you see some tension loosen from his shoulders." 
+
+    hide Kram Neu
+    scene bg black screen
+    with fade 
+
+    "You all return to the base. Jack and Frosty split off to find Mrs. Claus to patch up Frosty's cuts and debrief her on the situation."
+
+    "You and Krampus make your way to the room with the book, the place where you first meet."
+
+    scene bg book room 
+    with fade
+
+    "When you enter the magic around you grows brighter, warmth courses through you stronger and stronger the closer you get to the pedestal." 
+
+    show Kram Neu at right 
+    with dissolve
+
+    "You look at Krampus, whose usual silence weighs heavy on you ever since leaving Easter Island." 
+
+    "You know, you have to choose"
+
+    menu: 
+        "Go home":
+            " You turn to Krampus with a solemn smile." 
+
+            mc "It's time for me to go."
+
+            show Kram Nod at right 
+            with dissolve
+
+            "Krampus nods his understand"
+
+            krampus "I understand. Your mission is complete."
+
+            mc " Yeah…"
+            mc "I just never anticipated that it would be so hard to let go of… everything. To say good-bye."
+
+            show Kram Neu at right with dissolve
+
+            krampus "Then let's not say good-bye."
+
+            show Kram Neu at center with ease
+
+            "In your confusion, you miss Krampus stepping closer until you can feel the warmth radiating off of him." 
+            "He lifts a hand carefully towards your jowl, stopping short before touching you."
+
+            krampus "May I?"
+
+            mc "Yes."
+
+            "Cupping your jowl carefully, he softly lifts your head up slightly before pressing a soft kiss to your forehead."
+            "When he pulls away, he whispers calmly"
+
+            krampus "I'll see you later, little legend."
+
+            mc "I'll be where I've always been." 
+
+            "And with that you pull away full to approach the book, missing pages in hand." 
+
+            hide Kram Neu 
+            scene bg the book 
+            with fade
+
+            "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+            scene bg black screen 
+            with blink_shut
+        "Stay with Krampus":
+            "You turn to Krampus with a solemn smile." 
+
+            mc "It's time for me to go."
+
+            "You watch as Krampus' face contorts with several emotions one after the other, finally settling on a look of absolute resolution."
+
+            krampus "And what if I told you that I don't want you to go?"
+
+            mc "What?"
+
+            krampus "I don't want you to leave." 
+
+            show Kram Neu at center with ease
+
+            krampus "I'm not the best at being vulnerable, I can be gruff and cuttingly direct."
+            krampus "I'm not as tactful and soft as Frosty or as spontaneous and quippy as Jack." 
+            krampus "I've been told that I can be hard to get along with, but these last couple of days…"
+            krampus "These last couple of days with you, have made me feel a happiness that I have not felt in a really long time." 
+            krampus "Every morning, I look forward to seeing you at breakfast. "
+            krampus "I'd silently hope that you would choose to hang out with me so that I could share something new with you." 
+            krampus "In short, I can't imagine going back to what life was like without having you around all the time."
+            krampus "Do your duty, return the pages. But, don't disappear back into that book." 
+
+            "He takes one of your hands in both of his own, and his words swirl around in your head like a merry go round."
+            "He doesn't rush you, just waits while softly stroking the back of your palm. Because that is just who he is."
+            "Krampus, a man of few words, an endless pit of patience and a tenderness hidden behind walls of polished obsidian ."
+            "And there you would remain, behind those obsidian walls, in the garden of the softest parts of his heart."
+            "A life of hidden passion." 
+            "You can't help the smile at the thought,"
+
+            mc "Okay."
+
+            krampus "Okay?"
+
+            "His face once again twists in confusion."
+
+            mc "Okay, I'll stay."
+
+            show Kram Happy at center with dissolve
+
+            "The smile that streaks across his face is devastating."
+            "And when he bends down to kiss the back of your hand, you know there was no way you'd regret staying with him forever." 
+            "This was the start of life in a secret paradise for two."
+            hide Kram Happy 
+            scene bg black screen 
+            with blink_shut
+
     return
 
 
