@@ -2224,6 +2224,7 @@ label confrontation:
 
     "You and Krampus make your way across the room, ducking behind and through the debris."
     "The temperature in the room drops dramatically and the panes of the windows above begin to rattle frantically."
+    with blizzard
     "The howling of the wind outside grows louder and louder."
 
     krampus "So this plan-"
