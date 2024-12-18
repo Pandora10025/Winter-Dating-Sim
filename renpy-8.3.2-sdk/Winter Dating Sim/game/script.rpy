@@ -2545,7 +2545,200 @@ label jack_ending:
             scene bg black screen 
             with fade
 label frosty_ending: 
-    ""
+    frosty "[mcname] are you okay?"
+
+    mc "hmmm"
+
+    show Frosty Neu at center with moveinleft
+
+    "You turn to find Frosty staring at you intently." 
+
+    frosty "Are you okay? Earlier, during the fight I saw you fall and Jack had to pull you away. I was worried."
+
+    mc "Oh, I'm ok." 
+
+    "Frosty looks at you uncertainly." 
+
+    mc "Really, I'm ok–"
+    mc "Oh, jeez! What about you!"
+
+    "It took a moment to register, but suddenly you spot gashes along the back of Frosty's hands and budding burns where projectiles must have grazed him during the fight."
+
+    "You rush forward to start inspecting his wounds, mentally logging each one as you search his frame for more."
+
+    #show frosty happy at center with dissolve 
+
+    "Or at least you try, his body shakes with silent laughter as you inspect him making it hard to see and keep track."
+
+    mc "Will you stop moving, I've got to makes sure I know where your hurt so I can relay it to Mrs. Claus when she's patching you up later." 
+
+    frosty "Sorry- can't help it, I'm ticklish and you keep poking me-"
+
+    "He barely gets the statement between huffs of laughter."
+    "You take a step back and cross your arms."
+
+    mc "This is serious!"
+
+    "Frosty takes deep breaths, trying to calm himself."
+
+    frosty "I know, I know. But believe me, I can handle alot worse than a few cuts and burns."
+
+    "You sigh in resignation, there's not much you can do until you get back to the base anyway."
+
+    #show frosty neu at center with dissolve 
+
+    frosty "So.. are you magic now?"
+
+    "His sudden change in topic was almost startling, as he fixes you once again with that intent look."
+
+    "But before you can answer, Krampus' voice cuts through the air."
+
+    krampus "She's the Book of Legends."
+
+    "He approaches us with golden pages clutched in one hand."
+
+    show Kram Neu at right with moveinright
+
+    "He stops next to Frosty and holds out the pages to you" 
+
+    "You take them gingerly, a warmth passing through your fingers once you make contact with them." 
+
+    mc "Thank you."
+
+    show Kram Nod at right with dissolve 
+
+    "Frosty is struck to silence the surprise and awe from such a comical expression on his face that you can't help but chuckle a little."
+
+    "Truly at a loss for words, you watch as Frosty opens and shuts his mouth repeatedly searching for something to say before breathing out:" 
+
+    frosty "Cool!"
+
+    "Krampus silently shakes his head, before turning around and heading for the door. "
+
+    krampus "We should get going, Frosty is in need of patching up and the pages are at risk the longer we stay out here."
+    
+    hide Kram Nod with moveoutright
+
+    "That seems to catch Frosty's attention as he nods in agreement."
+
+    frosty "Yeah, yeah. Let's go."
+
+    "He hesitates for a little while, still staring at you." 
+
+    menu:
+        "Grab his hand":
+            "You walk over to him and slide your hand in his. With the other you pull on his arm to coax him towards the exit."
+            "These movements seem to snap him out of his reverie, as he squeezes your hand softly and follows you to the exit."
+
+        "Follow Krampus" :
+            "You laugh quietly, shaking your head as you walk in the same direction as Krampus." 
+            "As you pass Frosty, you nudge him playfully in the shoulder."
+            mc "You coming?"
+            "That seems to snap him out of his reverie and follows you to the exit."
+
+    hide Frosty Neu 
+    scene bg black screen
+    with fade 
+
+    "You all return to the base. Krampus and Jack split off, Krampus to go write up a mission report and Jack to take a nap."
+
+    "You and Frosty go to find Mrs. Claus to get Frosty's cuts patched up and debrief her on the situation."
+
+    "Once Mrs. Claus was finished with Frosty and thoroughly debriefed, you both made your way to the book room." 
+
+    scene bg book room with fade
+
+    "When you enter the magic around you grows brighter, warmth courses through you stronger and stronger the closer you get to the pedestal." 
+
+    show Frosty Neu at right with dissolve
+
+    "You look at Frosty, whose side you haven't left since leaving Easter Island." 
+
+    "You know, you have to choose"
+
+    menu: 
+        "Go home":
+
+            show Frosty Neu at center with ease
+
+            "You turn to Frosty, with a solemn smile and before you can say anything, he wraps you up in a warm embrace."
+
+            frosty "I'm going to miss you"
+
+            mc "I will miss you too." 
+
+            "You stay there a long while, swaying slightly back and forth with Frosty's arms engulfing you and the smell of roasted chestnuts and cinnamon surrounding you."
+            "After a while you pull away to see the shimmer of tears in the eyes of the blue giant."
+
+            mc "Aww, no don't cry."
+
+            "Frosty takes a steadying breath and the first tear begins to fall down his face."
+
+            frosty "This was always my least favorite part, saying goodbye."
+
+            "You shake your head softly."
+
+            mc "This isn't goodbye, just a see you later."
+            mc "I'll be where I have always been." 
+
+            "You take his hand to give it one last squeeze, before turning towards the book." 
+
+            hide Frosty Neu with moveoutbottom
+
+            "You approach the book, missing pages in hand." 
+
+            scene bg the book
+            with fade
+
+            frosty "See you later-"
+
+            "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+
+            scene bg black screen with blink_shut
+        "Stay with Frosty": 
+
+            "You turn to Frosty, with a solemn smile and before you can say anything, he wraps you up in a warm embrace."
+
+            frosty "Stay, please."
+
+            "It takes a moment for the words to register over the comforting smell of roasted chestnuts and cinnamon, but when they do you pull away slightly to look at him." 
+
+            mc "Huh?"
+
+            frosty "Stay with me. Here. Please."
+
+            "The look in his eyes is urging, insistent, and something else you can't quite place."
+            "Something light but strong, that fills that space in your chest and unleashes butterflies in your stomach."
+
+            frosty "Please." 
+            frosty "I don't know much, but I do know that I really like having you around."
+            frosty "If you go now, then there will always be this feeling like I'm missing something."
+            frosty "And it won't be like when I lose other things like those hats or scarves the elves make me sometimes."
+            frosty "They always just make me another one to replace what I lost. But, that won't work this time, if you leave."
+            frosty "I can't replace you and I won't want to."
+            frosty "So, please, stay."
+
+            "You let the words sink in for a moment."
+            "Frosty, your gentle giant. Sweet, caring, protective and reliable." 
+            "With him you know you'd always be safe and happy." 
+            "A life of contentment."
+            "You can't help the smile at the thought,"
+
+            mc "I'll stay"
+
+            "Frosty's face morphs quickly between surprize and pure joy."
+
+            frosty "Really?!"
+
+            mc "Yes!" 
+
+            "He wraps you up once again in a bear hug, you can feel the vibration of his flowing laughter in his chest."
+            "Warm, safe, and cared for. This was the start of a lifetime of happiness."
+
+            hide Frosty Neu 
+            scene bg black screen 
+            with fade
+
 label kram_ending:
     ""
     return
