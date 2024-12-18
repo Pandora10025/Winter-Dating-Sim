@@ -2308,18 +2308,18 @@ label confrontation:
     "You hear the murmur of words flow around you as everyone lets out a sigh of relief."
     "But you can't focus on what is being said as you catch a glimpse of a golden glow coming from the bottom of the pile of frozen pieces." 
 
-    if (kPoints< 4 and jPoints < 4 and fPoints < 4):
+    if (kPoints<= 4 and jPoints <= 4 and fPoints <= 4):
         menu:
             "Go towards the glow" :
                 jump neutral_ending 
 
-    if (kPoints >= 4):
+    if (kPoints > 4):
         jump krampus_ending
 
-    if (jPoints >= 4):
+    if (jPoints > 4):
         jump jack_ending
 
-    if (fPoints >= 4):
+    if (fPoints > 4):
         jump frosty_ending
 
 label neutral_ending:
