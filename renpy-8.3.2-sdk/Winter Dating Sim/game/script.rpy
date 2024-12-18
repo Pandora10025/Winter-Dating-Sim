@@ -268,7 +268,7 @@ label start:
     frosty "Actually, no I don't know..."
     frosty "I'm Frosty the Snowman."
     mc "Snowman?"
-    frosty "Yeah, the whole silk hat and corncob pipe thing… the kids love it. The label makes them laugh you know?"
+    frosty "Yeah, the whole silk hat and corncob pipe thing... the kids love it. The label makes them laugh you know?"
     "He drops his head towards you, and whispers like he's about to share a secret." 
     frosty "It's better than having a seven foot tall ice giant talking to them, and moms are scary when they don't know if you're nice."
 
@@ -410,7 +410,7 @@ label start:
 
     msC "Outside of the dizzy spells, how are you feeling?"
 
-    mc" Okay, I think. My head was pounding when I first woke up, but it's eased up since then."
+    mc "Okay, I think. My head was pounding when I first woke up, but it's eased up since then."
 
     "Mrs. Claus nods but the look of concern does not leave her face." 
 
@@ -530,13 +530,13 @@ label start:
 
     msC "Did you sleep well? You look like you've seen a ghost."
 
-    mc "I... I think I had a dream. Or maybe a memory? It’s hard to tell."
+    mc "I... I think I had a dream. Or maybe a memory? It's hard to tell."
 
     msC "Dreams have a funny way of showing us what we need to see, even if we don't understand them yet. But don't worry too much for now."
 
     "She pats your hand gently before standing again."
 
-    msC "Come along now. Breakfast is ready, and everyone is waiting. I think you’ll feel better with a full stomach."
+    msC "Come along now. Breakfast is ready, and everyone is waiting. I think you'll feel better with a full stomach."
 
     mc "Alright. Thank you, Mrs. Claus."
 
@@ -563,7 +563,7 @@ label start:
 
     "Mrs. Claus ushers you to a seat at the table, and plates of food are quickly passed your way."
 
-    msC "Eat up, dear. You’ll need your strength."
+    msC "Eat up, dear. You'll need your strength."
 
     "Frosty is the first to break the silence."
 
@@ -572,17 +572,17 @@ label start:
     mc "Better, thank you."
     mc "Although, there are a few things that I'm still wondering about."
 
-    jack "Questions are good! It means you’re curious. And curiosity leads to adventure."
+    jack "Questions are good! It means you're curious. And curiosity leads to adventure."
 
     krampus "Or trouble, in your case."
 
-    "Jack smirks but doesn’t deny it, while Frosty offers you a win grin."
+    "Jack smirks but doesn't deny it, while Frosty offers you a win grin."
 
-    msC "Speaking of adventure, I’m sure the three of you have plenty to do today."
+    msC "Speaking of adventure, I'm sure the three of you have plenty to do today."
 
     jack "Oh, you know me, Mrs. C. Always finding something fun to get into."
 
-    frosty "I’ve got a few things to take care of, but nothing too urgent."
+    frosty "I've got a few things to take care of, but nothing too urgent."
 
     krampus "And I have work to do."
 
@@ -590,7 +590,7 @@ label start:
 
     "She turns to you with a smile."
 
-    msC "You shouldn’t spend all day cooped up by yourself. Why don’t you join one of them? A little fresh air might help clear your mind."
+    msC "You shouldn't spend all day cooped up by yourself. Why don't you join one of them? A little fresh air might help clear your mind."
 
     show Jack Happy at right with ease
     #show Frosty Happy at left with ease
@@ -598,22 +598,22 @@ label start:
 
     "Jack immediately perks up, leaning forward with a playful grin."
 
-    jack "You heard the lady! I’m free all day, and I happen to be excellent company. We could play some games, and maybe find something you like."
+    jack "You heard the lady! I'm free all day, and I happen to be excellent company. We could play some games, and maybe find something you like."
 
     "Frosty gives Jack a pointed look before turning to you with his usual cheerful demeanor."
 
-    frosty "If you’d rather take things slow, I was going to head out to a cat cafe. It’s peaceful there, and you might enjoy the company."
+    frosty "If you'd rather take things slow, I was going to head out to a cat cafe. It's peaceful there, and you might enjoy the company."
 
     "Krampus crosses his arms, his expression neutral but inviting."
 
-    krampus "I’ll be skiing today. If you want to join, you’re welcome to. It's a fun activity."
+    krampus "I'll be skiing today. If you want to join, you're welcome to. It's a fun activity."
 
 
     stop music fadeout 1.0
 
 
     menu:
-        "Go to the dog cafe with Frosty":
+        "Go to the cat cafe with Frosty":
             jump frosty_date_1
             $ fPoints += 2
         "Play games with Jack":
@@ -632,8 +632,8 @@ label before_date_2:
     "You wake up on your own the next morning, and make your way to the dining room."
     "On your way, you catch Mrs. Claus speaking to a small group of pixies, who fly off as you approach."
 
-    msC "Good morning, dear. Breakfast is ready when you’re hungry, and I believe the boys are already in there."
-    msC "I’m afraid I’m a bit tied up at the moment. Did you need something from me?"
+    msC "Good morning, dear. Breakfast is ready when you're hungry, and I believe the boys are already in there."
+    msC "I'm afraid I'm a bit tied up at the moment. Did you need something from me?"
 
     "You shake your head, and leave her to enter the dining room instead. Just like before, Jack, Frosty, and Krampus sit at a table, chatting placidly when you enter."
     "Krampus spots you first this time, and beckons you to sit with them."
@@ -642,16 +642,16 @@ label before_date_2:
 
     frosty "Yeah, some of us were gonna head out to the ice rink if you wanted to come along!"
 
-    jack "Nothing like a day out on the ice, right? I’m going too, and I could use a skating partner."
+    jack "Nothing like a day out on the ice, right? I'm going too, and I could use a skating partner."
 
     "Frosty grins, and jostles the shorter man playfully."
 
-    frosty "It’s up to you."
+    frosty "It's up to you."
 
     "By their side, Krampus sighs and sets down his cup."
 
-    krampus "I won’t be participating in...this. But I was looking forward to an evening in my favorite local bar."
-    krampus "I’d be happy to show you around, if you’d like. It’s a lovely place to spend time."
+    krampus "I won't be participating in...this. But I was looking forward to an evening in my favorite local bar."
+    krampus "I'd be happy to show you around, if you'd like. It's a lovely place to spend time."
 
     menu:
         "Go ice skating with Frosty":
@@ -2152,15 +2152,15 @@ label confrontation:
     scene bg black screen
 
     "The world is dark, quiet, almost suffocating"
-    "This feeling…"
-    "Sorrow… despair… hollow emptiness"
+    "This feeling..."
+    "Sorrow... despair... hollow emptiness"
     "Cold, unrelenting unhappiness.."
-    "We felt it before… before"
+    "We felt it before... before"
     with flash 
 
     play sound "audio/child laugh.mp3"
-
-    #particles of snow falls
+    with snow
+    #if u wanna change the speed u gotta do it here somewhere or make a new thing for the speical snow.
 
     "Nicolai and Nadia Claus, arbiters of joy for good little children"
 
@@ -2183,11 +2183,13 @@ label confrontation:
 
     mc "Jack!"
 
-    show Jack Neu at center with ease
+    show Jack Neu at center 
+    with ease
     jack "Well good morning, sleeping beauty, nice of you to rejoin us!"
 
-    show Kram Neu at left with ease
-    krampus "Frost–"
+    show Kram Neu at left 
+    with ease
+    krampus "Frost-"
 
     jack "Not the time, got it, got it"
 
@@ -2203,12 +2205,13 @@ label confrontation:
 
     mc "We need snow, lots and lots of snow. As close to a blizzard as you can manage."
 
-    jack "You're kidding…"
+    jack "You're kidding..."
 
     mc "Snow, Frost. Go."
 
     hide Jack Neu with moveoutbottom
-    show Kramp Neu at center with ease
+    show Kramp Neu at center 
+    with ease
 
     "You turn to Krampus and find he is looking at you intently."
 
@@ -2246,14 +2249,16 @@ label confrontation:
 
     "Jack stands off to the side, staff glowing bright blue with the wind and snow swirling around him to fill the room."
 
-    show Frosty Ney at left with moveinleft
+    show Frosty Ney at left 
+    with moveinleft
 
     "Frosty is still dodging in and out of range of the Boogeyman, his movements slightly slower as he battles against the force of the wind to keep his momentum."
 
     "Despite its jeering, the movement of the gooey amalgamation is noticeably slower, sloppier."
     "Small parts of the gooping flesh are beginning to congeal and slowly solidify"
 
-    show Kram at center with moveinbottom
+    show Kram at center 
+    with moveinbottom
     krampus "The plan."
     "You nod in agreement."
     mc "If it freezes then it can be shattered." 
@@ -2263,9 +2268,10 @@ label confrontation:
     "Before you can respond, he leaps across the table and you scramble to follow him."
 
     hide Jack Neu with moveoutright
-    show Kram Neu at right with ease
+    show Kram Neu at right 
+    with ease
 
-    krampus "Frosty–"
+    krampus "Frosty-"
 
     "Frosty dodges another molten ball of goo and turns to face us."
 
@@ -2302,13 +2308,16 @@ label confrontation:
     "But you can't focus on what is being said as you catch a glimpse of a golden glow coming from the bottom of the pile of frozen pieces." 
 
     if (kPoints< 4 and jPoints < 4 and fPoints < 4):
-         menu:
+        menu:
             "Go towards the glow" :
                 jump neutral_ending 
+
     if (kPoints >= 4):
         jump krampus_ending
+
     if (jPoints >= 4):
         jump jack_ending
+
     if (fPoints >= 4):
         jump frosty_ending
 
@@ -2316,12 +2325,15 @@ label neutral_ending:
     "You walk towards the glow and as you get closer that familiar warmth tingles at your fingertips."
     "Brushing aside the frozen pieces, you find three torn golden pages." 
 
-    show Frosty Neu at right with moveinright 
+    show Frosty Neu at right 
+    with moveinright 
 
     frosty "[mcname]... what's going on?"
 
-    show Jack Sad at left with moveinleft
-    show Kram Neu at center with moveinbottom
+    show Jack Sad at left 
+    with moveinleft
+    show Kram Neu at center 
+    with moveinbottom
 
     jack "Yeah, I've been meaning to ask about the whole... glowing thing."
 
@@ -2330,7 +2342,8 @@ label neutral_ending:
 
     jack "Home? Did I miss something?"
 
-    show Kram Nod at center with dissolve
+    show Kram Nod at center 
+    with dissolve
 
     "Krampus gives you a knowing look as the golden radiance slowly engulfs you."
 
@@ -2351,7 +2364,8 @@ label neutral_ending:
     "You're approaching the pedestal when you sense a presence beside you."
 
     msC "You could at least say goodbye first." 
-    show Mrs Claus Neu at right with moveinright
+    show Mrs Claus Neu at right 
+    with moveinright
 
     mc "So, you figured it out."
     msC "And you did as well, my dear."
@@ -2385,11 +2399,12 @@ label neutral_ending:
     scene bg black screen with blink_shut
 
 label jack_ending: 
-    jack "So, about your first reconnaissance mission…"
+    jack "So, about your first reconnaissance mission..."
 
     "Jack's voice breaks you out of your daze and you turn to face him."
 
-    show Jack Happy at center with moveinright
+    show Jack Happy at center 
+    with moveinright
 
     "The words paired with the playful smirk pulling at his lips trigger a torrent of laughter bursting out of you."
     "His own chuckles ring through the air alongside your own."
@@ -2397,7 +2412,8 @@ label jack_ending:
     jack "Yeah, it was a bit more than we bargained for. You handled it well."
     jack "Speaking of which."
 
-    show Jack Neu at center with dissolve
+    show Jack Neu at center 
+    with dissolve
 
     "Jack steps closer, his smirk fading into a look of concern."
 
@@ -2411,7 +2427,8 @@ label jack_ending:
 
     mc "I remember everything. The glowing won't stop until I return my pages."
 
-    show Jack Happy at center with dissolve
+    show Jack Happy at center 
+    with dissolve
 
     jack "Everything? Really? That's great!" 
 
@@ -2423,7 +2440,8 @@ label jack_ending:
 
     "Krampus' voice cuts through the air as he approaches us, the golden pages clutched in one hand."
 
-    show Kram Neu at left with moveinleft
+    show Kram Neu at left 
+    with moveinleft
 
     "He stops next to Jack and offers the papers to you." 
 
@@ -2437,7 +2455,7 @@ label jack_ending:
 
     mc "Yes. Well, to be more precise, I am the spirit of the book." 
 
-    jack "Wow, that's…" 
+    jack "Wow, that's..." 
     jack "Wow."
 
     "Jack stares at you in awestruck silence, a moment that is quietly interrupted once more by Krampus' urging."
@@ -2447,7 +2465,6 @@ label jack_ending:
     "That seems to catch Jack's attention, and he nods in agreement."
 
     jack "Right. Let's go." 
-
 
     hide Kram Neu with moveoutleft
 
@@ -2465,7 +2482,8 @@ label jack_ending:
 
     "When you enter the room, the magic around you grows brighter. A sense of warmth courses through you, growing stronger and stronger the closer you get to the pedestal." 
 
-    show Jack Neu at right with dissolve
+    show Jack Neu at right 
+    with dissolve
 
     "You look at Jack, who hasn't let go of your hand." 
 
@@ -2477,7 +2495,8 @@ label jack_ending:
 
             mc "It's time for me to go."
 
-            show Jack Sad at right with dissolve
+            show Jack Sad at right 
+            with dissolve
 
             "Jack's expression crumples."
 
@@ -2502,7 +2521,8 @@ label jack_ending:
 
             mc "It's time for me to go."
 
-            show Jack Sad at right with dissolve
+            show Jack Sad at right 
+            with dissolve
 
             "Jack's face dips in sadness."
 
@@ -2514,7 +2534,8 @@ label jack_ending:
 
             jack "Then stay, and we can experience it together." 
 
-            show Jack Neu at center with ease
+            show Jack Neu at center 
+            with ease
 
             jack "Stay, and we can experience many more adventures together." 
 
@@ -2529,7 +2550,8 @@ label jack_ending:
 
             mc "How can I say no?"
 
-            show Jack Happy at center with dissolve
+            show Jack Happy at center 
+            with dissolve
 
             jack "Yes? Yes!"
 
@@ -2549,7 +2571,8 @@ label frosty_ending:
 
     mc "Hmmm?"
 
-    show Frosty Neu at center with moveinleft
+    show Frosty Neu at center 
+    with moveinleft
 
     "You turn to find Frosty staring at you intently." 
 
@@ -2598,7 +2621,8 @@ label frosty_ending:
 
     "He approaches us with golden pages clutched in one hand."
 
-    show Kram Neu at right with moveinright
+    show Kram Neu at right 
+    with moveinright
 
     "He stops next to Frosty and offers you the pages." 
 
@@ -2606,7 +2630,8 @@ label frosty_ending:
 
     mc "Thank you."
 
-    show Kram Nod at right with dissolve 
+    show Kram Nod at right 
+    with dissolve 
 
     "For once, Frosty is stricken with silence. The surprise and awe form such a comical expression on his face that you can't help but laugh."
 
@@ -2651,7 +2676,8 @@ label frosty_ending:
 
     "The magic around you grows brighter as you enter, and you feel the warmth that courses through you growing stronger and stronger the closer you get to the pedestal." 
 
-    show Frosty Neu at right with dissolve
+    show Frosty Neu at right 
+    with dissolve
 
     "You look at Frosty, whose side you haven't left since leaving Easter Island." 
 
@@ -2660,7 +2686,8 @@ label frosty_ending:
     menu: 
         "Go home.":
 
-            show Frosty Neu at center with ease
+            show Frosty Neu at center 
+            with ease
 
             "You turn to Frosty with a solemn look. Before you can say anything, he wraps you up in a warm embrace."
 
