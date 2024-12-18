@@ -2272,9 +2272,9 @@ label confrontation:
     frosty "Hey! You guys are okay!"
     frosty "That's great, I was really starting to get worried."
 
-    krampus "Yea-"
+    krampus "Yes-"
 
-    frosty "You think, you can get Jack to tone it down with the wind-"
+    frosty "You think you can get Jack to tone it down with the wind?"
     "He ducks another ball of goo."
     frosty "It's really killing my flow, and I think I've really got the guy on the hook now."
 
@@ -2289,13 +2289,13 @@ label confrontation:
     with fade
 
     "You spread out, launching attacks from all directions."
-    "Slowly chipping away at the howling creature." 
+    "Together, you slowly chip away at the howling creature." 
 
     boogey "No!"
     boogey "No.."
     boogey "This is not over!"
 
-    "With one final strike, it was over. Frozen and chipped pieces lay scattered across the floor as the Boogeyman fractures to pieces." 
+    "With one final strike, it's over. Frozen and chipped pieces lay scattered across the floor as the Boogeyman fractures to pieces." 
 
     "The wind dies down and the snow settles peacefully on the ground."
     "You hear the murmur of words flow around you as everyone lets out a sigh of relief."
@@ -2323,16 +2323,16 @@ label neutral_ending:
     show Jack Sad at left with moveinleft
     show Kram Neu at center with moveinbottom
 
-    jack "Yeah, I've been meaning to ask about the whole… glowing thing…"
+    jack "Yeah, I've been meaning to ask about the whole... glowing thing."
 
-    "You pickup the pages before turning around, smiling softly:"
+    "You pick up the pages before turning around, your lips curling into a smile."
     mc "It's time for me to go home."
 
     jack "Home? Did I miss something?"
 
     show Kram Nod at center with dissolve
 
-    "Krampus gives you a knowing look and a small nod as the golden radiance slowly engulfs you."
+    "Krampus gives you a knowing look as the golden radiance slowly engulfs you."
 
     krampus "The book."
 
@@ -2346,7 +2346,7 @@ label neutral_ending:
     scene bg book room 
     with flash 
 
-    "When it dies down, you are back in the book room of the North Base."
+    "When it dies down, you are back in the book room at the North Base."
 
     "You're approaching the pedestal when you sense a presence beside you."
 
@@ -2359,10 +2359,10 @@ label neutral_ending:
     mc "Goodbye doesn't mean much."
     mc "I'll be where I've always have been." 
 
-    "Mrs. Claus' face takes on a bittersweet expression as she steps closer"
+    "Mrs. Claus' face takes on a bittersweet expression as she steps closer."
     with vpunch
 
-    msC "Then, how about…"
+    msC "Then, how about..."
     msC "I'll see you later." 
 
     "She embraces you in a long hug." 
@@ -2375,12 +2375,12 @@ label neutral_ending:
     msC "Always."
     hide Mrs Claus Neu with dissolve 
 
-    "And with that you approach the book, missing pages in hand." 
+    "You approach the book, missing pages in hand." 
 
     scene bg the book
     with fade
 
-    "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+    "As your fingers touch the yellow pages, the spirit of the book finally returns home."
 
     scene bg black screen with blink_shut
 
@@ -2391,29 +2391,29 @@ label jack_ending:
 
     show Jack Happy at center with moveinright
 
-    "The words paired with a playful smirk pulling at his mouth trigger a torrent of laughter to come bursting out of you."
+    "The words paired with the playful smirk pulling at his lips trigger a torrent of laughter bursting out of you."
     "His own chuckles ring through the air alongside your own."
 
-    jack "Yeah a bit more than we bargained for but you handled it well."
-    jack "Speaking of which,"
+    jack "Yeah, it was a bit more than we bargained for. You handled it well."
+    jack "Speaking of which."
 
     show Jack Neu at center with dissolve
 
-    "Jack steps closer, the smirk fading into a look of concern."
+    "Jack steps closer, his smirk fading into a look of concern."
 
     jack "Are you okay?"
-    jack "When you fell, you stopped moving for a while- you scared me. So, I need to know that you're okay." 
+    jack "When you fell, you stopped moving for a while. You scared me. So, I need to know that you're okay." 
 
     mc "Yeah, I'm okay."
-    jack "And.. the glowing?"
+    jack "And... the glowing?"
 
-    "You look down to see that still persistent golden light pulsing around you" 
+    "You look down to see that persistent golden light slowly pulsing around you" 
 
-    mc "I remember everything. And the glowing won't stop until I return my pages."
+    mc "I remember everything. The glowing won't stop until I return my pages."
 
     show Jack Happy at center with dissolve
 
-    jack "Everything! Really, that's great!" 
+    jack "Everything? Really? That's great!" 
 
     "He pauses, then continues in a confused tone."
 
@@ -2421,67 +2421,67 @@ label jack_ending:
 
     krampus "She's the Book of Legends."
 
-    "Krampus' voice cuts through the air as he approaches us with golden pages clutched in one hand."
+    "Krampus' voice cuts through the air as he approaches us, the golden pages clutched in one hand."
 
     show Kram Neu at left with moveinleft
 
-    "He stops next to Jack and holds out the pages to you" 
+    "He stops next to Jack and offers the papers to you." 
 
     "You take them gingerly, a warmth passing through your fingers once you make contact with them." 
 
     mc "Thank you."
 
-    jack "Seriously, you're really the book. Like, THE Book."
+    jack "Seriously? You're the book? Like, THE Book?"
 
-    "Another chuckle passes through you as you nod in affirmation."
+    "Another laugh passes through you as you nod in affirmation."
 
     mc "Yes. Well, to be more precise, I am the spirit of the book." 
 
     jack "Wow, that's…" 
-    jack "Wow"
+    jack "Wow."
 
-    "Jack stares at you in awestruck silence, a moment that is quietly interrupted once more by Krampus' urging"
+    "Jack stares at you in awestruck silence, a moment that is quietly interrupted once more by Krampus' urging."
 
-    krampus "We should get going, Frosty is in need of patching up and the pages are at risk the longer we stay out here."
+    krampus "We should get going. Frosty is in need of patching up and the pages remain at risk the longer we stay out here."
 
-    "That seems to catch Jack's attention as he nods in agreement."
+    "That seems to catch Jack's attention, and he nods in agreement."
 
-    jack "Right, let's go." 
+    jack "Right. Let's go." 
 
 
     hide Kram Neu with moveoutleft
 
-    "Krampus walks off in the direction of the exit and Jack holds offers his hand:"
+    "Krampus walks off towards the exit and Jack offers you his hand:"
 
-    "You take his hand, cold but familiar. He offers up a smile as he leads you both out of Easter Island."
+    "You gladly accept. His touch is cold, but familiar, and he smiles happily as he leads you both out of Easter Island."
 
     scene bg black screen with fade 
 
-    "You all return to the base. Krampus and Frosty split off to find Mrs. Claus to patch up Frosty's cuts and debrief her on the situation."
+    "All four of you return to base. Without a word, Krampus and Frosty split off to find Mrs. Claus and patch up Frosty's wounds. They'll also need to debrief her on the situation."
 
-    "You and Jack make your way to the room with the book, the place where you first meet."
+    "Left alone, you and Jack make your way to the room with the book. The place where you first met."
 
     scene bg book room with fade
 
-    "When you enter the magic around you grows brighter, warmth courses through you stronger and stronger the closer you get to the pedestal." 
+    "When you enter the room, the magic around you grows brighter. A sense of warmth courses through you, growing stronger and stronger the closer you get to the pedestal." 
 
     show Jack Neu at right with dissolve
 
-    "You look at Jack, who hasn't let go of your hand since taking hold of it at Easter Island." 
+    "You look at Jack, who hasn't let go of your hand." 
 
-    "You know, you have to choose"
+    "You know that you'll have to choose."
 
     menu:
-        "Go home":
+        "Go home.":
             " You give Jack's hand a squeeze before letting go, turning to him with a solemn smile." 
 
             mc "It's time for me to go."
 
             show Jack Sad at right with dissolve
 
-            "Jack's face dips in sadness."
+            "Jack's expression crumples."
 
-            jack "Do you really have to, why not stay."
+            jack "Do you really have to? Why not stay?"
 
             mc "I cherish the time we've spent together. It was more than I could ever imagine, but I was expelled because the book was in danger."
             mc "Now that I have the pages back, I must return home."
@@ -2490,12 +2490,12 @@ label jack_ending:
 
             jack "I'll see you around."
 
-            "You nod and pull away. Looking at Jack one last time." 
+            "You nod and pull away, looking at Jack one last time." 
 
             mc "I'll be where I always have been." 
-            "And with that you approach the book, missing pages in hand." 
+            "And with that, you approach the book, missing pages in hand." 
             scene bg the book with fade
-            "You finally touch the warm golden pages, and the spirit of the book finally returns home"
+            "As your fingers touch the yellow pages, the spirit of the book finally returns home."
             scene bg black screen with blink_shut
         "Stay with Jack":
             " You give Jack's hand a squeeze before letting go, turning to him with a solemn smile." 
@@ -2506,34 +2506,34 @@ label jack_ending:
 
             "Jack's face dips in sadness."
 
-            jack "Do you really have to, why not stay."
+            jack "Do you really have to? Why not stay?"
 
-            mc "These past few days have been amazing. Beyond anything I have ever known in the pages of my memories."
-            mc "But, that is all I've ever known, the pages of adventures and songs that brought light and joy to the world." 
+            mc "These past few days have been amazing. It was beyond anything I have ever known in the pages of my memories."
+            mc "The book was my entire life. The pages of adventures and music are what bring light and joy to the world." 
             mc "I don't know what life looks like outside of that." 
 
             jack "Then stay, and we can experience it together." 
 
             show Jack Neu at center with ease
 
-            jack "Stay and we can experience many more adventures together." 
+            jack "Stay, and we can experience many more adventures together." 
 
             "You take a moment to think about it, about a life of adventures and experiences with Jack."
 
-            "Jack,  competitive, silly, caring and wonderful. Jack Frost."
+            "Jack, who is so competitive, silly, caring and wonderful. Jack Frost."
 
-            "Life would be magical and mischievous, never a dull moment."
+            "Life would be magical and mischievous. There would never be a dull moment."
             "A true adventure."
 
-            "You can't help the smile at the thought,"
+            "You can't help the smile at the thought."
 
-            mc "Ok, yes I'll stay"
+            mc "How can I say no?"
 
             show Jack Happy at center with dissolve
 
             jack "Yes? Yes!"
 
-            "Before you know it, Jack picks you up and twirls you around in a hug."
+            "Before you know it, Jack picks you up and twirls you around in an embrace."
 
             "His laughter and excitement ring out like bells on a silent night."
 
@@ -2547,51 +2547,52 @@ label jack_ending:
 label frosty_ending: 
     frosty "[mcname] are you okay?"
 
-    mc "hmmm"
+    mc "Hmmm?"
 
     show Frosty Neu at center with moveinleft
 
     "You turn to find Frosty staring at you intently." 
 
-    frosty "Are you okay? Earlier, during the fight I saw you fall and Jack had to pull you away. I was worried."
+    frosty "Are you okay? Earlier, during the fight, I saw you fall and Jack had to pull you away. I was worried."
 
-    mc "Oh, I'm ok." 
+    mc "Oh, I'm okay." 
 
     "Frosty looks at you uncertainly." 
 
-    mc "Really, I'm ok–"
-    mc "Oh, jeez! What about you!"
+    mc "Really, I'm okay."
 
-    "It took a moment to register, but suddenly you spot gashes along the back of Frosty's hands and budding burns where projectiles must have grazed him during the fight."
+    "It took a moment to register, but you suddenly spot the gashes along the back of Frosty's hands, along with budding burns where projectiles must have grazed him during the fight."
+    
+    mc "Oh! What about you?"
 
-    "You rush forward to start inspecting his wounds, mentally logging each one as you search his frame for more."
+    "You rush forward to examine his wounds, mentally logging each one as you gingerly search his frame."
 
     #show frosty happy at center with dissolve 
 
-    "Or at least you try, his body shakes with silent laughter as you inspect him making it hard to see and keep track."
+    "Or at least you try. His body shakes with laughter as you inspect him, making it hard to see and keep track."
 
-    mc "Will you stop moving, I've got to makes sure I know where your hurt so I can relay it to Mrs. Claus when she's patching you up later." 
+    mc "Will you stop moving? I've got to makes sure I know where your hurt so I can relay it to Mrs. Claus when she's patching you up later." 
 
-    frosty "Sorry- can't help it, I'm ticklish and you keep poking me-"
+    frosty "Sorry! I can't help it. I'm ticklish and you keep poking me -"
 
-    "He barely gets the statement between huffs of laughter."
+    "He barely gets the statement out between huffs of laughter."
     "You take a step back and cross your arms."
 
     mc "This is serious!"
 
     "Frosty takes deep breaths, trying to calm himself."
 
-    frosty "I know, I know. But believe me, I can handle alot worse than a few cuts and burns."
+    frosty "I know, I know. But believe me, I can handle a lot worse than a few cuts and burns."
 
-    "You sigh in resignation, there's not much you can do until you get back to the base anyway."
+    "You sigh in resignation. There's not much you can do until you get back to the base anyway."
 
     #show frosty neu at center with dissolve 
 
     frosty "So.. are you magic now?"
 
-    "His sudden change in topic was almost startling, as he fixes you once again with that intent look."
+    "You look up at him, startled, as he fixes you once again with that intent look."
 
-    "But before you can answer, Krampus' voice cuts through the air."
+    "Before you can answer, however, Krampus' voice cuts through the air."
 
     krampus "She's the Book of Legends."
 
@@ -2599,9 +2600,9 @@ label frosty_ending:
 
     show Kram Neu at right with moveinright
 
-    "He stops next to Frosty and holds out the pages to you" 
+    "He stops next to Frosty and offers you the pages." 
 
-    "You take them gingerly, a warmth passing through your fingers once you make contact with them." 
+    "You take them gingerly, a warmth passing through your fingers as you make contact with them." 
 
     mc "Thank you."
 
