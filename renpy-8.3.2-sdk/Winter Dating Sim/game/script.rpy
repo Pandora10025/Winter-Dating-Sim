@@ -27,7 +27,7 @@ image Kramp Nod = im.Scale("NODDING_Krampus.png", 800, 1000)
 
 image Frosty Neu = im.Scale("Neutral_frosty.png", 800, 1000)
 
-image Mrs Claus Neu = im.Scale("Neutral_Mrs_Claus",800,1000)
+image MrsClaus Neu = im.Scale("Neutral_Claus.png", 800, 1000)
 
 
 #Character Romance Points
@@ -318,8 +318,8 @@ label start:
     show Frosty Neu at right 
     with ease
 
-    show Mrs Claus Neu at left with moveinleft
-
+    show MrsClaus Neu at left 
+    with moveinleft
     "A short, older woman stands with her arms crossed. She wears an indiscernible expression."
     "Her hair is completely grey and pinned in a half up and half down style that fell around her shoulders. She wore a black and red dress."
     "You weren't sure why, but she struck you as vaguely familiar. You felt that her presence set you at ease."
@@ -402,7 +402,7 @@ label start:
     scene bg sitting room 
     with dissolve
 
-    show Mrs Claus Neu at center with moveinright 
+    show MrsClaus Neu at center with moveinright 
 
     msC "Take a seat, my dear, while I look you over."
 
@@ -458,7 +458,7 @@ label start:
 
     show Kramp Neu at right 
     show Jack Neu at left
-    show Mrs Claus Neu at center
+    show MrsClaus Neu at center
     with dissolve 
 
     msC "...keep an eye on them."
@@ -478,7 +478,7 @@ label start:
 
     hide Kramp Neu 
     hide Jack Neu
-    hide Mrs Claus Neu
+    hide MrsClaus Neu
     with dissolve 
 
     show Frosty Neu at center with dissolve
@@ -489,7 +489,7 @@ label start:
     "Mrs. Claus comes over once more."
 
     show Frosty Neu at left with ease
-    show Mrs Claus Neu at right with moveinright
+    show MrsClaus Neu at right with moveinright
 
     msC "Someone will come check on you in the morning, but for now I suggest you lay down and get some rest."
 
@@ -520,7 +520,7 @@ label start:
 
     mc "Yes, come in."
 
-    show Mrs Claus Neu at center with moveinright
+    show MrsClaus Neu at center with moveinright
 
     "Mrs. Claus enters with a warm smile, holding a small tray with a steaming cup of tea."
 
@@ -540,7 +540,7 @@ label start:
 
     mc "Alright. Thank you, Mrs. Claus."
 
-    hide Mrs Claus Neu with moveoutright
+    hide MrsClaus Neu with moveoutright
     scene bg hallway with dissolve
 
     "You follow Mrs. Claus down the winding hallway to enter a large dining room filled with the smell of fresh bread, bacon, and something sweet."
@@ -2365,7 +2365,7 @@ label neutral_ending:
     "You're approaching the pedestal when you sense a presence beside you."
 
     msC "You could at least say goodbye first." 
-    show Mrs Claus Neu at right 
+    show MrsClaus Neu at right 
     with moveinright
 
     mc "So, you figured it out."
@@ -2388,7 +2388,7 @@ label neutral_ending:
     "You can feel the silent laughter shake her form before she pulls away."
 
     msC "Always."
-    hide Mrs Claus Neu with dissolve 
+    hide MrsClaus Neu with dissolve 
 
     "You approach the book, missing pages in hand." 
 
