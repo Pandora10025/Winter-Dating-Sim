@@ -1162,7 +1162,8 @@ label frosty_date_3:
     "Together, you sit in the glow of the fluorescent lights, knowing this is the end of one chapter and the start of another."
     "Whatever comes next, you'll carry this moment with you. Always."
     with fade
-    return
+
+    jump before_mission
 
 
 label jack_date_1:
@@ -1476,7 +1477,9 @@ label jack_date_3:
 
     "You both leave the gym together, the mission looming ahead but feeling just a little less daunting with him by your side."
     with fade
-    return
+
+    jump before_mission    
+
 label krampus_date_1:
 
     scene bg skiing
@@ -1824,7 +1827,8 @@ label krampus_date_2:
 
     "With Krampus by your side, even the toughest challenges seem a little more thrilling-and a lot more fun."
     with fade
-    return
+    
+    jump before_mission
 
 label before_mission:
 
